@@ -1,0 +1,30 @@
+body
+{
+	margin: 0px auto;
+}
+
+/* Phần header */
+#header
+{
+	background-color: pink;
+	width: 100%;
+	display: flex;
+}
+
+#hotline
+{
+	width: 40%;
+}
+#menu
+{
+	padding-left: 40%;
+	width: 50%;
+}
+#main
+{
+	background-color: red;
+}
+#footer
+{
+	background-color: blue;
+}

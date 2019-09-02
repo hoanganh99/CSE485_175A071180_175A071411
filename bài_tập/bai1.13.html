@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Tạo form và các điều khiển</title>
+	<style>
+		table,tr,td{border: 1px solid #24afb6;border-collapse: collapse;background: #f5ee93;color: #24afb6;}
+	</style>
+</head>
+<body>
+<div>
+	<h2 style="color: #5959db;" align="center">Phiếu đăng ký tham gia chương trình khuyến mãi</h2>
+	<form style="display: flex;justify-content: center;">
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Khách Việt Nam</td>
+				<td><input type="checkbox" name="phai"></td>
+			</tr>
+			<tr>
+				<td>Chọn tour</td>
+				<td><select>
+					<optgroup label="Miền Bắc">
+					    <option >Hà Nội-Hạ Long-Sapo</option>
+					    <option >Hà Nội-Chùa Hương-Ninh Bình</option>
+					    <option>Hà Nội-Cát Bà-Tuần Châu</option>
+					  </optgroup>
+					<optgroup label="Miền Trung">
+					    <option >Huế-Bạch Mã-Đà Nẵng</option>
+					    <option >Nha Trang-Đà lạt</option>
+					    <option>Buôn mê thuột-Gia lai-Kontum</option>
+					</optgroup>
+					<optgroup label="Miền Nam">
+					    <option >TP.HCM-Cần Thơ-Cà Mau</option>
+					    <option >TP>HCM-Mỹ Tho</option>
+					</optgroup>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Phương tiện</td>
+				<td><input type="radio">Máy bay
+				<input type="radio">Xe ô tô
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<fieldset style="border-color: #c63535;">
+				  <legend style="color: #e18221;">Số lượng đoàn khách</legend>
+				  Người lớn<input type="text">
+				  Trẻ em<input type="text">
+				</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td>Ghi chú thêm</td>
+				<td>
+					<textarea style="width: 70%;"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td   colspan="2" ><input style="position: relative;
+				                                 left: 40%;" type="button" name="" value="Đồng ý" 
+					                             onclick="myFunction()"></td>
+			</tr>
+			<tr >
+				<td style="color: #e18221;" colspan="2" align="center" id="kq"></td>
+			</tr>
+		</table>
+	</form>
+</div>
+<script>
+    function myFunction() {document.getElementById("kq").innerHTML= "Bạn đã đăng ký thành công!!!"}
+</script>
+</body>
+</html>

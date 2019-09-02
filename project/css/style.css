@@ -1,30 +1,33 @@
+/*Phần body*/
 body
 {
-	margin: 0px auto;
+    margin: 0px;
 }
-
 /* Phần header */
-#header
+.header
 {
+    height: 150px;
 	background-color: pink;
 	width: 100%;
 	display: flex;
 }
 
-#hotline
+.hotline
 {
 	width: 40%;
 }
-#menu
+.menu
 {
 	padding-left: 40%;
 	width: 50%;
 }
-#main
+.main
 {
+    margin: 0 5%;
 	background-color: red;
 }
-#footer
+.footer
 {
+    height: 500px;
 	background-color: blue;
 }

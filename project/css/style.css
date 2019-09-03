@@ -1,33 +1,53 @@
-/*Phần body*/
+﻿/*Phần body*/
 body
 {
-    margin: 0px;
-}
-/* Phần header */
-.header
-{
-    height: 150px;
-	background-color: pink;
-	width: 100%;
-	display: flex;
+    font-size: 15px;
 }
 
-.hotline
+
+/*Phần header*/
+header
 {
-	width: 40%;
+    margin-left: -150px;
+    margin-right: -150px;
+    height: 600px;
 }
-.menu
+/*Hàng 1*/
+.row {
+    height: 50px;
+    background-color: #024282;
+    padding: 0px;
+    margin: 0px;
+}
+/*Hàng 2*/
+.row-2
 {
-	padding-left: 40%;
-	width: 50%;
+    height: 100px;
+    background-color:white;
 }
-.main
+.row-2 img
 {
-    margin: 0 5%;
-	background-color: red;
+    width: 60%;
 }
-.footer
+/*Hàng 3*/
+.row-3
+{
+    height: 450px;
+    background-color: black;
+}
+
+
+/*Phần main*/
+main
 {
     height: 500px;
-	background-color: blue;
+    background-color: pink;
+}
+
+
+/*Phần footer*/
+footer
+{
+    height: 500px;
+    background-color: red;
 }

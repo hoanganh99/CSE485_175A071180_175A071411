@@ -3,119 +3,91 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 13px;
+    font-size: 15px;
     font-family: sans-serif;
 }
 
 
 /*Phần header*/
-header {
+header 
+{
     height: 600px;
 }
 /*Hàng 1*/
-.row {
-    height: 40px;
-    background-color: #024282;
-    width: 119%;
-    padding: 0.9%;
+.row 
+{
+    height: 50px;
 }
 
-/*Phần menu*/
-.menu
+/*Số điện thoại liên hệ*/
+/*không có gạch chân của link liên kết trong thẻ a*/
+.hotline a 
 {
-    /*Cho thẻ li chung một dòng*/
-    display: flex;
-    /*Làm mất from của li*/
+    color: #fdb913;
+}
+
+/*Làm mất form của li*/
+.hotline li 
+{
+    display: inline-flex;
     list-style: none;
 }
-.menu li a
-{
-    color: rgba(255, 255, 255, 0.87);
-    padding-left: 35px;
-}
+
+/*Núp tìm kiếm*/
 .input-group
 {
-    margin-top: -7px;
+    width: 450px;
+    padding-left: 120px;
 }
-
-
 /*Hàng 2*/
 .row-2 {
-    height: 100px;
-    width: 119%;
-    background-color: white;
+    /*tạo đổ bóng cho menu*/
+    box-shadow: 0 5px 5px #666;
+    /*căn chỉnh dòng thứ 2*/
+    margin-left: -10%;
+    margin-right: -1%;
 }
 .row-2 img
 {
-    width: 70%;
     padding-left: 100px;
 }
+
 /*Hàng 3*/
-.row-3
+/*Phần trình diễn hình ảnh*/
+.mySlides 
 {
-    height: 450px;
+    display: none;
+    margin-top: -20px;
+    margin-right: 5%;
+    margin-left:5%;
 }
-.slieshow
-{
-    width:80%;
-    margin: 0px auto;
-    height:350px;
-}
-.images-list 
-{
-    width: 100%;
-}
-.images-list img
-{
-    width: 100%;
-    height:400px;
-}
-.title
-{
+
+/*phần màu nền bên dưới ảnh được làm mờ*/
+.title {
     height: 100px;
     /*Làm mờ ảnh*/
-    background-color:rgba(2, 66, 130, 0.3);
-    bottom: 100px;
-    font-size:40px;
-    font-weight:bold;
+    background-color: black;
+    font-size: 40px;
+    font-weight: bold;
     text-align: center;
     color: white;
     /*height bằng bao nhiêu thì line-height bằng từng đó*/
     line-height: 100px;
-}
-span {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 40px;
-    background-color: #024282;
-    /*không thiết lập đc độ rộng vì*/
-    /*width: 100px;*/
-    width:50px;
-    text-align: center;
-    border-radius: 20px;
+    margin-top: -150px;
     
 }
-.arrow-left {
-    position: absolute;
-    top: 250px;
-    left: 50px;
-    transform: translate(-50%, -50%);
-}
-.arrow-right {
-    position: absolute;
-    top: 250px;
-    right: 50px;
-    transform: translate(50%, -50%);
-}
-/*Phần main*/
-    main {
-        height: 500px;
-        background-color: pink;
-    }
 
+    
+/*Phần main*/
+/*Phần tin tức*/
+.row-4
+{
+    margin: 5%;
+    font-size: 20px;
+}
 
 /*Phần footer*/
-footer
+footer 
 {
     height: 500px;
     background-color: red;

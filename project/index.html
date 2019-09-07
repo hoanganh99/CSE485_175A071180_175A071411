@@ -10,90 +10,239 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Thêm icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <!--boostrap 3,4-->
+    <!--boostrap 3-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row" style="margin-left: -10%;">
-                <div class="col-md-4" style="padding-left: 100px; color: #b15f11;">
-                    HOTLINE: 
-                </div>
-                <div class="col-md-5">
-                    <ul class="menu">
-                        <li>
-                            <a href="#">SINH VIÊN</a>
-                        </li>
-                        <li>
-                            <a href="#">GIẢNG VIÊN</a>
-                        </li>
-                        <li>
-                            <a href="#">ĐÀO TẠO QUỐC TẾ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <div class="input-group">
-                        <input class="form-control btn-transparent border-0" placeholder="Tìm kiếm thông tin" name="keyword" style="background-color: rgba(29, 11, 82, 0.86); border: none; padding: -5%;">
-                            <span class="input-group-btn">
-                                <button class="btn btn-transparent btn-secondary border-0">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </button>
-                            </span>
+                <!--Thanh điều hướng-->
+                <nav class="navbar navbar-inverse" style="background-color:#024282;">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav" style="padding-left: 200px;">
+                            <li style="color: #fdb913; padding-top: 5px;">HOTLINE:
+                                <!--dòng số điện thoại liên hệ-->
+                                <ul class="hotline">
+                                    <li style="display: block; top: -60px;">
+                                        <a href="tel:0902.298.300">0902.298.300</a>
+                                        <!--Tạo dấu gạch giữa 2 số đt, &nbsp là tạo ra khoảng trống-->
+                                        &nbsp;-&nbsp;
+                                        <a href="tel:0906.298.300">0906.298.300</a>
+                                    </li>
+                                    <li style="display: block; top: 0px;">
+                                        <a href="tel:0912.298.300">0912.298.300</a>
+                                        &nbsp;-&nbsp;
+                                        <a href="tel:0914.298.300">0914.298.300</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li style="padding-left:150px;"><a href="#" style="color: #fff;">SINH VIÊN</a></li>
+                            <li><a href="#" style="color: white;">GIẢNG VIÊN</a></li>
+                            <li><a href="#" style="color: white;">ĐÀO TẠO QUỐC TẾ</a></li>
+                            <!--Tạo nút tìm  kiếm và căn chỉnh màu cho nút tìm kiếm-->
+                            <div class="input-group">
+                                <input class="form-control btn-transparent border-0" style="background-color:#0B0B61; border:none;" placeholder="Tìm kiếm thông tin" name="keyword">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-transparent btn-secondary border-0"style="background-color: #0B0B61; border: none; margin-bottom: 5px;">
+                                        <i class="fa fa-search" aria-hidden="true" style="color: white;"></i>
+                                    </button>
+                                    <!--Tạo nút thả xuống-->
+                                    <button class="btn btn-primary dropdown-toggle";" type="button" data-toggle="dropdown" style=" border:none; background-color:#024282;">
+                                        <a href="#">
+                                           <img src="images/england.png" alt="Alternate Text" style="width:35px;" />
+                                        </a>
+                                            <span class="caret"></span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                         <a href="#">
+                                             <img src="images/VN.jpg" alt="Alternate Text" style="width: 35px;" />
+                                         </a>
+                                    </div>
+                                </span>
+                            </div>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-md-1">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                            <a href="#">
-                                <img src="images/england.png" alt="Alternate Text" style="width:15px;" />
-                            </a>
-                            <span class="caret"></span>
+                    <!--Những thứ hiện ra sau khi co lại-->     
+                    <div class="navbar-header">
+                        <!--icon sau khi co trang lại-->
+                        <!--thuộc tính collapse để ẩn đi nội dung-->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="color:#024282;">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <!--Sau khi co trang thì hiện ra dòng tìm kiếm-->
+                            <div class="input-group">
+                                <input class="form-control btn-transparent border-0" placeholder="Tìm kiếm thông tin" name="keyword" style="background-color: #0B0B61; border: none;">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-transparent btn-secondary border-0" style="background-color: #0B0B61; border: none;">
+                                        <i class="fa fa-search" aria-hidden="true" style="color: white;margin-top: 10px;"></i>
+                                    </button>
+                                    <!--Tạo nút thả xuống-->
+                                    <button class="btn btn-primary dropdown-toggle" ;" type="button" data-toggle="dropdown" style=" border:none; background-color:#024282;">
+                                        <a href="#">
+                                            <img src="images/england.png" alt="Alternate Text" style="width:35px;margin-top: 5px;" />
+                                        </a>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#">
+                                            <img src="images/VN.jpg" alt="Alternate Text" style="width: 35px;" />
+                                        </a>
+                                    </div>
+                                </span>
+                            </div>
                         </button>
-                        <div class="dropdown-menu" style="width: 15px;">
-                            <a href="#">
-                                <img src="images/VN.jpg" alt="Alternate Text" style="width: 10px;"/>
-                            </a>
+                    <div>
+                </nav>    
+            </div>
+            <!--Hàng thứ 2-->
+            <div class="row-2">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid" style="background-color: white;border: none; margin-top: -15px;padding-left: 100px;">
+                        <div class="navbar-header">
+                            <!--những thành phần hiện ra sau khi co lại-->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <img src="images/logo.jpg" alt="Alternate Text" style="width:70%"/>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav" style="font-size: 23px; margin-top: 12px;">
+                                <li><a href="#"><i class="fa fa-info-circle" style="color:#024282;">Giới thiệu</i></a></li>
+                                <li><a href="#"><i class="fa fa-graduation-cap" style="color:#024282;">Tuyển sinh</i></a></li>
+                                <li><a href="#"><i class="fa fa-book" style="color:#024282;">Đào tạo</i></a></li>
+                                <li><a href="#"><i class="fa fa-bookmark" style="color:#024282;">Nghiên cứu</i></a></li>
+                                <li><a href="#"><i class="fa fa-handshake" style="color:#024282;">Hợp tác doanh nghiệp</i></a></li>
+                            </ul>
+                        </div>
+                        <!--nút lựa chọn-->
+                        <button type="button" class="btn btn-gnav" id="menu-trigger" data-trigger="#menu"><i class="fa fa-bars c-blue-a5"></i></button>
+                    </div>
+                </nav>
+            </div>
+
+            <!--Phần trình diễn hình ảnh-->
+            <div class="row-3">
+                <div class="w3-content w3-display-container">
+                    <!--Phần hình ảnh thứ nhất-->
+                    <div class="w3-display-container mySlides">
+                        <img src="images/1.jpg" style="width:100%">
+                        <div class="title">
+                            i am a title
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row-2" style="margin-left: -10%;">
-                <div class="col-md-4">
-                    <img src="images/logo.jpg" alt="Alternate Text" />
-                </div>
-                <div class="col-md-6">
-                       
-                </div>
-                <div class="col-md-2">
-                    c
-                </div>
-            </div>
-            <div class="row-3">
-                <div class="slideshow">
-                    <div class="images-list">
-                        <img src="images/logo.jpg" alt="Alternate Text" />
+                    <!--Phần hình ảnh thứ 2-->
+                    <div class="w3-display-container mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/Tin_Tuc/201908_TIN/9_WEB%20SLIDER.png" style="width:100%">
+                        <div class="title">
+                            i am a title
+                        </div>
                     </div>
-                    <div class="title">
-                        i am a title
+                    <!--Phần hình ảnh thứ 3-->
+                    <div class="w3-display-container mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/slider/Chinh-sach-hoc-bong-NTTU_Web-Slider.jpg" style="width:100%">
+                        <div class="title">
+                            i am a title
+                        </div>
                     </div>
-                    <span class="arrow-left">&lt</span>
-                    <span class="arrow-right">&gt</span>
+                    <!--Phần hình ảnh thứ 4-->
+                    <div class="w3-display-container mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/slider/Lien-thong-NTTU_Web-Slider.jpg" style="width:100%">
+                        <div class="title">
+                            i am a title
+                        </div>
+                    </div>
+                    <!--Phần hình ảnh thứ 5-->
+                    <div class="w3-display-container mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/slider/Thac-sy-2019-NTTU_Web-Slider.jpg" style="width:100%">
+                        <div class="title">
+                            i am a title
+                        </div>
+                    </div>
+                    <!--Phần hình ảnh thứ 6-->
+                    <div class="w3-display-container mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/slider/Vien%20dao%20tao%20quoc%20te%20NTT%202019_NIIE.jpg" style="width:100%">
+                        <div class="title">
+                            i am a title
+                        </div>
+                    </div>
+                    <!--Phần hình ảnh thứ 7-->
+                    <div class="w3-display-container mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/slider/BANER-FUTSAL-SINH-VIEN-TP-HCM-2019_NTTU.jpg" style="width:100%">
+                        <div class="title">
+                            i am a title
+                        </div>
+                    </div>
+                    <!--Phần hình ảnh thứ 8-->
+                    <div class="w3-display-container mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/slider/Tham-van-chuyen-gia-NTTU_Web-Slider.jpg" style="width:100%">
+                        <div class="title">
+                            i am a title
+                        </div>
+                    </div>
+                    <!--Nút chuyển sang hình ảnh khác-->
+                    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
                 </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                    }
+
+                    function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        if (n > x.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = x.length }
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex - 1].style.display = "block";
+                    }
+                </script>
             </div>
         </div>
     </header>
-    <!--Phần main-->
+    <!--Phần nội dung chính-->
     <main>
-
+        <div class="container-fluid">
+            <div class="row-4">
+                <div class="col-md-9 new">
+                    <a href="#" style="text-decoration: none; color: black;">Tin tức</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: black;">Media</a>
+                </div>
+            </div>
+            <div class="row-5">
+                <div class="col-md-3">
+                    <img src="#" />
+                </div>
+                <div class="col-md-3">
+                    <img src="#" alt="Alternate Text" />
+                </div>
+                <div class="col-md-3">
+                    <img src="#" alt="Alternate Text" />
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
     </main>
-    <!--Phần footer-->
+    <!--Phần cuối-->
     <footer>
 
     </footer>

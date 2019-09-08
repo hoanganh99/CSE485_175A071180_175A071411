@@ -77,18 +77,132 @@ header
     
 }
 
+
     
 /*Phần main*/
-/*Phần tin tức*/
 .row-4
 {
     margin: 5%;
+}
+/*Căn chỉnh hình ảnh ở phần tin tức*/
+.image-1 img
+{
+    margin-top: 5%;
+    width: 100%;
+}
+/*Nội dung trong phần tin tức*/
+.content-1 p 
+{
+    margin-top: 5%;
     font-size: 20px;
+    /*Căn chữ đều 2 bên*/
+    text-align: justify;
+}
+/*Dòng xem thêm*/
+.content-1 i 
+{
+    color: #024282;
+    padding-left: 72%;
+}
+.content-1 i a 
+{
+    color: #024282;
 }
 
-/*Phần footer*/
-footer 
+/*video trong phần media*/
+.video iframe {
+    width: 100%;
+    margin-top: 5%;
+    height: 175px;
+}
+/*link viedeo trong phần media*/
+.link-video li
 {
+    /*Làm mất from của li*/
+    list-style: none;
+}
+/*Phần thẻ i trong link-video*/
+.link-video li i 
+{
+    margin-left: -10%;
+    /*Tăng khoảng cách giữa 2 dòng*/
+    line-height: 170%;
+}
+/*Phần thẻ i trong link-video*/
+.link-video li i a
+{
+    color: #808080;
+    /*làm nhỏ độ rộng của chữ*/
+    font-weight: 100;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/*Hàng thứ 5*/
+.row-5 
+{
+    margin-top: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 350px;
+    background-color: #024282;
+}
+/*thẻ h1*/
+.row-5 h1
+{
+    padding-top: 3%;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    color: rgba(253, 185, 19, 0.67);
+}
+/*Phần lí do chọn trường Nguyễn Tất Thành*/
+.carousel-inner
+
+{
+.item
+{
+    transition: 500ms ease-in-out left;
+}
+.left
+
+{
+    left: -33%;
+}
+
+.right 
+{
+    left: 33%;
+}
+
+.next 
+{
+    left: 33%;
+}
+
+.prev 
+{
+    left: -33%;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) 
+{
+    .item 
+    {
+        /* use your favourite prefixer here transition: 500ms ease-in-out left;*/
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none !important;
+    }
+}
+
+/*Hàng thứ 6*/
+.image-2 img
+{
+    width: 90%;
+}
+/*Phần footer*/
+footer {
     height: 500px;
     background-color: red;
 }

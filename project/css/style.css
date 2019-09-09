@@ -16,7 +16,7 @@ header
 /*Hàng 1*/
 .row 
 {
-    height: 50px;
+    height:50px;
 }
 
 /*Số điện thoại liên hệ*/
@@ -157,50 +157,33 @@ header
     color: rgba(253, 185, 19, 0.67);
 }
 /*Phần lí do chọn trường Nguyễn Tất Thành*/
-.carousel-inner
-
-{
-.item
-{
-    transition: 500ms ease-in-out left;
-}
-.left
-
-{
-    left: -33%;
-}
-
-.right 
-{
-    left: 33%;
-}
-
-.next 
-{
-    left: 33%;
-}
-
-.prev 
-{
-    left: -33%;
-}
-
-@media all and (transform-3d), (-webkit-transform-3d) 
-{
-    .item 
-    {
-        /* use your favourite prefixer here transition: 500ms ease-in-out left;*/
-        transition: 500ms ease-in-out all;
-        backface-visibility: visible;
-        transform: none !important;
-    }
-}
-
-/*Hàng thứ 6*/
-/*Phần sự kiên đặc biệt*/
 
 /*Phần footer*/
-footer {
-    height: 500px;
-    background-color: red;
+/*Làm mất form của li*/
+.row-7 ul li
+{
+    list-style: none;
+}
+/*Tạo viền cho phần liên hệ*/
+.contact li {
+    padding-top: 2%;
+    margin-top: 2%;
+    /*Tạo độ cong cho đường viền*/
+    border-radius: 5px;
+    /*đường riềm ko chung với màu nền*/
+    border: 5px solid rgba(255, 255, 255, 0);
+    width: 200px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.29);
+}
+/*Chỉnh màu cho icon*/
+.row-7 i
+{
+    color: white;
+    padding-left: 7%;
+}
+.contact li a
+{
+    text-decoration: none;
+    color: white;
 }

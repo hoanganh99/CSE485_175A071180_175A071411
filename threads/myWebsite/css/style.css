@@ -1,0 +1,131 @@
+body{
+    margin:0px auto;
+}
+
+#top-header{
+    display:flex;
+    background-color:#024282;
+    height: 36px;
+}
+
+.contact{
+    width:33.33%;
+    color:#fdb913;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+}
+
+.sub-menu{
+    width:40.33%;
+    display:flex;
+    
+    align-items: center;
+}
+.sub-menu a{
+    color:#fff;
+    text-decoration: none;
+    margin-right:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search{
+    width:20%;
+    display:flex;
+    align-items: center;
+    color:#fff;
+}
+
+.lang{
+    width:6.33%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#main-header{
+    height: 100px;
+    background-color:#fff;
+    border-bottom:1px solid rgba(0,0,0,0.15);
+    display:flex;
+}
+
+.logo{
+    width:30%;
+    display:flex;
+    align-items: center;
+    margin-left:15px;
+}
+
+.main-menu{
+    width:70%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-menu a{
+    text-decoration: none;
+    color:#000;
+    font-size:18px;
+    margin-right:20px;
+}
+
+.main-menu a:hover{
+    color:green;
+}
+
+/* Bắt đầu Slideshow */
+
+#slideshow{
+    position: relative;
+    height: 400px;
+}
+.images-list{
+    width:100%;
+}
+
+.images-list img{
+    width:100%;
+    height: 400px;
+}
+.image-title{
+    height: 90px;
+    background-color:rgba(1,2,3,0.4);
+    position: relative;
+    bottom:90px;
+    line-height: 90px;
+}
+
+.image-title h1{
+    margin:0px;
+    color:#fff;
+    text-align: center;
+}
+
+#slideshow span{
+    display:inline-block;
+    color:black;
+    font-size:50px;
+    font-weight: bold;
+    width:60px;
+    background-color:#fff;
+    text-align: center;
+    border:2px solid olive;
+    border-radius: 50%;
+}
+
+.arrow-l{
+    position: absolute;
+    top:50%;
+    left:60px;
+    transform: translate(-50%,-50%);
+}
+
+.arrow-r{
+    position: absolute;
+    top:50%;
+    right:60px;
+    transform: translate(50%,-50%);
+}

@@ -1,5 +1,6 @@
 ﻿/*Phần body*/
-body {
+body 
+{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,54 +17,124 @@ header
 /*Hàng 1*/
 .row 
 {
-    height:50px;
+    height: 35px;
+    width: 111%;
+    margin-left: 200px;
+    background-color: #024282;
 }
-
-/*Số điện thoại liên hệ*/
-/*không có gạch chân của link liên kết trong thẻ a*/
-.hotline a 
+/*Dòng hotline*/
+.row .hotline
 {
-    color: #fdb913;
+    margin-left: 200px;
+    color: rgba(253, 185, 19, 0.97);
+    margin-top: 2%;
 }
-
-/*Làm mất form của li*/
-.hotline li 
+/*Dòng sđt*/
+.row .hotline ul a
 {
-    display: inline-flex;
+    color: rgba(253, 185, 19, 0.97);
+}
+/*Dòng menu*/
+.row .menu 
+{
     list-style: none;
+    display: flex;
 }
-
-/*Núp tìm kiếm*/
-.input-group
+/*Thay đổi màu cho menu*/
+.row .menu a
 {
+    color: white;
+}
+/*Căn chỉnh khoảng cách cho dòng menu*/
+.row .menu li
+{
+    margin-top: 2%;
+}
+/*Căn chỉnh khoảng nút tìm kiếm và hình ảnh nhỏ*/
+.row .input-group
+{
+    padding-right: 15%;
     width: 450px;
     padding-left: 120px;
 }
+
+
 /*Hàng 2*/
-.row-2 {
+.row-2 
+{
+    height: 100px;
+    width: 102%;
+    margin-left: -1%;
+    background-color: white;
     /*tạo đổ bóng cho menu*/
     box-shadow: 0 5px 5px #666;
-    /*căn chỉnh dòng thứ 2*/
-    margin-left: -10%;
-    margin-right: -1%;
 }
+/*Chỉnh sửa hình ảnh*/
 .row-2 img
 {
-    padding-left: 100px;
+    padding-left: 15%;
+    height: 90px;
+}
+/*Chỉnh sửa khoảng cách menu chính*/
+.row-2 .menu-1 
+{
+    list-style: none;
+    display: flex;
+    padding-top: 5%;
+}
+/*Sửa màu và kích cỡ cho menu*/
+.row-2 .menu-1 a i
+{
+    color:#024282;
+    font-size: 20px;
+}
+/*Khi rê chuột vào thì màu chữ thay đổi*/
+.row-2 .menu-1 a i:hover
+{
+    color: rgba(209, 151, 10, 0.84);
 }
 
+
+
 /*Hàng 3*/
+.row-3
+{
+    background-color: red;
+}
+/*Nút danh sách*/
+.row-3 .nav button
+{
+}
+/*slideshow*/
+.w3-button 
+{
+    margin-top: -5%;
+}
 /*Phần trình diễn hình ảnh*/
 .mySlides 
 {
-    display: none;
-    margin-top: -20px;
+    margin-top: -5%;
     margin-right: 5%;
-    margin-left:5%;
+    margin-left: 5%;
 }
 
+.w3-left, .w3-right, .w3-badge 
+{
+    cursor: pointer
+}
+
+.w3-badge 
+{
+    height: 13px;
+    width: 13px;
+    padding: 0
+}
+
+
+
 /*phần màu nền bên dưới ảnh được làm mờ*/
-.title {
+.title 
+{
     height: 100px;
     /*Làm mờ ảnh*/
     background-color: black;
@@ -110,7 +181,8 @@ header
 }
 
 /*video trong phần media*/
-.video iframe {
+.video iframe 
+{
     width: 100%;
     margin-top: 5%;
     height: 175px;
@@ -141,14 +213,14 @@ header
 /*Hàng thứ 5*/
 .row-5 
 {
-    margin-top: 40%;
+    margin-top: 45%;
     margin-left: 5%;
     margin-right: 5%;
     height: 350px;
-    background-color: #024282;
 }
-/*thẻ h1*/
-.row-5 h1
+/*Căn chỉnh thanh trượt nhiều menu*/
+
+.row-5 h1 
 {
     padding-top: 3%;
     font-size: 25px;
@@ -157,6 +229,57 @@ header
     color: rgba(253, 185, 19, 0.67);
 }
 /*Phần lí do chọn trường Nguyễn Tất Thành*/
+.multi-item-carousel 
+{
+    .carousel-inner
+
+{
+    > .item
+
+{
+    transition: 500ms ease-in-out left;
+}
+
+.active 
+{
+    &.left
+
+{
+    left: -33%;
+}
+
+&.right 
+{
+    left: 33%;
+}
+
+}
+
+.next 
+{
+    left: 33%;
+}
+
+.prev 
+{
+    left: -33%;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) 
+{
+    > .item 
+    {
+        // use your favourite prefixer here transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none !important;
+    }
+}
+
+}
+}
+
+
 
 /*Phần footer*/
 /*Làm mất form của li*/

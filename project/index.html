@@ -7,30 +7,40 @@
     <meta name="author" content="Hoàng Ánh, Huyền Trang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trường Đại Học Nguyễn Tất Thành</title>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Thêm icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--boostrap 3-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--boostrap 4-->
 
-    <!--jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </head>
 <body>
     <header>
         <!--Hàng 1-->
-        <div class="container-fluid">
-            <div class="row" style="margin-left: -10%;">
-                <div class="col-md-4">
-                    <div class="hotline">
-                        HOTLINE:
-                        <!--dòng số điện thoại liên hệ-->
-                        <ul><!---
+        <!--fixed-top: hiện ở dòng đầu tiên-->
+        <nav class="navbar navbar-expand-md navbar sticky-top">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <!--Khi co vào thì hiện ra nút navbar-->
+                <span class="navbar-toggler-icon" style="color: white;"></span>
+            </button>
+            <!--Khi co vào thì chỉ còn lại nguyên cái nút navbar-->
+            <div class="collapse navbar-collapse" id="collapse_target">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            HOTLINE:
+                            <!--dòng số điện thoại liên hệ-->
+                            <ul>
+                                <!---
                             <li style="display: block; top: -60px;">
                                 <a href="tel:0902.298.300" style="padding-left: 15%;">0902.298.300</a>
                                 <span>-</span>
@@ -41,159 +51,169 @@
                                 <span>-</span>
                                 <a href="tel:0914.298.300">0914.298.300</a>
                             </li>-->
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <ul class="menu">
-                        <li><a href="#">SINH VIÊN</a></li>
-                        <li><a href="#" style="padding-left: 60px;">GIẢNG VIÊN</a></li>
-                        <li><a href="#" style="padding-left: 60px;">ĐÀO TẠO QUỐC TẾ</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <div class="input-group">
-                        <input class="form-control btn-transparent border-0" style="background-color:#0B0B61; border:none;" placeholder="Tìm kiếm thông tin" name="keyword">
-                        <span class="input-group-btn">
-                            <button class="btn btn-transparent btn-secondary border-0" style="background-color: #0B0B61; border: none; margin-bottom: 5px;">
-                                <i class="fa fa-search" aria-hidden="true" style="color: white;"></i>
-                            </button>
-                            <!--Tạo nút thả xuống-->
-                            <button class="btn btn-primary dropdown-toggle" ;" type="button" data-toggle="dropdown" style=" border:none; background-color:#024282;">
-                                <a href="#">
-                                    <img src="images/england.png" alt="Alternate Text" style="width:35px;" />
-                                </a>
-                                <span class="caret"></span>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a href="#">
-                                    <img src="images/VN.jpg" alt="Alternate Text" style="width: 35px;" />
-                                </a>
-                            </div>
-                        </span>
-                    </div>
-                </div>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SINH VIÊN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GIẢNG VIÊN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ĐÀO TẠO QUỐC TẾ</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <!--Hàng 2-->
+            <div class="input-group" style="padding-left: 50%;padding-right: 5%;">
+                <input class="form-control btn-transparent border-0" style="background-color:#0B0B61; border:none;" placeholder="Tìm kiếm thông tin" name="keyword">
+                <span class="input-group-btn">
+                    <button class="btn btn-transparent btn-secondary border-0" style="background-color: #0B0B61; border: none; margin-bottom: 5px;">
+                        <i class="fa fa-search" aria-hidden="true" style="color: white;"></i>
+                    </button>
+                    <!--Tạo nút thả xuống-->
+                    <button class="btn btn-primary dropdown-toggle" ;" type="button" data-toggle="dropdown" style=" border:none; background-color:#024282;">
+                        <a href="#">
+                            <img src="images/england.png" alt="Alternate Text" style="width:35px;" />
+                        </a>
+                        <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#">
+                            <img src="images/VN.jpg" alt="Alternate Text" style="width: 35px;" />
+                        </a>
+                    </div>
+                </span>
+            </div>
+        </nav>
+
+
+
+        <!--Hàng 2: Menu chính-->
         <div class="container-fluid">
             <div class="row-2">
-                <div class="col-md-3">
-                    <img src="images/logo.jpg" alt="Alternate Text"/>
-                </div>
-                <!--menu chính-->
-                <div class="col-md-9">
-                    <ul class="menu-1">
-                        <li><a href="#"><i class="fa fa-info-circle">Giới thiệu</i></a></li>
-                        <li><a href="#"><i class="fa fa-graduation-cap" style="padding-left: 60px;">Tuyển sinh</i></a></li>
-                        <li><a href="#"><i class="fa fa-book" style="padding-left: 60px;">Đào tạo</i></a></li>
-                        <li><a href="#"><i class="fa fa-bookmark" style="padding-left: 60px;">Nghiên cứu</i></a></li>
-                        <li><a href="#"><i class="fa fa-handshake" style="padding-left: 60px;">Hợp tác doanh nghiệp</i></a></li>
-                    </ul>
-                </div>
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="Alternate Text" /></a>
+                        </div>
+                        <div class="collapse navbar-collapseid="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-info-circle">Giới thiệu</i></a></li>
+                                <li><a href="#"><i class="fa fa-graduation-cap" style="padding-left: 60px;">Tuyển sinh</i></a></li>
+                                <li><a href="#"><i class="fa fa-book" style="padding-left: 60px;">Đào tạo</i></a></li>
+                                <li><a href="#"><i class="fa fa-bookmark" style="padding-left: 60px;">Nghiên cứu</i></a></li>
+                                <li><a href="#"><i class="fa fa-handshake" style="padding-left: 60px;">Hợp tác doanh nghiệp</i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-        
 
 
 
 
 
-
-            <!--Phần trình diễn hình ảnh-->
-            <!--Hàng thứ 3-->
-            <div class="row-3">
-                <div class="nav">
-                    <button type="button" class="btn btn-gnav" id="menu-trigger" data-trigger="#menu">
-                        <i class="fa fa-bars c-blue-a5"></i>
-                    </button>
-                </div
-                <div class="w3-container">
-                    <div class="mySlides">
-                        <!--Hình ảnh thứ 1-->
-                        <img src="images/1.jpg" style="width:100%">
-                        <div class="title" style="color: red;">
-                            <h3>ĐH Nguyễn Tất Thành nhận hồ sơ xét tuyển học bạ đợt cuối đến ngày 03/09/2019</h3>
-                        </div>
-                    </div>
-                    <!--Phần hình ảnh thứ 2-->
-                    <div class="mySlides">
-                        <img src="http://ntt.edu.vn/web/upload/images/slider/Chinh-sach-hoc-bong-NTTU_Web-Slider.jpg" style="width:100%">
-                        <div class="title">
-                            <h3>Chính sách học bổng Trường Đại học Nguyễn Tất Thành năm 2019</h3>
-                        </div>
-                    </div>
-                    <!--Phần hình ảnh thứ 3-->
-                    <div class="w3-display-container mySlides">
-                        <img src="http://ntt.edu.vn/web/upload/images/slider/Lien-thong-NTTU_Web-Slider.jpg" style="width:100%">
-                        <div class="title">
-                            <h3>Tuyển sinh liên thông 2019</h3>
-                        </div>
-                    </div>
-                    <!--Phần hình ảnh thứ 4-->
-                    <div class="mySlides">
-                        <img src="http://ntt.edu.vn/web/upload/images/slider/Thac-sy-2019-NTTU_Web-Slider.jpg" style="width:100%">
-                        <div class="title">
-                            <h3>Tuyển sinh trình độ Thạc sỹ đợt 1 năm 2019 tại ĐH Nguyễn Tất Thành</h3>
-                        </div>
-                    </div>
-                    <!--Phần hình ảnh thứ 5-->
-                    <div class="mySlides">
-                        <img src="http://ntt.edu.vn/web/upload/images/slider/Vien%20dao%20tao%20quoc%20te%20NTT%202019_NIIE.jpg" style="width:100%">
-                        <div class="title">
-                            <h3>Viện đào tạo quốc tế NTT (NIIE) - "Cử nhân quốc tế, Cơ hội toàn cầu"</h3>
-                        </div>
-                    </div>
-                    <!--Phần hình ảnh thứ 6-->
-                    <div class="mySlides">
-                        <img src="http://ntt.edu.vn/web/upload/images/slider/BANER-FUTSAL-SINH-VIEN-TP-HCM-2019_NTTU.jpg" style="width:100%">
-                        <div class="title">
-                            <h3>Giải đấu Futsal SV Thành phố Hồ Chí Minh 2019</h3>
-                        </div>
-                    </div>
-                    <!--Phần hình ảnh thứ 7-->
-                    <div class="mySlides">
-                        <img src="http://ntt.edu.vn/web/upload/images/slider/Tham-van-chuyen-gia-NTTU_Web-Slider.jpg" style="width:100%" />
-                        <div class="title">
-                            <h3>Lịch phát sóng Chương trình Tham vấn Chuyên gia</h3>
-                        </div>
-                    </div>
-                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%;">
-                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="margin-left: 88%; height: 20px;">&#10094;</div>
-                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)" style="margin-left: 90%;">&#10095;</div>
+        <!--Phần trình diễn hình ảnh-->
+        <!--Hàng thứ 3-->
+        <div class="row-3">
+            <div class="nav">
+                <button type="button" class="btn btn-gnav" id="menu-trigger" data-trigger="#menu">
+                    <i class="fa fa-bars c-blue-a5"></i>
+                </button>
+            </div>
+            <div class="w3-container">
+                <div class="mySlides">
+                    <!--Hình ảnh thứ 1-->
+                    <img src="images/1.jpg" style="width:100%">
+                    <div class="title" style="color: red;">
+                        <h3>ĐH Nguyễn Tất Thành nhận hồ sơ xét tuyển học bạ đợt cuối đến ngày 03/09/2019</h3>
                     </div>
                 </div>
-
-                <script>
-                    var slideIndex = 1;
-                    showDivs(slideIndex);
-
-                    function plusDivs(n) {
-                        showDivs(slideIndex += n);
-                    }
-
-                    function currentDiv(n) {
-                        showDivs(slideIndex = n);
-                    }
-
-                    function showDivs(n) {
-                        var i;
-                        var x = document.getElementsByClassName("mySlides");
-                        var dots = document.getElementsByClassName("demo");
-                        if (n > x.length) { slideIndex = 1 }
-                        if (n < 1) { slideIndex = x.length }
-                        for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";
-                        }
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" w3-white", "");
-                        }
-                        x[slideIndex - 1].style.display = "block";
-                        dots[slideIndex - 1].className += " w3-white";
-                    }
-                </script>
-
+                <!--Phần hình ảnh thứ 2-->
+                <div class="mySlides">
+                    <img src="http://ntt.edu.vn/web/upload/images/slider/Chinh-sach-hoc-bong-NTTU_Web-Slider.jpg" style="width:100%">
+                    <div class="title">
+                        <h3>Chính sách học bổng Trường Đại học Nguyễn Tất Thành năm 2019</h3>
+                    </div>
+                </div>
+                <!--Phần hình ảnh thứ 3-->
+                <div class="w3-display-container mySlides">
+                    <img src="http://ntt.edu.vn/web/upload/images/slider/Lien-thong-NTTU_Web-Slider.jpg" style="width:100%">
+                    <div class="title">
+                        <h3>Tuyển sinh liên thông 2019</h3>
+                    </div>
+                </div>
+                <!--Phần hình ảnh thứ 4-->
+                <div class="mySlides">
+                    <img src="http://ntt.edu.vn/web/upload/images/slider/Thac-sy-2019-NTTU_Web-Slider.jpg" style="width:100%">
+                    <div class="title">
+                        <h3>Tuyển sinh trình độ Thạc sỹ đợt 1 năm 2019 tại ĐH Nguyễn Tất Thành</h3>
+                    </div>
+                </div>
+                <!--Phần hình ảnh thứ 5-->
+                <div class="mySlides">
+                    <img src="http://ntt.edu.vn/web/upload/images/slider/Vien%20dao%20tao%20quoc%20te%20NTT%202019_NIIE.jpg" style="width:100%">
+                    <div class="title">
+                        <h3>Viện đào tạo quốc tế NTT (NIIE) - "Cử nhân quốc tế, Cơ hội toàn cầu"</h3>
+                    </div>
+                </div>
+                <!--Phần hình ảnh thứ 6-->
+                <div class="mySlides">
+                    <img src="http://ntt.edu.vn/web/upload/images/slider/BANER-FUTSAL-SINH-VIEN-TP-HCM-2019_NTTU.jpg" style="width:100%">
+                    <div class="title">
+                        <h3>Giải đấu Futsal SV Thành phố Hồ Chí Minh 2019</h3>
+                    </div>
+                </div>
+                <!--Phần hình ảnh thứ 7-->
+                <div class="mySlides">
+                    <img src="http://ntt.edu.vn/web/upload/images/slider/Tham-van-chuyen-gia-NTTU_Web-Slider.jpg" style="width:100%" />
+                    <div class="title">
+                        <h3>Lịch phát sóng Chương trình Tham vấn Chuyên gia</h3>
+                    </div>
+                </div>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%;">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="margin-left: 88%; height: 20px;">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)" style="margin-left: 90%;">&#10095;</div>
+                </div>
             </div>
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-white", "");
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " w3-white";
+                }
+            </script>
+
+        </div>
         </div>
     </header>
     <!--Phần nội dung chính-->

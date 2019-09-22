@@ -1,7 +1,9 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Montserrat');
+﻿/*body*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body 
 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
 
 
@@ -11,59 +13,50 @@ header
     height: 600px;
 }
 /*Hàng 1*/
-.row
+/*căn chỉnh boostrap*/
+.active1
 {
-    width: 100%;
+    padding-top: 1%;
+    color: white !important;
 }
-/*Can chinh hang 1*/
-.navbar
-{
-    background-color: #024282;
-}
+/*dòng hotline*/
 
-/*lam mat form cua a*/
-.nav-link 
+/*thay đổi màu chữ tự động của boostrap*/
+.active1 a
 {
-    text-decoration: none;
     color: white;
 }
-/*Hàng 2*/
-.row-2 .navbar {
-    height: 70px;
-    width: 103%;
-    margin-left: -2%;
-    background-color: white !important;
-    border: none;
-}
-/*căn chỉnh hình ảnh*/
-.row-2 .navbar .navbar-header img
+/*làm mất màu nền của boostrap*/
+.nav .active1 a:hover
 {
-    margin-top: -4%;
-    height: 70px;
-    padding-left: 30%;
+    background-color: #024282;
+    color: white;
 }
-/*Căn chỉnh menu*/
-.row-2 .navbar .navbar-collapse .nav li 
+/*căn chỉnh nút tìm kiếm*/
+.input-group
 {
-    padding-left: 5px;
-    padding-top: 2%;
-}
-.row-2 .navbar .navbar-collapse .nav li i
-{
-    color:#024282;
-    font-size: 20px;
+    padding-left: 35%;
+    padding-right: 5%;
+    margin-top: -40px;
 }
 
-/*Hàng 3*/
-.row-3
+/*Hàng 2*/
+.navbar-nav i
 {
+    color: #024282;
+    font-size: 20px;
+}
+.navbar-nav .active i:hover
+{
+    color: rgba(253, 185, 19, 0.37);
+}
+/*Hàng 3*/
+.row-3 {
     background-color: pink;
     height: 100%;
 }
 /*Nút danh sách*/
-.row-3 .nav button
-{
-}
+
 /*slideshow*/
 
 /*Phần trình diễn hình ảnh*/

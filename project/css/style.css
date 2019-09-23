@@ -44,21 +44,23 @@ header
 .navbar-nav i
 {
     color: #024282;
-    font-size: 20px;
+    font-size: 21px;
 }
 .navbar-nav .active i:hover
 {
-    color: rgba(253, 185, 19, 0.37);
+    color: rgba(253, 185, 19, 0.57);
 }
+/*menu3: Nút danh sách*/
+
+
+
 /*Hàng 3*/
-.row-3 {
-    background-color: pink;
+.row-3 
+{
     height: 100%;
 }
-/*Nút danh sách*/
 
 /*slideshow*/
-
 /*Phần trình diễn hình ảnh*/
 .mySlides 
 {
@@ -77,29 +79,87 @@ header
     width: 13px;
     padding: 0
 }
-
-
-
 /*phần màu nền bên dưới ảnh được làm mờ*/
-.title 
+.title
+{
+    background-color: rgba(0, 0, 0, 0.46);
+    position: absolute;
+    margin-top: -100px;
+    width: 88%;
+    height: 100px;
+}
+/*Sửa phần bên dưới phần trình chiếu*/
+.title h3 
 {
     height: 100px;
     /*Làm mờ ảnh*/
-    background-color: black;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 27px;
+    padding-left: 3%;
+    padding-top: 2%;
     color: white;
-    /*height bằng bao nhiêu thì line-height bằng từng đó*/
-    line-height: 100px;
-    margin-top: -150px;
-    
+}
+/*menu3*/
+/*triangle*/
+.triangle
+{
+    width: 0px;
+    height: 0px;
+    border-top: 60px solid white;
+    border-right: 60px solid transparent;
+    /*border-bottom: 60px solid yellow;*/
+    border-left: 60px solid transparent;
 }
 
 
-    
+.dropdown-menu
+{
+    margin-left: 6% !important;
+    height: 500px !important;
+    margin-top: -2% !important;
+    width: 88%;
+}
+/*căn chỉnh chữ của menu chính*/
+.menu-main
+{
+    padding-top: 5%;
+}
+.dropdown-header p:hover
+{
+    color: rgba(253, 185, 19, 0.87);
+}
+.menu-main a {
+    color: rgba(255, 255, 255, 0.54);
+}
+.menu-main a:hover
+{
+    color: rgba(253, 185, 19, 0.87);
+}
+/*tạo viền cho icon*/
+.menu-icon i
+{
+    padding-top: 2%;
+    margin-top: 2%;
+    /*Tạo độ cong cho đường viền*/
+    border-radius: 5px;
+    /*đường riềm ko chung với màu nền*/
+    border: 5px solid rgba(255, 255, 255, 0);
+    width: 200px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.29);
+    color: white;
+}
+.menu-icon i:hover
+{
+    color: #024282;
+}
+
+
+
+
+
+/*Hàng 4*/
 /*Phần main*/
-.row-4
+.row-4 
 {
     margin: 5%;
 }
@@ -161,7 +221,6 @@ header
 /*Hàng thứ 5*/
 .row-5 
 {
-    margin-top: 45%;
     margin-left: 5%;
     margin-right: 5%;
     height: 350px;
@@ -236,7 +295,8 @@ header
     list-style: none;
 }
 /*Tạo viền cho phần liên hệ*/
-.contact li {
+.contact li 
+{
     padding-top: 2%;
     margin-top: 2%;
     /*Tạo độ cong cho đường viền*/

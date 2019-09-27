@@ -1,5 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Đại học Nguyễn Tất Thành">
+    <meta name="keywords" content="NTTU, Đại học Nguyễn Tất Thành">
+    <meta name="author" content="Hoàng Ánh, Huyền Trang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trường Đại Học Nguyễn Tất Thành</title>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- Thêm icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--boostrap3-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
 <!--Phần cuối-->
-<footer>
+    <footer>
         <div class="container-fluid">
             <div class="row-7" style="height: 400px; background-color:#024282; margin-top: 3%; margin-left: -1%;margin-right:-1%; padding-left: 5%; padding-right: 5%;">
                 <div class="col-md-3" style="margin-top: 2%;">
@@ -40,8 +64,8 @@
                         <li style="margin-top: 2%;"><a href="#" style="color: #808080;">Công đoàn Trường ĐH Nguyễn Tất Thành</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3" style="margin-top: 2%;">
-                    <a href="#" style="font-size: 20px;color: white;padding-left: 5%">TRUNG TÂM - VIỆN</a>
+                <div class="col-md-3" style="margin-top: 2%; margin-left: 3%;">
+                    <a href="#" style="font-size: 20px;color: white;padding-left: 10%">TRUNG TÂM - VIỆN</a>
                     <br />
                     <ul class="contact">
                         <li>
@@ -104,4 +128,22 @@
                 </div>
             </div>
         </div>
+        <!--Hãy để lại lời nhắn-->
+        <div class="message">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Hãy để lại lời nhắn</button>
+                <div id="demo" class="collapse">
+                    <div class="message1">
+                        <a href="index.php">Hãy để lại lời nhắn <i class="fa fa-delete"></i></a>
+                        <p>Bạn vui lòng điền vào biểu mẫu dưới đây và chúng tôi sẽ liên hệ lại với bạn ngay khi có thể.</p>
+                    </div>
+                    <div class="message2">
+                        <form action="action_page.php">
+                            *Tên<br>
+                            <input type="text" name="firstname">
+                        </form>
+                    </div>
+                </div>
+        </div>
     </footer>
+</body>
+</html>

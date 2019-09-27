@@ -1,3 +1,6 @@
+
+
+
 <nav class="navbar menu1" style="background-color:#024282; height: 5%; margin-top:-1%; z-index: 1;">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -131,5 +134,89 @@
                 </div>
             </div>  
 
+            <div class="container-fluid">
+            <div class="row-3" style=" margin-top:-5%; padding-left:-15%;">
+                <div class="w3-container">
+                    <div class="mySlides">
+                        <!--Hình ảnh thứ 1-->
+                        <img src="images/1.jpg" style="width:100%;">
+                        <div class="title">
+                            <h3>ĐH Nguyễn Tất Thành nhận hồ sơ xét tuyển học bạ đợt cuối đến ngày 03/09/2019</h3>
+                        </div>
+                    </div>
+                    <!--Phần hình ảnh thứ 2-->
+                    <div class="mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/slider/Chinh-sach-hoc-bong-NTTU_Web-Slider.jpg" style="width:100%">
+                        <div class="title">
+                            <h3>Chính sách học bổng Trường Đại học Nguyễn Tất Thành năm 2019</h3>
+                        </div>
+                    </div>
+                    <!--Phần hình ảnh thứ 3-->
+                    <div class="w3-display-container mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/slider/Lien-thong-NTTU_Web-Slider.jpg" style="width:100%">
+                        <div class="title">
+                            <h3>Tuyển sinh liên thông 2019</h3>
+                        </div>
+                    </div>
+                    <!--Phần hình ảnh thứ 4-->
+                    <div class="mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/slider/Thac-sy-2019-NTTU_Web-Slider.jpg" style="width:100%">
+                        <div class="title">
+                            <h3>Tuyển sinh trình độ Thạc sỹ đợt 1 năm 2019 tại ĐH Nguyễn Tất Thành</h3>
+                        </div>
+                    </div>
+                    <!--Phần hình ảnh thứ 5-->
+                    <div class="mySlides"><img src="http://ntt.edu.vn/web/upload/images/slider/Vien%20dao%20tao%20quoc%20te%20NTT%202019_NIIE.jpg" style="width:100%">
+                        <div class="title">
+                            <h3>Viện đào tạo quốc tế NTT (NIIE) - "Cử nhân quốc tế, Cơ hội toàn cầu"</h3>
+                        </div>
+                    </div>
+                    <!--Phần hình ảnh thứ 6-->
+                    <div class="mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/slider/BANER-FUTSAL-SINH-VIEN-TP-HCM-2019_NTTU.jpg" style="width:100%">
+                        <div class="title">
+                            <h3>Giải đấu Futsal SV Thành phố Hồ Chí Minh 2019</h3>
+                        </div>
+                    </div>
+                    <!--Phần hình ảnh thứ 7-->
+                    <div class="mySlides">
+                        <img src="http://ntt.edu.vn/web/upload/images/slider/Tham-van-chuyen-gia-NTTU_Web-Slider.jpg" style="width:100%" />
+                        <div class="title">
+                            <h3>Lịch phát sóng Chương trình Tham vấn Chuyên gia</h3>
+                        </div>
+                    </div>
+                    <!--Phần chuyển slideshow-->
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="display: flex; margin-top: -4%;">
+                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"><i class="fa fa-angle-left"></i></div>
+                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
 
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                    function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                    }
+                    function currentDiv(n) {
+                        showDivs(slideIndex = n);
+                    }
+                    function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        if (n > x.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = x.length }
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" w3-white", "");
+                        }
+                        x[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " w3-white";
+                    }
+                </script>
+            </div>
+        </div>
             

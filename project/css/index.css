@@ -45,11 +45,11 @@ header
 {
     color: #024282;
     font-size: 21px;
-}
-.navbar-nav .active i:hover
+}.navbar-nav .active i:hover
 {
     color: rgba(253, 185, 19, 0.57);
 }
+
 /*menu3: Nút danh sách*/
 
 
@@ -318,3 +318,58 @@ header
     text-decoration: none;
     color: white;
 }
+/*Hãy liên hệ*/
+.message  button
+{
+    margin-left: 75%; 
+    margin-bottom: -5%; 
+    background-color: #024282; 
+    border-radius: 5px;
+    width: 24%; 
+    height: 50px; 
+    padding-top: 1%; 
+    padding-left: 1%;
+}
+.message  button:hover
+{
+    background-color: #024282; 
+}
+/*đăng nhập để liên hệ*/
+#demo
+{
+    border: 0.5px solid #808080;
+    width: 375px;
+    height: 600px;
+    background-color:  pink;
+    border-radius: 5px;
+}
+.message1
+{
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 120px;
+    background-color: #024282;
+    border-radius: 5px;
+    color: white;
+}
+.message1 a
+{
+    text-decoration: none;
+    color: white;
+}
+.message1 p
+{
+    padding-top: 5%;
+    text-align: justify;
+}
+/*phần nhập tên, email, sđt, ngày sinh */
+.message2
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 0.5px solid #808080;
+}
+/* huy */

@@ -1,301 +1,407 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="description" content="Đại học Nguyễn Tất Thành">
     <meta name="keywords" content="NTTU, Đại học Nguyễn Tất Thành">
     <meta name="author" content="Hoàng Ánh, Huyền Trang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trường Đại Học Nguyễn Tất Thành</title>
-    <!--jquery-->
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <!-- Thêm icon -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--boostrap3-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+	<!--boostrap4-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--css-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!--icon-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<!--phần tại sao chọn NTTU-->
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>	
+	<!--javascript-->
+	<script type="text/javascript">
+		
+	</script>
+	<!--jquery-->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-    <header>
-    <?php
-        include "top.php"
-    ?>   
+	<div class="home">
+		<?php
+			include"top.php"
+		?>
+		<!--Phần tin tức và media-->
+		<div class="row">
+			<div class="col-md-9">
+				<!-- Phần tin tức -->
+				<div class="tintuc">
+					<h3>Tin tức</h3>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="media">
+					<h3>Media</h3>
+					<hr>
+				</div>
+			</div>
+		</div>
+		
+			<div class="reason">
+				<div class="wrapper ">
+					<div class="wrapper-reason">
+						<div class="title">
+							<b>TẠI SAO CHỌN ĐẠI HỌC NGUYỄN TẤT THÀNH?</b>
+							<div class="d-flex justify-content-center">
+								<div class="ngang">
+								
+								</div>
+							</div>
+							
+						</div>
+						<div class="content">
+							<div class="carousel_wrapper_track">
+								<section class="center slider">
+								    <div class="item">
+								      <img src="http://ntt.edu.vn/web/upload/images/hp_nguoithay-01.svg">
+								      <div class="main">
+								      	<h5>Chuẩn 3 sao QS-Starts</h5>
+								      	<p>Xếp hạng quốc tế 3 sao theo chuẩn QS-Stars, một trong các chuẩn xếp hạng hàng đầu dành cho các trường đại học trên thế giới.ếp hạng quốc tế 3 sao theo chuẩn QS-Stars, một trong các chuẩn xếp hạng hàng đầu dành cho các trường đại học trên thế giới.ếp hạng quốc tế 3 sao theo chuẩn QS-Stars, một trong các chuẩn xếp hạng hàng đầu dành cho các trường đại học trên thế giới.	</p>
+								      </div>
+								      
+								    </div>
+								    <div class="item">
+								      <img src="http://ntt.edu.vn/web/upload/images/hp_xhoi-01.svg">
+								      <div class="main">
+								      	<h5>Đạt chuẩn chất lượng quốc gia</h5>
+								      	<p>Xếp hạng quốc tế 3 sao theo chuẩn QS-Stars, một trong các chuẩn xếp hạng hàng đầu dành cho các trường đại học trên thế giới.</p>
+								      </div>
+								      
+								    </div>
 
-        <!-- huy -->
-      
-        <!-- end huy -->
-        <!--Phần trình diễn hình ảnh-->
-        
-    </header>
-    <!--Phần nội dung chính-->
-    <main>
-        <div class="container-fluid">
-            <!--Hàng thứ 4-->
-            <div class="row-4">
-                <div class="col-md-3">
-                    <a href="#" style="text-decoration:none; color: black; font-size: 20px;">
-                        Tin tức
-                        <!--Tạo dòng kẻ ngang-->
-                        <hr style="width: 15%; margin: 0; height: 2px; background-color: #f8b103;" />
-                    </a>
-                    <div class="image-1">
-                        <img src="http://ntt.edu.vn/web/upload/images/Tin_Tuc/201909_TIN/1.JPG" style="height: 175px;" alt="Alternate Text" />
-                        <div class="content-1">
-                            <p>Trường ĐH Nguyễn Tất Thành tổ chức “Vui Tết Trung thu” cho con CB – GV - CNV</p>
-                            <p style="font-size: 15px;">NTTU - Hòa chung không khí vui tươi của các bạn thiếu nhi trong cả nước sắp đón một mùa Trung thu mới, được sự hỗ trợ và tạo điều kiện của của lãnh đạo Trường ĐH Nguyễn Tất Thành, Công đoàn nhà trường</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image-1">
-                        <img src="http://ntt.edu.vn/web/upload/images/Tin_Tuc/201908_TIN/37552646402_26cef66dfb_o.jpg" style="height: 175px; margin-top: 15%;" alt="Alternate Text" />
-                        <div class="content-1">
-                            <p>Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</p>
-                            <p style="font-size: 15px;">Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image-1">
-                        <img src="http://ntt.edu.vn/web/upload/images/Tin_Tuc/201908_TIN/Web_Post.jpg" style="height: 175px; margin-top: 15%;" alt="Alternate Text" />
-                        <div class="content-1">
-                            <p>ĐH Nguyễn Tất Thành nhận hồ sơ xét tuyển học bạ đợt cuối đến ngày 03/09/2019</p>
-                            <p style="font-size: 15px;">NTTU - Với ưu điểm linh hoạt, thuận tiện và đặc biệt là cho phép thí sinh (TS) chủ động hơn trong quá trình xét tuyển, phương thức xét tuyển bằng học bạ lớp 12 đang dần khẳng định được sức hút của mình.Theo đó,</p>
-                            <i class="fa fa-chevron-circle-right">&nbsp<a href="#">Xem thêm</a></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <a href="#" style="text-decoration:none; color: black; font-size: 20px;">
-                        Media
-                        <!--Tạo dòng kẻ ngang-->
-                        <hr style="width: 15%; margin: 0; height: 2px; background-color: #f8b103;" />
-                    </a>
-                    <div class="video">
-                        <iframe width="211" height="140" src="https://www.youtube.com/embed/iZ1EUr2DAMs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="link-video" style="margin-top: 5%;">
-                        <ul>
-                            <li><i class="fa fa-angle-right"> &nbsp <a href="https://www.youtube.com/watch?v=SwWJkVE6vMg">ĐH Nguyễn Tất Thành – 20 năm dấu ấn một chặng đường</a></i></li>
-                            <li style="margin-top: 5%;"><i class="fa fa-angle-right"> &nbsp<a href="https://www.youtube.com/watch?v=txdD9O_bGXA">NỎ THẦN - TẬP 8 | BẬT MÍ VỀ NỎ THẦN VÀ NHỮNG CÂU CHUYỆN CÓ THẬT</a></i></li>
-                            <li style="margin-top: 5%;"><i class="fa fa-angle-right"> &nbsp<a href="https://www.youtube.com/watch?v=gE_RSL0ad6c">NỎ THẦN | TẬP CUỐI: ĐƯỜNG VỀ QUY LẠC</a></i></li>
-                        </ul>
-                        <i class="fa fa-chevron-circle-right" style="color: #024282; padding-left: 65%;">&nbsp&nbsp<a href="#" style="color: #024282;">Xem thêm</a></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br />
-        <!--Hàng thứ 5-->
-        <div class="container-fluid">
-            <div class="row-5">
-                <div class="container">
-                    <div id="carousel-simple" class="carousel multi-item-carousel slide col-md-6 col-md-offset-3" data-ride="carousel" style="background-color: #024282;  margin-left: 0%; margin-right: 2%; height: 350px; width: 100%;">
-                        <h1>TẠI SAO CHỌN ĐẠI HỌC NGUYỄN TẤT THÀNH?</h1>
-                        <hr style="width: 4%; height: 1px; background-color: #f0732a;" />
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox" style="text-align: center;">
-                            <div class="item active" style="padding-top: 5%; width: 95%;">
-                                <div class="col-md-4" style="padding-left: 5%">
-                                    <a href="#" style="color: white; font-size: 25px;text-decoration: none;">Chuẩn 3 sao QS-Stars (Anh Quốc)</a>
-                                    <p style="color: rgba(255, 255, 255, 0.51);">Xếp hạng quốc tế 3 sao theo chuẩn QS-Stars, một trong các chuẩn xếp hạng hàng đầu dành cho các trường đại học trên thế giới.</p>
-                                </div>
-                            </div>
-                            <div class="item" style="padding-top: 5%; width: 95%;">
-                                <div class="col-md-4" style="padding-left: 5%;">
-                                    <a href="#" style="color: white; font-size: 25px;text-decoration: none;">Đạt chuẩn chất lượng quốc gia</a>
-                                    <p style="color: rgba(255, 255, 255, 0.51);">Xếp hạng quốc tế 3 sao theo chuẩn QS-Stars, một trong các chuẩn xếp hạng hàng đầu dành cho các trường đại học trên thế giới.Là trường đại học ngoài công lập đầu tiên tại TP.HCM được kiểm định đạt chất lượng theo bộ tiêu chí quốc gia do Bộ GD&ĐT ban hành.</p>
-                                </div>
-                            </div>
-                            <div class="item" style="padding-top: 5%; width: 95%;">
-                                <div class="col-md-4" style="padding-left: 5%">
-                                    <a href="#" style="color: white; font-size: 25px;text-decoration: none;">Đại học hạnh phúc</a>
-                                    <p style="color: rgba(255, 255, 255, 0.51);">Đại học Nguyễn Tất Thành là ngôi trường tri thức và hạnh phúc dành cho sinh viên với 5 giá trị nổi bật</p>
-                                </div>
-                            </div>
-                            <div class="item" style="padding-top: 5%; width: 95%;">
-                                <div class="col-md-4" style="padding-left: 5%">
-                                    <a href="#" style="color: white; font-size: 25px;text-decoration: none;">Top 10 thương hiệu nổi tiếng</a>
-                                    <p style="color: rgba(255, 255, 255, 0.51);">Trong những năm qua, Trường ĐH Nguyễn Tất Thành đã không ngừng đổi mới công tác quản trị đại học, nâng cao chất lượng đào tạo, nghiên cứu khoa học, công tác hợp tác quốc tế, công tác sinh viên.</p>
-                                </div>
-                            </div>
-                            <div class="item " style="padding-top: 5%; width: 95%;">
-                                <div class="col-md-4" style="padding-left: 5%">
-                                    <a href="#" style="color: white; font-size: 25px;text-decoration: none;">95% sinh viên tốt nghiệp có việc làm</a>
-                                    <p style="color: rgba(255, 255, 255, 0.51);">Định vị là trường ứng dụng và thực hành hướng tới mục tiêu đáp ứng nhu cầu giáo dục đại học đại chúng, trí thức hóa nguồn nhân lực, tạo môi trường học tập tích cực và trải nghiệm thực tiễn cho sinh viên</p>
-                                </div>
-                            </div>
-                        </div>
+								    <div class="item">
+								      <img src="http://ntt.edu.vn/web/upload/images/hp_nhatruong-01.svg">
+								      <div class="main">
+								      	<h5>Đại học hạnh phúc</h5>
+								      	<p>Xếp hạng quốc tế 3 sao theo chuẩn QS-Stars, một trong các chuẩn xếp hạng hàng đầu dành cho các trường đại học trên thế giới.</p>
+								      </div>
+								      
+								    </div>
 
-                        <!-- Controls -->
-                        <a href="#carousel-simple" role="button" data-slide="prev">
-                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                        </a>
-                        <a href="#carousel-simple" role="button" data-slide="next" style="padding-left: 97%;">
-                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
+								    <div class="item">
+								      <img src="http://ntt.edu.vn/web/upload/images/hp_sinhvien-01.svg">
+								      <div class="main">
+								      	<h5>Top 10 thương hiệu nổi tiếng</h5>
+								      	<p>Xếp hạng quốc tế 3 sao theo chuẩn QS-Stars, một trong các chuẩn xếp hạng hàng đầu dành cho các trường đại học trên thế giới.</p>
+								      </div>
+								      
+								    </div>
 
-                <script type="text/javascript">
-                    $('.multi-item-carousel .item').each(function () {
-                        var next = $(this).next();
-                        if (!next.length) {
-                            next = $(this).siblings(':first');
-                        }
-                        next.children(':first-child').clone().appendTo($(this));
-                        if (next.next().length > 0) {
-                            next.next().children(':first-child').clone().appendTo($(this));
-                        } else {
-                            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-                        }
-                    });
-                </script>
-            </div>
-        </div>
+								    <div class="item">
+								      <img src="http://ntt.edu.vn/web/upload/images/hp_doanhnghiep-01.svg">
+								      <div class="main">
+								      	<h5>95% sinh viên tốt nghiệp có việc làm</h5>
+								      	<p>Xếp hạng quốc tế 3 sao theo chuẩn QS-Stars, một trong các chuẩn xếp hạng hàng đầu dành cho các trường đại học trên thế giới.</p>
+								      </div>
+								      
+								    </div>
+							    
+								  </section>
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
 
-        <!--Tạo dòng gạch ngang-->
-        <hr style="margin: 5%; margin-top: 3%;" />
+			<div class="tintuc cooperate">
+				<div class="wrapper">
+					<div class="row">
+						<div class="col-md-4">
+							<h4 class="title">Tin tức </h4>
+							<div class="ngang"></div>
+							<div class="row content">
+								<div class="col-12">
+									<img src="images/tintuc.jpg" class="w-100">
+									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
+									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
+									<div class="xemthem">
+										<a href="">
+											<i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>
+											Xem thêm 
+										</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h4 class="title">Media</h4>
+							<div class="ngang"></div>
+							<div class="row content">
+						
+								<div class="col-md-12">
+									<img src="images/tintuc2.jpg" class="w-100">
+									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
+									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
+									<div class="xemthem">
+										<a href="">
+											<i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>
+											Xem thêm 
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h4 class="title">Sự kiện nổi bật</h4>
+							<div class="ngang"></div>
+							<div class="row content">
+						
+								<div class="col-md-12 noibat">
+									<div class="row item_noibat">
+										<div class="col-3 col-md-3 day">
+											<span>Sep</span>
+											<b>11</b>
+										</div>
+										<div class="col-9 col-md-9">
+											<a href="#">Chương trình "Đồng hành cùng sức khỏe học đường: Tư vấn, chăm sóc, điều trị các bện về da" năm 2019</a>
+											<ul>
+												<li class="line-1">
+													<i class="fas fa-clock"></i>
+													07:30
+												</li>
+												<li class="line-2">
+													Sân bóng - cơ sở quận 7, 458/3F Nguyễn Hữu Thọ, phường Tân Hưng, quận 7
+												</li>
+											</ul>
+										</div>
+									</div>
+									
+									<div class="row item_noibat">
+										<div class="col-3 col-md-3 day">
+											<span>Sep</span>
+											<b>11</b>
+										</div>
+										<div class="col-9 col-md-9">
+											<a href="#">Chương trình "Đồng hành cùng sức khỏe học đường: Tư vấn, chăm sóc, điều trị các bện về da" năm 2019</a>
+											<ul>
+												<li class="line-1">
+													<i class="fas fa-clock"></i>
+													07:30
+												</li>
+												<li class="line-2">
+													Sân bóng - cơ sở quận 7, 458/3F Nguyễn Hữu Thọ, phường Tân Hưng, quận 7
+												</li>
+											</ul>
+										</div>
+									</div>
 
-        <!--Hàng thứ 6-->
-        <div class="container-fluid">
-            <div class="row-6" style="margin-top: -3%;">
-                <!--Phần hợp tác quốc tế-->
-                <div class="col-md-4" style="margin-left: 5%; width: 30%;">
-                    <a href="#" style="color: rgba(0, 0, 0, 0.90); font-size: 20px; text-decoration: none;">Hợp tác quốc tế</a>
-                    <hr style="width: 15%; margin: 0; height: 1px; background-color: #f8b103;" />
-                    <div class="image-2" style="margin-top: 5%;">
-                        <img src="images/2.jpg" style="width: 87%;height: 175px;" alt="Alternate Text" />
-                        <div style="margin-top: 5%; width: 90%;">
-                            <a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.87); font-size: 20px;text-align: justify;">
-                                ĐH Nguyễn Tất Thành tham gia Diễn đàn nâng cao chất lượng đào tạo Việt Nam – Lào và Triển lãm giáo dục Việt Nam 2019
-                            </a>
-                            <p style="margin-top: 5%; color: black; text-align: justify;">
-                                NTTU – Từ ngày 26/5 đến 30/05/2019 tại Trường ĐH Quốc gia Lào, Thủ đô Viêng Chăn, Cộng hòa Dân chủ Nhân dân Lào đã diễn ra Diễn đàn nâng cao chất lượng đào tạo Việt Nam – Lào và Triển lãm giáo dục Việt Nam 2019. ĐH Nguyễn Tất Thành là một trong số các trường ĐH tại Việt Nam tham gia diễn
-                            </p>
-                            <i class="fa fa-chevron-circle-right" style="color: #024282;">&nbsp&nbsp<a href="#" style="color: #024282;">Xem thêm</a></i>
-                        </div>
-                    </div>
-                </div>
-                <!--Phần môi trường học tập-->
-                <div class="col-md-4" style=" width: 30%; " width="300px" height="208px">
-                    <a href="#" style="color: rgba(0, 0, 0, 0.90); font-size: 20px; text-decoration: none;">Môi trường học tập</a>
-                    <hr style="width: 15%; margin: 0; height: 1px; background-color: #f8b103;" />
-                    <div class="image-2" style="margin-top: 5%;">
-                        <img src="images/3.jpg" style="width: 87%;" alt="Alternate Text" />
-                        <div style="margin-top: 5%; width: 90%;">
-                            <a href="#" style="text-decoration: none; color: rgba(0, 0, 0, 0.87); font-size: 20px;text-align: justify; ">
-                                Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất
-                            </a>
-                            <p style="margin-top: 5%; color: black; text-align: justify;">
-                                Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất
-                                Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.
-                            </p>
-                            <i class="fa fa-chevron-circle-right" style="color: #024282;">&nbsp&nbsp<a href="#" style="color: #024282;">Xem thêm</a></i>
-                        </div>
-                    </div>
-                </div>
-                <!--Phần sự kiện nổi bật-->
-                <div class="col-md-4" style=" width: 30%;">
-                    <a href="#" style="color: rgba(0, 0, 0, 0.90); font-size: 20px; text-decoration: none;">
-                        Sự kiện nổi bật
-                    </a>
-                    <hr style="width: 15%; margin: 0; height: 1px; background-color: #f8b103;" />
-                    <div>
-                        <ul style="list-style: none;">
-                            <!--Chương trình đồng hành cùng sức khỏe học đường-->
-                            <li style="margin-top: 5%; margin-left:-10%;">
-                                <div class="row">
-                                    <div class="col-md-1 ">
-                                        <p style="width: 100px; height: 100px; background-color: #024282; text-align: center; color: white; font-size: 25px;">
-                                            Sep
-                                            <br />
-                                            <span style="font-size: 35px; font-weight: bolder;">
-                                                11
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3" style="margin-left: 20%; width: 70%;">
-                                        <a href="#" style="font-size: 17px; color: black; font-weight: bolder; text-decoration: none;">
-                                            Chương trình "Đồng hành cùng sức khỏe học đường: Tư vấn, chăm sóc, điều trị các bện về da" năm 2019
-                                        </a>
-                                        <p style="margin-top:5%;color:#808080;">
-                                            <i class="fa fa-clock mr-2" aria-hidden="true">
-                                                07:30 <br /><br />
-                                                <span style="font-weight: 100;">Hội trường A.801, 300A Nguyễn Tất Thành, phường 13, quận 4, TP. HCM</span>
-                                            </i>
-                                        </p>
-                                        <hr style="width: 30%; margin: 0; height: 2px; background-color: #808080;" />
-                                    </div>
-                                </div>
-                            </li>
-                            <!--Chương trình trung thu cho con của GV-CB-CNV trường-->
-                            <li>
-                                <div class="row" style="margin-top: 10%; margin-left: -15%;">
-                                    <div class="col-md-1 ">
-                                        <p style="width: 100px; height: 100px; background-color: #024282; text-align: center; color: white; font-size: 25px;">
-                                            Sep
-                                            <br />
-                                            <span style="font-size: 35px; font-weight: bolder;">
-                                                07
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3" style="margin-left: 20%; width: 70%;">
-                                        <a href="#" style="font-size: 17px; color: black; font-weight: bolder; text-decoration: none;">
-                                            Chương trình trung thu cho con của GV - CB - CNV Trường
-                                        </a>
-                                        <p style="margin-top:5%;color:#808080;">
-                                            <i class="fa fa-clock mr-2" aria-hidden="true">
-                                                07:45 <br /><br />
-                                                <span style="font-weight: 100;">HT A.801, 300A Nguyễn Tất Thành, P. 13, Q. 4</span>
-                                            </i>
-                                        </p>
-                                        <hr style="width: 30%; margin: 0; height: 2px; background-color: #808080;" />
-                                    </div>
-                                </div>
-                            </li>
-                            <!--Chương trình ngày hội tốt nghiệp và chinh phục nhà tuyển dụng-->
-                            <li>
-                                <div class="row" style="margin-top: 10%; margin-left: -15%;">
-                                    <div class="col-md-1">
-                                        <p style="width: 100px; height: 100px; background-color: #024282; text-align: center; color: white; font-size: 25px;">
-                                            Sep
-                                            <br />
-                                            <span style="font-size: 35px; font-weight: bolder;">
-                                                07
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3" style="margin-left: 20%; width: 70%;">
-                                        <a href="#" style="font-size: 17px; color: black; font-weight: bolder; text-decoration: none;">
-                                            Chương trình Ngày hội tốt nghiệp và Chinh phục nhà tuyển dung - Khoa Công nghệ sinh học
-                                        </a>
-                                        <p style="margin-top:5%;color:#808080;">
-                                            <i class="fa fa-clock mr-2" aria-hidden="true">
-                                                07:45
-                                                <span style="font-weight: 100;">Trung tâm CNSH TPHCM</span>
-                                            </i>
-                                        </p>
-                                        <hr style="width: 30%; margin: 0; height: 2px; background-color: #808080;" />
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <i class="fa fa-chevron-circle-right" style="color: #024282; margin-top: 5%;">&nbsp&nbsp<a href="#" style="color: #024282;">Xem thêm</a></i>
-                </div>
-            </div>
-        </div>
-    </main>
-    <?php
-        include "footer.php"
-    ?>
+									<div class="row item_noibat">
+										<div class="col-3 col-md-3 day">
+											<span>Sep</span>
+											<b>11</b>
+										</div>
+										<div class="col-9 col-md-9">
+											<a href="#">Chương trình "Đồng hành cùng sức khỏe học đường: Tư vấn, chăm sóc, điều trị các bện về da" năm 2019</a>
+											<ul>
+												<li class="line-1">
+													<i class="fas fa-clock"></i>
+													07:30
+												</li>
+												<li class="line-2">
+													Sân bóng - cơ sở quận 7, 458/3F Nguyễn Hữu Thọ, phường Tân Hưng, quận 7
+												</li>
+											</ul>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+
+				</div>
+			</div>
+
+				<div class="contact">
+					<div class="wrapper">
+						<div class="row ">
+							<div class="col-md-6 col-lg-3">
+								<h4><a href="">ĐH NGUYỄN TẤT THÀNH</a></h4>
+								<ul>
+									<li><a href="">Thư ngỏ</a></li>
+									<li><a href="">Tầm nhìn - Sứ mạng</a></li>
+									<li><a href="">Văn hóa ĐH Nguyễn Tất Thành</a></li>
+									<li><a href="">Thông tin 3 công khai</a></li>
+									<li><a href="">Đảm bảo chất lượng</a></li>
+									<li><a href="">Phát triển bền vững</a></li>
+									<li><a href="">Trường Trung cấp Nguyễn Tất Thành</a></li>
+									<li><a href="">Trường Tiểu học Anh Việt Mỹ</a></li>
+								</ul>
+							</div>
+							<div class="col-md-6 col-lg-3 cot-2">
+								<h4><a href="">PHÒNG - BAN</a></h4>
+								<h4><a href="">THƯ VIỆN ẢNH</a></h4>
+								<h4><a href="">E-LEARNING</a></h4>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<h4><a href="">TRUNG TÂM - VIỆN</a></h4>
+								<ul>
+									<li><a href="">Viện Đào Tạo Quốc Tế</a></li>
+									<li><a href="">Viện Công Nghệ Cao</a></li>
+									<li><a href="">Viện Đào tạo Sau đại học</a></li>
+									<li><a href="">Trung tâm Thông tin Thư viện</a></li>
+									<li><a href="">TT Ngoại Ngữ</a></li>
+									<li><a href="">TT Tin Học NTT</a></li>
+									<li><a href="">TT QH Doanh Nghiệp & Khởi nghiệp</a></li>
+									<li><a href="">TT Đào tạo theo nhu cầu XH</a></li>
+									<li><a href="">TT Xuất khẩu lao động Texgamex</a></li>
+									<li><a href="">Công đoàn Trường ĐH Nguyễn Tất Thành</a></li>
+								</ul>
+							</div>
+							<div class="col-md-6 col-lg-3 sociaty">
+				  				<ul>
+				  					<li><a href=""><i class="fab fa-facebook-square"></i>Facebook</a></li>
+				  					<li><a href=""><i class="fab fa-google-plus-g"></i>Google Plus</a></li>
+				  					<li><a href=""><i class="fab fa-youtube"></i>Youtube</a></li>
+				  					<li><a href=""><i class="fas fa-envelope"></i>E-mail</a></li>
+				  					<li><a href=""><i class="fab fa-youtube"></i>Youtube</a></li>
+				  					<li><a href=""><i class="fa fa-wechat"></i>Zalo</a></li>
+				  					<li><a href=""><i class="fa fa-mortar-board"></i>E-office</a></li>
+				  					<li><a href=""><i class="fa fa-users"></i>Tuyển dụng</a></li>
+				  				</ul>
+				  			</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="footer">
+					<div class="wrapper">
+						<div class="row">
+							<div class="col-md-6">
+								<h4>THÔNG TIN LIÊN HỆ</h4>
+								<p>Trụ sở chính:<b>300A – Nguyễn Tất Thành, Phường 13, Quận 4, TP. Hồ Chí Minh, Việt Nam</b></p>
+								<p>Điện thoại:<b>1900 2039</b>Fax:<b>028 39 404 759</b></p>
+								<p>Hotline:<b>0902 298 300 – 0906 298 300 – 0912 298 300 – 0914 298 300</b></p>
+								<p>Email:<b>tttvtsinh@ntt.edu.vn – bangiamhieu@ntt.edu.vn</b></p>
+								
+							</div>
+							<div class="col-md-6">
+								<p>©2017. Bản quyền thuộc về trường <b>Đại học Nguyễn Tất Thành</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="wrapper_chatbox">
+				<div class="chatbox" >
+					<button href="#">Hãy để lại lời nhắn</button>
+
+				</div>
+				<div class="content_chatbox">
+					<div class="top">
+						<div class="d-flex row">
+							<div class="col-8 d-flex justify-content-start">
+								<p>Hãy để lại lời nhắn</p>
+							</div>
+							<div class="col-4 d-flex justify-content-end">
+								<i id="close" class="fas fa-times-circle"></i>
+							</div>
+							
+						</div>
+						
+						<div>Bạn vui lòng điền vào biểu mẫu dưới đây và chúng tôi sẽ liên hệ lại với bạn ngay khi có thể.</div>
+					</div>
+					<div class="main">
+						<input type="text" placeholder="*Tên" name="">
+						<input type="text" placeholder="*E-mail" name="">
+						<input type="text" placeholder="Điện thoại" name="">
+						<input type="text" placeholder="Ngày sinh" name="">
+						<textarea placeholder="*lời nhắn"></textarea>
+						<input type="submit" value="Hoàn tất" name="">
+						<div class="tiny">
+							We're <img src="https://cdn.jsdelivr.net/emojione/assets/png/26a1.png?v=2.2.7">  by tawk.to
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+
+	$( document ).ready(function() {
+    	$('#showCollapse').click(function(){
+    		// $(".collapse-handmade").css("display",'block');
+    		$(".collapse-handmade").slideToggle("slow");
+    	});
+    	$('#showCollapse2').click(function(){
+    		// $(".collapse-handmade").css("display",'block');
+    		$(".collapse-handmade").slideToggle("slow");
+    	});
+    	 
+
+    	 $('.content_chatbox').hide();
+    	 $('.chatbox').click(function(){
+    	 	$('.content_chatbox').show();
+    	 	$(this).hide();
+    	 });
+    	 $('#close').click(function(){
+    	 	$('.content_chatbox').hide();
+    	 	$('.chatbox').show();
+    	 });
+
+    	count = 0;
+  		wordsArray = ["0902.298.300 - 0906.298.300","0912.298.300  - 0914.298.300"];
+    	 setInterval(function () {
+		    count++;
+		    $("#hotline-1").slideUp(600, function () {
+		    	// odd % 2 == 1
+		      $(this).text(wordsArray[count % wordsArray.length]).slideDown(200);
+		      console.log('wordsArray '+count % wordsArray.length+' count '+count+' length '+wordsArray.length);
+		    });
+		  }, 3000);
+
+    	 setInterval(function () {
+		    count++;
+		    $("#hotline-2").slideUp(600, function () {
+		    	// odd % 2 == 1
+		      $(this).text(wordsArray[count % wordsArray.length]).slideDown(200);
+		      console.log('wordsArray '+count % wordsArray.length+' count '+count+' length '+wordsArray.length);
+		    });
+		  }, 3000);
+
+    	 	$('.content-responsive').hide();
+	    	$('#showMenuRes').click(function(){
+	    		$('.content-responsive').slideToggle();
+    		});
+	    	$(".center").slick({
+				        dots: true,
+				        infinite: true,
+				        centerMode: true,
+				        slidesToShow: 3,
+				        slidesToScroll: 3,
+				        dots:false,
+
+				 responsive: [
+			        {
+			            breakpoint: 900,
+			            settings: {
+			                slidesToShow: 1,
+			                slidesToScroll: 1,
+			            }
+			        }]
+
+		      });
+	    	// responsive slide 2
+
+			
+    		
+	});
+</script>
 </html>

@@ -25,27 +25,28 @@
 </head>
 <body>
 	<div class="home">
+		<!-- Trước khi co lại -->
 		<div class="head head-desktop">
 			<div class="wrapper row top_head">
 				<div class="col-md-3 hotline">
 					HOTLINE: <span id="hotline-1">0902.298.300 - 0906.298.300</span>
-					
 				</div>
 				<div class="col-md-5 ">
 					<a class="col" href="">SINH VIÊN</a>
 					<a class="col" href="">GIẢNG VIÊN</a>
 					<a class="col" href="">ĐÀO TẠO QUỐC TẾ</a>
 				</div>
+				<!-- Nút tìm kiếm -->
 				<div class="col-md-4 input d-flex justify-content-end">
 					<form>
 						<input type="text" name="" placeholder="Tìm kiếm thông tin ">
 						<i class="fa fa-search" aria-hidden="true"></i>
 					</form>
-					
 					<img src="http://ntt.edu.vn/web/frontend/images/ico-flagen.jpg">
 				</div>
 			</div>
 		</div>
+		<!-- sau khi co lại -->
 		<div class="head-responsive">
 					<div class="row">
 						<div class="col left">
@@ -57,21 +58,14 @@
 								<button>
 									<i class="fa fa-search" aria-hidden="true"></i>
 								</button>
-								
 							</form>		
 						</div>
 						<div class="col right">
 							<img src="http://ntt.edu.vn/web/frontend/images/ico-flagen.jpg">
 						</div>
 					</div>
-					
-					
 				</div>
-		
-		
-		
 			<div class="menu">
-				<!-- start responsive -->
 				<div class="content-responsive">
 							<ul>
 								<li><a href="#">HOTLINE: 0902.298.300 - 0906.298.300</a></li>
@@ -80,7 +74,7 @@
 								<li><a href="#">ĐÀO TẠO QUỐC TẾ</a></li>
 							</ul>
 					</div>
-				<!-- end head-responsive -->
+				<!-- phần menu 2 -->
 				<div class="wrapper">
 					<nav class="navbar navbar-expand-lg">
 					  	<img src="images/logo_ntt.jpg">
@@ -114,22 +108,18 @@
 					</nav>
 				</div>
 			</div>
-			
+			<!-- phần trình diễn hình ảnh -->
 			<div class="slide">
-				
 				<div class="wrapper slide-wrapper">
-					
-					<!-- slide -->
 					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 						<div class="triangle-wrapper">
+							<!-- phần icon -->
 							<div class="triangle">
-
 								<a id="showCollapse"><i class="fa fa-bars c-blue-a5"></i></a>
-								
 							</div>
-							
 						</div>
 					  <div class="carousel-inner">
+					  	<!-- phần hình ảnh -->
 					    <div class="carousel-item active">
 					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Thac-sy-2019-NTTU_Web-Slider.jpg" alt="First slide">
 					    </div>
@@ -140,18 +130,18 @@
 					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Chinh-sach-hoc-bong-NTTU_Web-Slider.jpg" alt="Third slide">
 					    </div>
 					    <div class="carousel-item">
-					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Vien%20dao%20tao%20quoc%20te%20NTT%202019_NIIE.jpg" alt="Third slide">
+					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Vien%20dao%20tao%20quoc%20te%20NTT%202019_NIIE.jpg" alt="fourth slide">
 					    </div>
 					    <div class="carousel-item">
-					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Tham-van-chuyen-gia-NTTU_Web-Slider.jpg" alt="Third slide">
+					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Tham-van-chuyen-gia-NTTU_Web-Slider.jpg" alt="fifth slide">
 					    </div>
 					  </div>
-					  
+					  <!-- phần bên trong của icon menu 3 -->
 					  	<div class="collapse-handmade" id="collapse-handmade">
 					  		<div class="row">
 					  			<div class="col-md-6 col-lg-9 row">
 					  				<div class="col-12 col-md-6 col-lg-4 item">
-					  				
+					  					<!-- cột thứ nhât, giới thiệu chung -->
 						  				<ul>
 						  					<li><h5><a href="">Giới thiệu chung </a></h5></li>
 						  					<li>
@@ -180,8 +170,8 @@
 						  					</li>
 						  				</ul>
 						  			</div>
+						  			<!-- cột thứ hai, cột tuyển sinh -->
 						  			<div class="col-12 col-md-6 col-lg-4 item">
-						  				
 						  				<ul>
 						  					<li><h5><a href="">Tuyển sinh</a>  </h5></li>
 						  					<li>
@@ -206,8 +196,8 @@
 						  					</li>
 						  				</ul>
 						  			</div>
+						  			<!-- cột thứ 3, cột đào tạo  -->
 						  			<div class="col-12 col-md-6 col-lg-4 item">
-						  				
 						  				<ul>
 						  					<li><h5><a href="">Đào tạo</a>  </h5></li>
 						  					<li>
@@ -236,8 +226,8 @@
 						  					</li>
 						  				</ul>
 						  			</div>
+						  			<!-- cột thứ 4, hợp tác doanh nghiệp -->
 						  			<div class="col-12 col-md-6 col-lg-4 item">
-					  				
 						  				<ul>
 						  					<li><h5><a href="">Hợp tác doanh nghiệp</a>  </h5></li>
 						  					<li>
@@ -262,9 +252,8 @@
 						  					</li>
 						  				</ul>
 						  			</div>
-
+									<!-- cột thứ năm, cột nghiên cứu -->
 						  			<div class="col-12 col-md-6 col-md-4 item">
-						  				
 						  				<ul>
 						  					<li><h5><a href="">Nghiên cứu</a>  </h5></li>
 						  					<li>
@@ -282,6 +271,7 @@
 						  				</ul>
 						  			</div>
 					  			</div>
+					  			<!-- cột liên hệ -->
 					  			<div class="col-md-6 col-lg-3 sociaty">
 					  				<ul>
 					  					<li><a href=""><i class="fab fa-facebook-square"></i>Facebook</a></li>
@@ -294,12 +284,9 @@
 					  					<li><a href=""><i class="fa fa-users"></i>Tuyển dụng</a></li>
 					  				</ul>
 					  			</div>
-
-					  			
-
 					  		</div>
 					  	</div>
-
+							<!-- nút di chuyển trình diễn hình ảnh -->
 						  <div class="line-slide">
 							<h3>Chính sách học bổng của trường đại học Nguyễn Tất Thành</h3>
 							<div class="control-button">
@@ -318,4 +305,4 @@
 			</div>
 		</div>
 	</body>
->
+</html>

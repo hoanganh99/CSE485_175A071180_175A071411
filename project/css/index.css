@@ -1,24 +1,27 @@
-/*.home div{
-  padding: 0;
-  margin: 0;
-}*/
-.home{
+/* top.php */
+.home
+{
   overflow: hidden;
   position: relative;
 }
-.home .head{
+/* màu của menu1 */
+.home .head
+{
   background-color: #024282;
-
 }
-.home .head .hotline{
+/* màu của hotline */
+.home .head .hotline
+{
   color: #fdb913;
 }
-.home .wrapper{
-  padding-left: 8%;
-  padding-right: 8%;
-  
+/* căn lề */
+.home .wrapper
+{
+  padding-left: 5%;
+  padding-right: 5%;
 }
-.home .slide .slide-wrapper{
+.home .slide .slide-wrapper
+{
   padding-bottom: 30px;
 }
 .home .head .wrapper{
@@ -228,6 +231,9 @@
 .collapse-handmade{
   display: none;
 }
+
+
+/* phần tin tức */
 .home .tintuc .content img,.home .tintuc .content iframe{
   min-height: 175px;
 }

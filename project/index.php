@@ -38,18 +38,18 @@
 							<div class="row content d-flex justify-content-end">
 								<div class="col-12 col-md-4">
 									<img src="http://ntt.edu.vn/web/upload/images/123.JPG" class="w-100">
-									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
-									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
+									<a class="" href="">Đào tạo nguồn nhân lực du lịch: Đã đến lúc phải để cho sinh viên tự làm</a>
+									<p>Hiện nay, nhiều trường, cơ sở đào tạo các ngành về dịch vụ du lịch vẫn đang chú trọng quá nhiều vào đào tạo lý thuyết mà ít có thực hành… đúng nghĩa. Đây cũng là điều hạn chế xưa nay, đã được bàn - nói đến rất</p>
 								</div>
 								<div class="col-12 col-md-4">
 									<img src="http://ntt.edu.vn/web/upload/images/Tin_Tuc/201909_TIN/537ed521aa664c381577.jpg" class="w-100">
-									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
-									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
+									<a class="" href="">Giảng viên ĐH Nguyễn Tất Thành lọt vào top 1% các nhà bình duyệt từ Việt Nam</a>
+									<p>NTTU - Vừa qua, Global Peer Review Awards 2019 đã công bố 10 nhà bình duyệt xuất sắc nhất, trong đó có đại diện đến từ Trường ĐH Nguyễn Tất Thành, TS. Võ Nguyễn Đại Việt. Kết quả này là sự ghi nhận của Global Peer</p>
 								</div>
 								<div class="col-12 col-md-4">
 									<img src="http://ntt.edu.vn/web/upload/images/Khoa-nganh/ketoan-taichinh-thumb.png" class="w-100">
-									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
-									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
+									<a class="" href="">ĐH Nguyễn Tất Thành tuyển sinh liên thông các ngành đào tạo</a>
+									<p>NTTU - ĐH Nguyễn Tất Thành tuyển sinh liên thông các ngành đào tạo...</p>
 								</div>
 								<div class="xemthem">
 									<div class="" style="text-align:end;">
@@ -71,13 +71,13 @@
 									<div class="description">
 										<ul>
 											<li>
-												<a href="#"><i class="fa fa-angle-right"></i>ĐH Nguyễn Tất Thành – 20 năm dấu ấn một chặng đường</a>
+												<a href="#"><i class="fa fa-angle-right"></i>ĐIỂM TIN THÁNG 8</a>
 											</li>
 											<li>
 												<a href="#"><i class="fa fa-angle-right"></i>ĐH Nguyễn Tất Thành – 20 năm dấu ấn một chặng đường</a>
 											</li>
 											<li>
-												<a href="#"><i class="fa fa-angle-right"></i>ĐH Nguyễn Tất Thành – 20 năm dấu ấn một chặng đường</a>
+												<a href="#"><i class="fa fa-angle-right"></i>NỎ THẦN - TẬP 8 | BẬT MÍ VỀ NỎ THẦN VÀ NHỮNG CÂU CHUYỆN CÓ THẬTg</a>
 											</li>
 										</ul>
 									</div>
@@ -173,13 +173,13 @@
 				<div class="wrapper">
 					<div class="row">
 						<div class="col-md-4">
-							<h4 class="title">Tin tức </h4>
+							<h4 class="title">Hợp tác quốc tế </h4>
 							<div class="ngang"></div>
 							<div class="row content">
 								<div class="col-12">
-									<img src="image/tintuc.jpg" class="w-100">
-									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
-									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
+									<img src="http://ntt.edu.vn/web/upload/images/Tin_Tuc/201909_TIN/DSC04631.JPG" class="w-100">
+									<a class="" href="">Khoa Công nghệ Sinh học ĐH Nguyễn Tất Thành làm việc với ĐH Hiroshima</a>
+									<p>NTTU - Sáng ngày 17/09/2019, khoa Công nghệ Sinh học Trường ĐH Nguyễn Tất Thành đã có buổi làm việc với ĐH Hiroshima (Nhật Bản)</p>
 									<div class="xemthem">
 										<a href="">
 											<i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>
@@ -191,14 +191,14 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<h4 class="title">Media</h4>
+							<h4 class="title">Môi trường học tập</h4Môi trường học tập>
 							<div class="ngang"></div>
 							<div class="row content">
 						
 								<div class="col-md-12">
-									<img src="image/tintuc2.jpg" class="w-100">
-									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
-									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
+									<img src="http://ntt.edu.vn/web/upload/images/3e3.JPG" class="w-100">
+									<a class="" href="">Tìm hiểu về các câu lạc bộ tại Trường ĐH Nguyễn Tất Thành</a>
+									<p>NTTU - Những năm gần đây, bên cạnh việc nâng cao chất lượng đào tạo, Trường ĐH Nguyễn Tất Thành không ngừng phát triển mô hình câu lạc bộ sinh viên nhằm tạo môi trường học tập và vui chơi tốt nhất cho người học. Thông qua mô hình CLB, các bạn sinh viên có thể dễ dàng trao đổi kiến</p>
 									<div class="xemthem">
 										<a href="">
 											<i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>
@@ -216,18 +216,18 @@
 								<div class="col-md-12 noibat">
 									<div class="row item_noibat">
 										<div class="col-3 col-md-3 day">
-											<span>Sep</span>
-											<b>11</b>
+											<span>Oct</span>
+											<b>10</b>
 										</div>
 										<div class="col-9 col-md-9">
-											<a href="#">Chương trình "Đồng hành cùng sức khỏe học đường: Tư vấn, chăm sóc, điều trị các bện về da" năm 2019</a>
+											<a href="#">Ngày Doanh nhân Việt Nam và Đại hội CLB Doanh nghiệp Trường Đại học Nguyễn Tất Thành</a>
 											<ul>
 												<li class="line-1">
 													<i class="fas fa-clock"></i>
 													07:30
 												</li>
 												<li class="line-2">
-													Sân bóng - cơ sở quận 7, 458/3F Nguyễn Hữu Thọ, phường Tân Hưng, quận 7
+													Hội trường A.801, 300A Nguyễn Tất Thành, phường 13, quận 4, TP. HCM
 												</li>
 											</ul>
 										</div>
@@ -235,18 +235,18 @@
 									
 									<div class="row item_noibat">
 										<div class="col-3 col-md-3 day">
-											<span>Sep</span>
-											<b>11</b>
+											<span>Oct</span>
+											<b>05</b>
 										</div>
 										<div class="col-9 col-md-9">
-											<a href="#">Chương trình "Đồng hành cùng sức khỏe học đường: Tư vấn, chăm sóc, điều trị các bện về da" năm 2019</a>
+											<a href="#">Lễ tốt nghiệp cho Sinh viên bậc Đại học liên thông từ Trung cấp khóa 2016; bậc Cao đẳng liên thông từ Trung cấp khóa 2017</a>
 											<ul>
 												<li class="line-1">
 													<i class="fas fa-clock"></i>
 													07:30
 												</li>
 												<li class="line-2">
-													Sân bóng - cơ sở quận 7, 458/3F Nguyễn Hữu Thọ, phường Tân Hưng, quận 7
+													Hội trường A.801, 300A Nguyễn Tất Thành, phường 13, quận 4, TP. HCM
 												</li>
 											</ul>
 										</div>
@@ -255,17 +255,17 @@
 									<div class="row item_noibat">
 										<div class="col-3 col-md-3 day">
 											<span>Sep</span>
-											<b>11</b>
+											<b>25</b>
 										</div>
 										<div class="col-9 col-md-9">
-											<a href="#">Chương trình "Đồng hành cùng sức khỏe học đường: Tư vấn, chăm sóc, điều trị các bện về da" năm 2019</a>
+											<a href="#">Đại hội đại biểu Đoàn TNCS Hồ CHí Minh - Trường ĐH Nguyễn Tất Thành lần VII, nhiệm kỳ 2019 - 2022</a>
 											<ul>
 												<li class="line-1">
 													<i class="fas fa-clock"></i>
 													07:30
 												</li>
 												<li class="line-2">
-													Sân bóng - cơ sở quận 7, 458/3F Nguyễn Hữu Thọ, phường Tân Hưng, quận 7
+													Hội trường A.801, 300A Nguyễn Tất Thành, phường 13, quận 4, TP. HCM
 												</li>
 											</ul>
 										</div>
@@ -275,9 +275,6 @@
 							</div>
 						</div>
 					</div>
-					
-					
-
 				</div>
 			</div>
 

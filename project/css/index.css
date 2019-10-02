@@ -4,6 +4,7 @@
   overflow: hidden;
   position: relative;
 }
+/* menu1 */
 /* màu của menu1 */
 .home .head
 {
@@ -14,56 +15,68 @@
 {
   color: #fdb913;
 }
-/* căn lề */
+/* căn lề  */
 .home .wrapper
 {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
-.home .slide .slide-wrapper
+/* dòng menu1 đc căn giữa và dãn giữa các phần */
+.home .head .wrapper
 {
-  padding-bottom: 30px;
+    font-size: 13px;
 }
-.home .head .wrapper{
-  
-  font-size: 13px;
-}
-.home .head .wrapper div{
+/* dòng hotline chạy trên 1 dòng */
+.home .head .wrapper div
+{
   display: flex;
   align-items: center;
 }
-.home .head .wrapper a{
+/* màu của menu1 */
+.home .head .wrapper a
+{
   padding: 0;
   color: white;
 }
-.home .head .wrapper .input input{
+/* phần tìm kiếm  */
+.home .head .wrapper .input input
+{
   height: 35px;
   background-color: #012b64;
   border:none;
   padding-left: 20px;
   font-size: 16px;
 }
-.home .head .wrapper .input img{
+/* phần hình ảnh ở góc bên phải tìm kiêma */
+.home .head .wrapper .input img
+{
   height: 16px;
   margin-left: 10px;
 }
-.home .head .wrapper .input i{
+/* màu của icon tìm kiếm */
+.home .head .wrapper .input i
+{
   color: white;
   padding-right: 20px;
 }
-.home .head .wrapper .input form {
+/* màu nền của icon tìm kiếm */
+.home .head .wrapper .input form 
+{
   background-color: #012b64;
 }
-/*menu*/
-.home .menu .navbar{
-  padding: 0;
-  background-color: unset;
-}
-.home .menu .navbar .navbar-nav{
+
+
+/*menu2*/
+/* căn chỉnh dãn cách menu2 */
+.home .menu .navbar .navbar-nav
+{
   width: 100%;
   padding-left: 10px;
+  height: 70px;
 }
-.home .menu .navbar .navbar-nav li{
+/* căn chỉnh phần trong menu2 */
+.home .menu .navbar .navbar-nav li
+{
   padding: 0;
   margin: 0;
   display: flex;
@@ -71,62 +84,73 @@
   font-size: 18px;
   padding-left: 6px;
 }
-.home .menu .navbar .navbar-nav li:hover i,.home .menu .navbar .navbar-nav li:hover a{
+/* thay đổi màu chữ sau khi rê chuột vào */
+.home .menu .navbar .navbar-nav li:hover i,.home .menu .navbar .navbar-nav li:hover a
+{
   color: #aa914d;
 }
-.home .menu .navbar .navbar-nav li i{
+/* màu và kích thước cho icon và phần danh sách trong menu2 */
+.home .menu .navbar .navbar-nav li i
+{
   color: #35699b;
   margin-right: 5px;
   font-size: 22px;
 }
-.home .menu .navbar .navbar-nav li a{
+/* định dạng màu cho thành phần trong menu2 */
+.home .menu .navbar .navbar-nav li a
+{
   color: black;
   margin: 0;
   padding: 0;
 }
-.slide-wrapper{
-
-}
-.home .slide .slide-wrapper .triangle-wrapper{
-  display: flex;
+/* nút triangle đè lên menu2 */
+.home .slide .slide-wrapper .triangle-wrapper
+{
+    display: flex;
     position: absolute;
     justify-content: center;
     width: 100%;
     z-index: 3;
-    
 }
-.home .slide .slide-wrapper .triangle-wrapper .triangle{
+/* chỉnh sửa triangle */
+.home .slide .slide-wrapper .triangle-wrapper .triangle
+{
     width: 0;
     height: 0;
+    /* làm mờ phần triangle */
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 45px solid white;
     display: flex;
     justify-content: center;
-
 }
-.home .slide .slide-wrapper .triangle-wrapper .triangle i{
+/* chỉnh sửa icon nút menu3 */
+.home .slide .slide-wrapper .triangle-wrapper .triangle i
+{
   position: absolute;
   top: 0;
   font-size: 25px;
 }
-.home .slide .slide-wrapper .triangle-wrapper .triangle a{
+/* căn giữa cho icon */
+.home .slide .slide-wrapper .triangle-wrapper .triangle a
+{
   display: flex;
   justify-content: center;
 }
-.home .slide .carousel-inner{
+/* thừa hưởng thuộc tính bên trên nó */
+.home .slide .carousel-inner
+{
   position: relative;
 }
-.home .slide .line-slide{
+/* phần làm mờ ở trình diễn hình ảnh */
+.home .slide .line-slide
+{
   bottom: 0;
   position: absolute;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.25);
   width: 100%;
   padding: 30px 20px;
-}
-.home .slide .line-slide h3{
-  color: white;
-  z-index: 2;
+  height: 90px;
 }
 .home .slide .line-slide .control-button{
     position: relative;
@@ -134,103 +158,96 @@
     display: flex;
     justify-content: flex-end;
 }
-.home .slide .line-slide .control-button .right{
-  width: 20%;
-  position: absolute;
-}
-.home .slide .huy-right{
-  position: absolute;
-  background: red;
-  padding: 10px;
-  border-radius: 50%;
-  top: 50%;
-  right: 140px;
-  width: fit-content;
-  transform:translate(50%,-50%);
-}
-.slide-wrapper{
+/* kế thừa từ cha nó */
+.slide-wrapper
+{
   position: relative;
 }
-.home .slide .carousel-control-next,.home .slide .carousel-control-prev{
-  width: 80%;
+khoảng cách của
+.home .slide .carousel-control-next,.home .slide .carousel-control-prev
+{
+  width: 177%;
 }
-.home .slide .right i{
-  font-size: 50px;
+/* độ dầy của icon nút chuyển trình diễn hình ảnh */
+.home .slide .right i
+{
+  font-size: 40px;
 }
-.home .head .top_head div{
-  margin: 0;
-  padding: 0;
-}
-  /*.carousel-inner::before{
-    content: '';
-    
-  }*/
-.home .slide .collapse-handmade {
+
+/* căn chỉnh menu3 */
+.home .slide .collapse-handmade 
+{
   top: 0;
   left: 0;
   right: 0;
-  
+  /* khi ấn vào mới hiện menu3 */
   position: absolute;
   background-color: rgba(2,66,130,0.95);
   z-index: 2;
-  
 }
-.home .slide .collapse-handmade .sociaty li a{
-    width: 100%;
-    color: #fff;
-    background-color: #42719f;
-    
+/* căn chỉnh màu của phần liên kết trong menu3 */
+.home .slide .collapse-handmade .sociaty li a
+{
+  width: 100%;
+  color: #fff;
+  background-color: #42719f;
 }
-.home .slide .collapse-handmade li{
+/* bỏ đi cấu trúc của thẻ li trong menu3 */
+.home .slide .collapse-handmade li
+{
   list-style: none;
   padding: 0;
 }
-.home .slide .collapse-handmade{
+/* cách phần đầu và màu chữ */
+.home .slide .collapse-handmade
+{
   padding-top: 70px;
   color: white;
 }
-.home .slide .collapse-handmade .item ul li i{
+/* các icon trong menu3 */
+.home .slide .collapse-handmade .item ul li i
+{
   font-size: 12px;
   color: #d2d2d2;
 }
-.home .slide .collapse-handmade .item ul li h5>a{
-  color: white;
-  font-weight: bold;
-}
-.home .slide .collapse-handmade .item ul li a{
+/* màu chữ trong menu3 */
+.home .slide .collapse-handmade .item ul li a
+{
   color: #d2d2d2;
+  font-size: 15px;
   opacity: 0.8;
 }    
-.home .slide .collapse-handmade .item ul li:hover a,.home .slide .collapse-handmade .item ul li:hover i{
+/* thay đổi màu khi rê chuột vào */
+.home .slide .collapse-handmade .item ul li:hover a,.home .slide .collapse-handmade .item ul li:hover i
+{
   color: #a99149;
 }
-.home .slide .collapse-handmade .sociaty ul{
-  /*padding: 0;*/
+/* phần liên kết */
+.home .slide .collapse-handmade .sociaty ul li,.home .contact .sociaty ul li
+{
+  width: 80%;
+  background-color: #42719f;
+  border-radius: 5px;
+  padding: 7px 15px;
+  margin-bottom: 5px;
 }
-.home .slide .collapse-handmade .sociaty ul li,.home .contact .sociaty ul li{
-    width: 80%;
-    background-color: #42719f;
-    border-radius: 5px;
-    padding: 7px 15px;
-    margin-bottom: 5px;
-}
-.home .slide .collapse-handmade .sociaty ul li a,.home .contact .sociaty ul li a{
-  text-decoration: none;
-}
-.home .slide .collapse-handmade .sociaty ul li a i,.home .contact .sociaty ul li a i{
+/* bỏ gạch chân ở liên kết */
+.home .slide .collapse-handmade .sociaty ul li a i,.home .contact .sociaty ul li a i
+{
   padding-right: 6px;
 }
-.home .slide .collapse-handmade .sociaty ul li:hover,.home .contact .sociaty ul li:hover  {
+/* đổi màu nền liên kết sau khi rê chuột vào */
+.home .slide .collapse-handmade .sociaty ul li:hover,.home .contact .sociaty ul li:hover  
+{
     background-color: white;
-
 }
-.home .slide .collapse-handmade .sociaty ul li:hover a,.home .contact .sociaty ul li:hover a{
+/* đổi màu nền liên kết sau khi rê chuột vào  */
+.home .slide .collapse-handmade .sociaty ul li:hover a,.home .contact .sociaty ul li:hover a
+{
   color: #0275d8;
   background-color: white;
 }
-.collapse-handmade{
-  display: none;
-}
+
 
 
 /* phần tin tức */

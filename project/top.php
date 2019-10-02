@@ -42,7 +42,7 @@
 						<input type="text" name="" placeholder="Tìm kiếm thông tin ">
 						<i class="fa fa-search" aria-hidden="true"></i>
 					</form>
-					<img src="http://ntt.edu.vn/web/frontend/images/ico-flagen.jpg">
+					<a href=""><img src="http://ntt.edu.vn/web/frontend/images/ico-flagen.jpg"></a>
 				</div>
 			</div>
 		</div>
@@ -61,7 +61,7 @@
 							</form>		
 						</div>
 						<div class="col right">
-							<img src="http://ntt.edu.vn/web/frontend/images/ico-flagen.jpg">
+							<a href=""><img src="http://ntt.edu.vn/web/frontend/images/ico-flagen.jpg"></a>
 						</div>
 					</div>
 				</div>
@@ -77,7 +77,7 @@
 				<!-- phần menu 2 -->
 				<div class="wrapper">
 					<nav class="navbar navbar-expand-lg">
-					  	<img src="images/logo_ntt.jpg">
+					  	<img src="images/logo_ntt.jpg" style="width: 15%;">
 					  <button style="outline: none;" class="navbar-toggler" type="button" >
 					    <i id="showCollapse2" style="border: 1px solid #d0d0d0;padding: 10px;" class="fa fa-bars c-blue-a5"></i>
 					  </button>
@@ -121,19 +121,24 @@
 					  <div class="carousel-inner">
 					  	<!-- phần hình ảnh -->
 					    <div class="carousel-item active">
-					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Thac-sy-2019-NTTU_Web-Slider.jpg" alt="First slide">
+					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Thac-sy-2019-NTTU_Web-Slider.jpg" alt="First slide" >
+					      <h3 style="margin-top: -5%; color: white; padding-left: 2%; padding-bottom: 1%;">Tuyển sinh trình độ Thạc sỹ năm 2019 tại ĐH Nguyễn Tất Thành</h3>
 					    </div>
 					    <div class="carousel-item">
 					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Lien-thong-NTTU_Web-Slider.jpg" alt="Second slide">
+					      <h3 style="margin-top: -5%; color: white; padding-left: 2%;padding-bottom: 1%;">Tuyển sinh liên thông 2019</h3>
 					    </div>
 					    <div class="carousel-item">
 					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Chinh-sach-hoc-bong-NTTU_Web-Slider.jpg" alt="Third slide">
+					      <h3 style="margin-top: -5%; color: white; padding-left: 2%;padding-bottom: 1%;">Chính sách học bổng Trường Đại học Nguyễn Tất Thành năm 2019</h3>
 					    </div>
 					    <div class="carousel-item">
 					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Vien%20dao%20tao%20quoc%20te%20NTT%202019_NIIE.jpg" alt="fourth slide">
+					      <h3 style="margin-top: -5%; color: white; padding-left: 2%;padding-bottom: 1%;">Viện đào tạo quốc tế NTT (NIIE) - "Cử nhân quốc tế, Cơ hội toàn cầu"</h3>
 					    </div>
 					    <div class="carousel-item">
 					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Tham-van-chuyen-gia-NTTU_Web-Slider.jpg" alt="fifth slide">
+					      <h3 style="margin-top: -5%; color: white; padding-left: 2%;padding-bottom: 1%;">Lịch phát sóng Chương trình Tham vấn Chuyên gia</h3>
 					    </div>
 					  </div>
 					  <!-- phần bên trong của icon menu 3 -->
@@ -288,7 +293,6 @@
 					  	</div>
 							<!-- nút di chuyển trình diễn hình ảnh -->
 						  <div class="line-slide">
-							<h3>Chính sách học bổng của trường đại học Nguyễn Tất Thành</h3>
 							<div class="control-button">
 								<div class="right">
 									<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

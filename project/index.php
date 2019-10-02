@@ -7,45 +7,100 @@
     <meta name="author" content="Hoàng Ánh, Huyền Trang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trường Đại Học Nguyễn Tất Thành</title>
-	<!--boostrap4-->
+	<!--boostrap 4-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<!--css-->
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/index.css">
 	<!--icon-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<!--phần tại sao chọn NTTU-->
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>	
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<!--javascript-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		
 	</script>
 	<!--jquery-->
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 	<div class="home">
-		<?php
+		<?php  
 			include"top.php"
 		?>
-		<!--Phần tin tức và media-->
-		<div class="row">
-			<div class="col-md-9">
-				<!-- Phần tin tức -->
-				<div class="tintuc">
-					<h3>Tin tức</h3>
-					<hr>
+			
+			<div class="tintuc ">
+				<div class="wrapper">
+					<div class="row">
+						<div class="col-md-9">
+							<h4 class="title">Tin tức </h4>
+							<div class="ngang"></div>
+							<div class="row content d-flex justify-content-end">
+								<div class="col-12 col-md-4">
+									<img src="http://ntt.edu.vn/web/upload/images/123.JPG" class="w-100">
+									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
+									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
+								</div>
+								<div class="col-12 col-md-4">
+									<img src="http://ntt.edu.vn/web/upload/images/Tin_Tuc/201909_TIN/537ed521aa664c381577.jpg" class="w-100">
+									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
+									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
+								</div>
+								<div class="col-12 col-md-4">
+									<img src="http://ntt.edu.vn/web/upload/images/Khoa-nganh/ketoan-taichinh-thumb.png" class="w-100">
+									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
+									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
+								</div>
+								<div class="xemthem">
+									<div class="" style="text-align:end;">
+										<a href="">
+											<i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>
+											Xem thêm 
+										</a>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-md-3">
+							<h4 class="title">Media</h4>
+							<div class="ngang"></div>
+							<div class="row content">
+								<div class="col-12 video">
+									<iframe width="270" height="140" src="https://www.youtube.com/embed/JViDyojZzhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<div class="description">
+										<ul>
+											<li>
+												<a href="#"><i class="fa fa-angle-right"></i>ĐH Nguyễn Tất Thành – 20 năm dấu ấn một chặng đường</a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-angle-right"></i>ĐH Nguyễn Tất Thành – 20 năm dấu ấn một chặng đường</a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-angle-right"></i>ĐH Nguyễn Tất Thành – 20 năm dấu ấn một chặng đường</a>
+											</li>
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+							<div class="xemthem">
+								<div class="" style="text-align:end;">
+									<a href="">
+										<i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>
+										Xem thêm 
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					
+								
+
 				</div>
 			</div>
-			<div class="col-md-3">
-				<div class="media">
-					<h3>Media</h3>
-					<hr>
-				</div>
-			</div>
-		</div>
-		
+			
 			<div class="reason">
 				<div class="wrapper ">
 					<div class="wrapper-reason">
@@ -122,7 +177,7 @@
 							<div class="ngang"></div>
 							<div class="row content">
 								<div class="col-12">
-									<img src="images/tintuc.jpg" class="w-100">
+									<img src="image/tintuc.jpg" class="w-100">
 									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
 									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
 									<div class="xemthem">
@@ -141,7 +196,7 @@
 							<div class="row content">
 						
 								<div class="col-md-12">
-									<img src="images/tintuc2.jpg" class="w-100">
+									<img src="image/tintuc2.jpg" class="w-100">
 									<a class="" href="">Tân sinh viên - Bí quyết để tuổi 20 của bạn trở thành mốc thời gian đáng nhớ nhất</a>
 									<p>Tuổi 20 là khoảng thời gian “rắc rối” nhất của con người. 20 tuổi, bạn không còn là một đứa trẻ vô âu vô lo, nhưng cũng chẳng phải là một người lớn thực thụ. Người ta nói tuổi 20 “dở dở ương ương”, bạn chẳng biết được mình nên làm gì và phải làm như thế nào.</p>
 									<div class="xemthem">
@@ -327,8 +382,21 @@
 					</div>
 				</div>
 			</div>
-		</div>
+
 	</div>
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5cc12161ee912b07bec4bce7/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
 </body>
 <script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>

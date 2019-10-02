@@ -1,80 +1,66 @@
-/*Phần top.php*/
-.home
-{
-  /* Phần tràn bị cắt, phần còn lại ở chế độ ẩn */
+/*.home div{
+  padding: 0;
+  margin: 0;
+}*/
+.home{
   overflow: hidden;
   position: relative;
 }
-/* hàng thứ nhất, khi chưa co lại*/
-.home .head
-{
+.home .head{
   background-color: #024282;
+
 }
-/* căn chỉnh phần hotline */
-.home .wrapper
-{
+.home .head .hotline{
+  color: #fdb913;
+}
+.home .wrapper{
   padding-left: 8%;
   padding-right: 8%;
+  
 }
-.home .head .wrapper
-{
+.home .slide .slide-wrapper{
+  padding-bottom: 30px;
+}
+.home .head .wrapper{
+  
   font-size: 13px;
-  color: #fdb913;
+}
+.home .head .wrapper div{
   display: flex;
   align-items: center;
 }
-/* màu của menu 1 */
-.home .head .wrapper a
-{
+.home .head .wrapper a{
   padding: 0;
   color: white;
 }
-/* phần tìm kiếm thông tin */
-.home .head .wrapper .input form 
-{
-  background-color: #012b64;
-}
-.home .head .wrapper .input input
-{
+.home .head .wrapper .input input{
   height: 35px;
   background-color: #012b64;
   border:none;
   padding-left: 20px;
   font-size: 16px;
 }
-/* icon tìm kiếm */
-.home .head .wrapper .input i
-{
+.home .head .wrapper .input img{
+  height: 16px;
+  margin-left: 10px;
+}
+.home .head .wrapper .input i{
   color: white;
   padding-right: 20px;
 }
-/* hình ảnh nhỏ ở hàng 1 */
-.home .head .wrapper .input .dropdown .btn a img
-{
-  width: 35px;
-  border:  none;
+.home .head .wrapper .input form {
+  background-color: #012b64;
 }
-.home .head .wrapper .input .dropdown .btn a img:hover
-{
-  background-color: #024282;
-}
-
-
-
-/*hàng thứ 2, menu 2*/
-.home .menu .navbar
-{
+/*menu*/
+.home .menu .navbar{
   padding: 0;
   background-color: unset;
 }
-.home .menu .navbar .navbar-nav
-{
+.home .menu .navbar .navbar-nav{
   width: 100%;
   padding-left: 10px;
 }
-/* căn chỉnh thành phần trong menu 2 */
-.home .menu .navbar .navbar-nav li
-{
+.home .menu .navbar .navbar-nav li{
   padding: 0;
   margin: 0;
   display: flex;
@@ -82,119 +68,101 @@
   font-size: 18px;
   padding-left: 6px;
 }
-/* rê chuột vào thì đổi màu */
-.home .menu .navbar .navbar-nav li:hover i,.home .menu .navbar .navbar-nav li:hover a
-{
+.home .menu .navbar .navbar-nav li:hover i,.home .menu .navbar .navbar-nav li:hover a{
   color: #aa914d;
 }
-/* icon trong menu2 */
-.home .menu .navbar .navbar-nav li i
-{
+.home .menu .navbar .navbar-nav li i{
   color: #35699b;
   margin-right: 5px;
   font-size: 22px;
 }
-/* chữ khi chưa rê chuột vào */
-.home .menu .navbar .navbar-nav li a
-{
+.home .menu .navbar .navbar-nav li a{
   color: black;
   margin: 0;
   padding: 0;
 }
+.slide-wrapper{
 
-
-
-/*hang thứ 3, phần sildeshow */
-.home .slide .slide-wrapper
-{
-  padding-bottom: 30px;
 }
-/* triangle */
-.home .slide .slide-wrapper .triangle-wrapper
-{
+.home .slide .slide-wrapper .triangle-wrapper{
   display: flex;
-  position: absolute;
-  justify-content: center;
-  width: 100%;
-  z-index: 3;  
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    z-index: 3;
+    
 }
-/* tạo ra triangle  */
-.home .slide .slide-wrapper .triangle-wrapper .triangle
-{
+.home .slide .slide-wrapper .triangle-wrapper .triangle{
     width: 0;
     height: 0;
-    /* transparent: trong suốt */
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    /* màu của triangle */
     border-top: 45px solid white;
     display: flex;
     justify-content: center;
 
 }
-/* icon menu 3 */
-.home .slide .slide-wrapper .triangle-wrapper .triangle i
-{
+.home .slide .slide-wrapper .triangle-wrapper .triangle i{
   position: absolute;
   top: 0;
-  font-size: 20px;
+  font-size: 25px;
 }
-.home .slide .slide-wrapper .triangle-wrapper .triangle a
-{
+.home .slide .slide-wrapper .triangle-wrapper .triangle a{
   display: flex;
   justify-content: center;
 }
-
-/* phần nút di chyển slide */
-.home .slide .carousel-inner
-{
+.home .slide .carousel-inner{
   position: relative;
 }
-/* làm mờ  */
-.home .slide .line-slide
-{
+.home .slide .line-slide{
   bottom: 0;
   position: absolute;
   background: rgba(0,0,0,0.45);
   width: 100%;
   padding: 30px 20px;
-  margin-top: -10%;
 }
-/* nút di chuyển slide */
-.home .slide .line-slide .control-button
-{
+.home .slide .line-slide h3{
+  color: white;
+  z-index: 2;
+}
+.home .slide .line-slide .control-button{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
-.home .slide .line-slide .control-button .right
-{
+.home .slide .line-slide .control-button .right{
   width: 20%;
   position: absolute;
 }
-
-
-/* phần triangle chứa menu */
-.slide-wrapper
-{
+.home .slide .huy-right{
+  position: absolute;
+  background: red;
+  padding: 10px;
+  border-radius: 50%;
+  top: 50%;
+  right: 140px;
+  width: fit-content;
+  transform:translate(50%,-50%);
+}
+.slide-wrapper{
   position: relative;
 }
-.home .slide .carousel-control-next,.home .slide .carousel-control-prev
-{
+.home .slide .carousel-control-next,.home .slide .carousel-control-prev{
   width: 80%;
 }
-.home .slide .right i
-{
+.home .slide .right i{
   font-size: 50px;
 }
-.home .head .top_head div
-{
+.home .head .top_head div{
   margin: 0;
   padding: 0;
 }
-.home .slide .collapse-handmade 
-{
+  /*.carousel-inner::before{
+    content: '';
+    
+  }*/
+.home .slide .collapse-handmade {
   top: 0;
   left: 0;
   right: 0;
@@ -204,96 +172,126 @@
   z-index: 2;
   
 }
-.home .slide .collapse-handmade .sociaty li a
-{
-  width: 100%;
-  color: #fff;
-  background-color: #42719f;
+.home .slide .collapse-handmade .sociaty li a{
+    width: 100%;
+    color: #fff;
+    background-color: #42719f;
+    
 }
-.home .slide .collapse-handmade li
-{
+.home .slide .collapse-handmade li{
   list-style: none;
   padding: 0;
 }
-.home .slide .collapse-handmade
-{
+.home .slide .collapse-handmade{
   padding-top: 70px;
   color: white;
 }
-.home .slide .collapse-handmade .item ul li i
-{
+.home .slide .collapse-handmade .item ul li i{
   font-size: 12px;
   color: #d2d2d2;
 }
-.home .slide .collapse-handmade .item ul li h5>a
-{
+.home .slide .collapse-handmade .item ul li h5>a{
   color: white;
   font-weight: bold;
 }
-.home .slide .collapse-handmade .item ul li a
-{
+.home .slide .collapse-handmade .item ul li a{
   color: #d2d2d2;
   opacity: 0.8;
 }    
-.home .slide .collapse-handmade .item ul li:hover a,.home .slide .collapse-handmade .item ul li:hover i
-{
+.home .slide .collapse-handmade .item ul li:hover a,.home .slide .collapse-handmade .item ul li:hover i{
   color: #a99149;
 }
-.home .slide .collapse-handmade .sociaty ul li,.home .contact .sociaty ul li
-{
-  width: 80%;
-  background-color: #42719f;
-  border-radius: 5px;
-  padding: 7px 15px;
-  margin-bottom: 5px;
+.home .slide .collapse-handmade .sociaty ul{
+  /*padding: 0;*/
 }
-.home .slide .collapse-handmade .sociaty ul li a,.home .contact .sociaty ul li a
-{
+.home .slide .collapse-handmade .sociaty ul li,.home .contact .sociaty ul li{
+    width: 80%;
+    background-color: #42719f;
+    border-radius: 5px;
+    padding: 7px 15px;
+    margin-bottom: 5px;
+}
+.home .slide .collapse-handmade .sociaty ul li a,.home .contact .sociaty ul li a{
   text-decoration: none;
 }
-.home .slide .collapse-handmade .sociaty ul li a i,.home .contact .sociaty ul li a i
-{
+.home .slide .collapse-handmade .sociaty ul li a i,.home .contact .sociaty ul li a i{
   padding-right: 6px;
 }
-.home .slide .collapse-handmade .sociaty ul li:hover,.home .contact .sociaty ul li:hover  
-{
-  background-color: white;
+.home .slide .collapse-handmade .sociaty ul li:hover,.home .contact .sociaty ul li:hover  {
+    background-color: white;
+
 }
-.home .slide .collapse-handmade .sociaty ul li:hover a,.home .contact .sociaty ul li:hover
-{
+.home .slide .collapse-handmade .sociaty ul li:hover a,.home .contact .sociaty ul li:hover a{
   color: #0275d8;
   background-color: white;
 }
-.collapse-handmade
-{
+.collapse-handmade{
   display: none;
 }
-
-
-
-/* phần tin tưc */
-.tintuc h3
-{
-  margin-left: 12%;
+.home .tintuc .content img,.home .tintuc .content iframe{
+  min-height: 175px;
 }
-.tintuc hr
-{
-  width: 50px;
-  margin-left: 12%;
-  background-color: red;
-  height: 1px;
+.home .tintuc .title:before{
+      background-color: #aa914d;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    width: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
+.home .tintuc .title{
+  color: #252525;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.home .tintuc .content a{
+      color: #000;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.home .tintuc .content p{
+      margin-top: 0;
+    margin-bottom: 1rem;
+}
+.home .tintuc .description {
+    padding: 0 15px 0 15px;
+    min-height: 236px;
+    position: relative;
+}
+.home .tintuc .description ul{
+  font-size: 14px;
+    list-style: none;
+    padding-left: 20px;
+}
+.home .tintuc .description ul li{
+  margin-top: 10px;
+}
+.home .tintuc .description ul li i{
+    width: 20px;
+    text-indent: -20px;
+    margin-right: -20px;
+    color: black;
+}
+.home .tintuc .description ul li a{
+  color: #878787;
+  font-size: 15px;
+}
+.home .tintuc .description ul li a:hover{
+  text-decoration: underline;
+}
+.home .tintuc .xemthem a{
+  color: #024282;
+  font-size: 14px;
+  font-weight: bold;
+}
 .home .reason .title b{
 
     font-size: 24px;
@@ -327,6 +325,9 @@
   right: 10px;
 }
 .home .reason .wrapper-reason .content .item{
+ /* background-image: url('http://ntt.edu.vn/web/upload/images/hp_nguoithay-01.svg');
+  background-repeat: no-repeat;
+  background-position: center;*/
   color: white;
   text-align: center;
   display: flex;

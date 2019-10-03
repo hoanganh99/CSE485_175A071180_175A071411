@@ -77,7 +77,7 @@
 				<!-- phần menu 2 -->
 				<div class="wrapper">
 					<nav class="navbar navbar-expand-lg">
-					  	<img src="images/logo_ntt.jpg" style="width: 15%;">
+					  	<img src="images/logo_ntt.jpg">
 					  <button style="outline: none;" class="navbar-toggler" type="button" >
 					    <i id="showCollapse2" style="border: 1px solid #d0d0d0;padding: 10px;" class="fa fa-bars c-blue-a5"></i>
 					  </button>

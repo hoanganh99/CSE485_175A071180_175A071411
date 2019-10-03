@@ -28,27 +28,36 @@
 		<?php  
 			include"top.php"
 		?>
-			
-			<div class="tintuc ">
+			<!-- phần tin tức và media -->
+			<div class="tintuc_media ">
 				<div class="wrapper">
 					<div class="row">
 						<div class="col-md-9">
-							<h4 class="title">Tin tức </h4>
-							<div class="ngang"></div>
+							<h4 class="title"><a href="">Tin tức </a></h4>
+							<hr style="height: 1px; background-color: #aa914d;width: 35px; margin-top: -1%;">
 							<div class="row content d-flex justify-content-end">
+								<!-- cột tin tức 1 -->
 								<div class="col-12 col-md-4">
-									<img src="http://ntt.edu.vn/web/upload/images/123.JPG" class="w-100">
-									<a class="" href="">Đào tạo nguồn nhân lực du lịch: Đã đến lúc phải để cho sinh viên tự làm</a>
+									<a href="">
+										<img src="http://ntt.edu.vn/web/upload/images/123.JPG" class="w-100">
+									</a>
+									<a class="content1" href="">Đào tạo nguồn nhân lực du lịch: Đã đến lúc phải để cho sinh viên tự làm</a>
 									<p>Hiện nay, nhiều trường, cơ sở đào tạo các ngành về dịch vụ du lịch vẫn đang chú trọng quá nhiều vào đào tạo lý thuyết mà ít có thực hành… đúng nghĩa. Đây cũng là điều hạn chế xưa nay, đã được bàn - nói đến rất</p>
 								</div>
+								<!-- cột tin tức 2 -->
 								<div class="col-12 col-md-4">
-									<img src="http://ntt.edu.vn/web/upload/images/Tin_Tuc/201909_TIN/537ed521aa664c381577.jpg" class="w-100">
-									<a class="" href="">Giảng viên ĐH Nguyễn Tất Thành lọt vào top 1% các nhà bình duyệt từ Việt Nam</a>
+									<a href="">
+										<img src="http://ntt.edu.vn/web/upload/images/Tin_Tuc/201909_TIN/537ed521aa664c381577.jpg" class="w-100">
+									</a>
+									<a class="content1" href="">Giảng viên ĐH Nguyễn Tất Thành lọt vào top 1% các nhà bình duyệt từ Việt Nam</a>
 									<p>NTTU - Vừa qua, Global Peer Review Awards 2019 đã công bố 10 nhà bình duyệt xuất sắc nhất, trong đó có đại diện đến từ Trường ĐH Nguyễn Tất Thành, TS. Võ Nguyễn Đại Việt. Kết quả này là sự ghi nhận của Global Peer</p>
 								</div>
+								<!-- cột tin tức 3 -->
 								<div class="col-12 col-md-4">
-									<img src="http://ntt.edu.vn/web/upload/images/Khoa-nganh/ketoan-taichinh-thumb.png" class="w-100">
-									<a class="" href="">ĐH Nguyễn Tất Thành tuyển sinh liên thông các ngành đào tạo</a>
+									<a href="">
+										<img src="http://ntt.edu.vn/web/upload/images/Khoa-nganh/ketoan-taichinh-thumb.png" class="w-100">
+									</a>
+									<a class="content1" href="">ĐH Nguyễn Tất Thành tuyển sinh liên thông các ngành đào tạo</a>
 									<p>NTTU - ĐH Nguyễn Tất Thành tuyển sinh liên thông các ngành đào tạo...</p>
 								</div>
 								<div class="xemthem">
@@ -60,14 +69,15 @@
 									</div>
 								</div>
 							</div>
-							
 						</div>
 						<div class="col-md-3">
-							<h4 class="title">Media</h4>
-							<div class="ngang"></div>
+							<h4 class="title"><a href="">Media</a></h4>
+							<hr style="height: 1px; background-color: #aa914d;width: 35px; margin-top: -2%;">
 							<div class="row content">
 								<div class="col-12 video">
-									<iframe width="270" height="140" src="https://www.youtube.com/embed/JViDyojZzhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<a href="">
+										<iframe width="270" height="140" src="https://www.youtube.com/embed/JViDyojZzhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</a>
 									<div class="description">
 										<ul>
 											<li>
@@ -81,7 +91,6 @@
 											</li>
 										</ul>
 									</div>
-									
 								</div>
 							</div>
 							<div class="xemthem">
@@ -92,15 +101,11 @@
 									</a>
 								</div>
 							</div>
-
 						</div>
 					</div>
-					
-								
-
 				</div>
 			</div>
-			
+			<!-- phần lý do chọn trường Nguyễn Tất Thành -->
 			<div class="reason">
 				<div class="wrapper ">
 					<div class="wrapper-reason">

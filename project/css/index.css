@@ -250,71 +250,74 @@ khoảng cách của
 
 
 
-/* phần tin tức */
-.home .tintuc .content img,.home .tintuc .content iframe{
+/* phần tin tức và media */
+/* chiều rộng của phần hình ảnh */
+.home .tintuc_media .content a img,.home .tintuc_media .content a iframe
+{
   min-height: 175px;
 }
-.home .tintuc .title:before{
-      background-color: #aa914d;
-    content: "";
-    display: block;
-    position: absolute;
-    height: 2px;
-    left: 0;
-    bottom: -10px;
-    width: 40px;
-}
-.home .tintuc .title{
+/* dòng tin tức */
+.home .tintuc_media .title a
+{
   color: #252525;
-    font-size: 20px;
-    position: relative;
-    margin-bottom: 30px;
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 30px;
+  text-decoration: none;
 }
-.home .tintuc .content a{
-      color: #000;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    text-decoration: none;
+/* tránh bị lộn xộn hình ảnh */
+.home .tintuc_media .wrapper hr
+{
+  display: block;
+  position: absolute;
 }
-.home .tintuc .content p{
+.home .tintuc_media .content1 
+{
+  color: #000;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.home .tintuc_media .content p{
       margin-top: 0;
     margin-bottom: 1rem;
 }
-.home .tintuc .description {
+.home .tintuc_media .description {
     padding: 0 15px 0 15px;
     min-height: 236px;
     position: relative;
 }
-.home .tintuc .description ul{
+.home .tintuc_media .description ul{
   font-size: 14px;
     list-style: none;
     padding-left: 20px;
 }
-.home .tintuc .description ul li{
+.home .tintuc_media .description ul li{
   margin-top: 10px;
 }
-.home .tintuc .description ul li i{
+.home .tintuc_media .description ul li i{
     width: 20px;
     text-indent: -20px;
     margin-right: -20px;
     color: black;
 }
-.home .tintuc .description ul li a{
+.home .tintuc_media .description ul li a{
   color: #878787;
   font-size: 15px;
 }
-.home .tintuc .description ul li a:hover{
+.home .tintuc_media .description ul li a:hover{
   text-decoration: underline;
 }
-.home .tintuc .xemthem a{
+.home .tintuc_media .xemthem a{
   color: #024282;
   font-size: 14px;
   font-weight: bold;
 }
+/* phần lý do chọn trường Nguyễn Tất Thành */
 .home .reason .title b{
 
     font-size: 24px;

@@ -254,7 +254,7 @@ khoảng cách của
 /* chiều rộng của phần hình ảnh */
 .home .tintuc_media .content a img,.home .tintuc_media .content a iframe
 {
-  min-height: 175px;
+  height: 175px;
 }
 /* dòng tin tức */
 .home .tintuc_media .title a
@@ -271,89 +271,105 @@ khoảng cách của
   display: block;
   position: absolute;
 }
-.home .tintuc_media .content1 
+/* phần nội dung sau hình ảnh */
+.home .tintuc_media .content1
 {
-  color: #000;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 10px;
-  margin-top: 20px;
   text-decoration: none;
+  color: #252525;
 }
-.home .tintuc_media .content p{
-      margin-top: 0;
-    margin-bottom: 1rem;
+/* phần nội dung thứ 2 sau hình ảnh */
+.home .tintuc_media .content p
+{
+  padding-top: 5%;
+  color: #252525;
+  font-size: 13px;
 }
-.home .tintuc_media .description {
-    padding: 0 15px 0 15px;
-    min-height: 236px;
-    position: relative;
+/* phần media */
+.home .tintuc_media .description 
+{
+  padding: 0 15px 0 15px;
+  min-height: 236px;
+  position: relative;
+  font-size: 15px;
 }
-.home .tintuc_media .description ul{
+/* mất form của li */
+.home .tintuc_media .description ul
+{
   font-size: 14px;
-    list-style: none;
-    padding-left: 20px;
+  list-style: none;
+  padding-left: 20px;
 }
-.home .tintuc_media .description ul li{
+/* dãn cách giữa các li */
+.home .tintuc_media .description ul li
+{
   margin-top: 10px;
 }
-.home .tintuc_media .description ul li i{
-    width: 20px;
-    text-indent: -20px;
-    margin-right: -20px;
-    color: black;
+/* icon của phần media */
+.home .tintuc_media .description ul li i
+{
+  width: 20px;
+  text-indent: -20px;
+  margin-right: -20px;
+  color: black;
 }
-.home .tintuc_media .description ul li a{
+.home .tintuc_media .description ul li a
+{
   color: #878787;
   font-size: 15px;
 }
-.home .tintuc_media .description ul li a:hover{
-  text-decoration: underline;
-}
-.home .tintuc_media .xemthem a{
+/* phần xem thêm */
+.home .tintuc_media .xemthem a
+{
   color: #024282;
   font-size: 14px;
   font-weight: bold;
 }
-/* phần lý do chọn trường Nguyễn Tất Thành */
-.home .reason .title b{
 
-    font-size: 24px;
-    font-weight: 400;
-    color: #aa914d;
+
+/* phần lý do chọn trường Nguyễn Tất Thành */
+/* căn chỉnh khoảng cách với phần trên */
+.home .reason
+{
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
-.home .reason .title .ngang{
+/* dòng tại sao chọn trường Nguyễn Tất Thành */
+.home .reason .title b
+{
+  font-size: 24px;
+  font-weight: 400;
+  color: #aa914d;
+}
+/* căn chỉnh dòng tại sao chọn trường NTT */
+.home .reason .title
+{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.home .reason .wrapper-reason
+{
+  background-color: #024282;
+  padding-top: 20px;
+}
+/* dòng gạch bên dưới  */
+.home .reason .title hr
+{
   background-color: #aa914d;
   width: 5%;
   height: 3px;
 }
-.home .reason .title{
-  text-align: center;
-  margin-bottom: 30px;
-}
-.home .reason{
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-.home .reason .wrapper-reason{
-  background-color: #024282;
-  padding-top: 20px;
-}
-.home .reason .slick-prev,.home .reason .slick-next{
-  
-}
-.home .reason .slick-prev{
+/* nút chuyển  */
+.home .reason .slick-prev
+{
   left: 10px;
 }
-.home .reason .slick-next{
+.home .reason .slick-next
+{
   right: 10px;
 }
-.home .reason .wrapper-reason .content .item{
- /* background-image: url('http://ntt.edu.vn/web/upload/images/hp_nguoithay-01.svg');
-  background-repeat: no-repeat;
-  background-position: center;*/
+/* căn chỉnh nộ dung bên trong phần lý do */
+.home .reason .wrapper-reason .content .item
+{
   color: white;
   text-align: center;
   display: flex;
@@ -362,32 +378,69 @@ khoảng cách của
   height: 215px;
   overflow: hidden;
 }
-.home .reason .wrapper-reason .content .item h5{
-  font-size: 24px;
-  font-weight: 400;
-}
-.home .reason .wrapper-reason .content .item p{
-    color: #b7b7b7;
-    font-size: 16px;
-    line-height: 1.4;
-    margin: 0;
-}
-.home .reason .wrapper-reason .content .item .main{
+/* căn chỉnh khảng cách của nội dung chính trong lý do */
+.home .reason .wrapper-reason .content .item .main
+{
   position: absolute;
   padding: 0 40px;
   top: 10%;
 }
-.home .reason .wrapper-reason .content .item img{
+/* dòng tiêu đề trong phần nội dung */
+.home .reason .wrapper-reason .content .item h5
+{
+  font-size: 24px;
+  font-weight: 400;
+}
+.home .reason .wrapper-reason .content .item p
+{
+  color: #b7b7b7;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+}
+/* phần hình ảnh trong lý do chọn trường */
+.home .reason .wrapper-reason .content .item img
+{
   height: 100px;
 }
-.home .cooperate .xemthem a{
+
+
+ /* phần hợp tác quốc tế, môi trường học tập và sự kiện nổi bật  */
+ /* cỡ chữ phần tiêu đề */
+.home .tintuc_moitruong_sukien .title 
+{
+  font-size: 17px;
+}
+.home .tintuc_moitruong_sukien .content img
+{
+  height: 175px;
+}
+/* phần xem thêm */
+.home .tintuc_moitruong_sukien .xemthem a
+{
   margin: 0 !important;
   font-size: 13px !important;
+  color: #024282;
+  font-weight: bolder;
 }
-.home .cooperate .xemthem a i{
+.home .tintuc_moitruong_sukien .xemthem a i
+{
   margin: 0 !important;
 }
-.home .cooperate .noibat .day{
+/* dòng sau hình ảnh */
+.home .tintuc_moitruong_sukien .content .content1
+{
+  text-decoration: none;
+  color: black;
+}
+.home .tintuc_moitruong_sukien .content p
+{
+  margin-top: 10%;
+  font-size: 13px;
+}
+/* ô vuông cột ngày */
+.home .tintuc_moitruong_sukien .noibat .day
+{
   background-color: #024282;
   height: 100px;
   display: flex;
@@ -397,145 +450,172 @@ khoảng cách của
   color: white;
   font-size: 25px;
 }
-.home .cooperate .noibat a{
+/* chữ của phần sự kiện nổi bật */
+.home .tintuc_moitruong_sukien .noibat a
+{
+  text-decoration: none;
   margin: 0;
   font-weight: bold;
+  color: black;
 }
-.home .cooperate .noibat ul .line-1{
-  color: #aa914d;
-  font-size: 13px;
-  
-}
-.home .cooperate .noibat ul li{
+.home .tintuc_moitruong_sukien .noibat ul
+{
+  padding: 0;
+} 
+.home .tintuc_moitruong_sukien .noibat ul li
+{
   list-style: none;
 }
-.home .cooperate .noibat ul{
-  padding: 0;
-}    
-.home .cooperate .noibat ul .line-2{
+
+/* icon đồng hồ */
+.home .tintuc_moitruong_sukien .noibat ul .line-1
+{
+  color: #aa914d;
+  font-size: 13px;
+}
+/* dòng chữ nhỏ của sự kiện nổi bật */
+.home .tintuc_moitruong_sukien .noibat ul .line-2
+{
   color: #959595;
   font-size: 14px;
   position: relative;
   padding-bottom: 5px;
-  
 }
-.home .cooperate .noibat .item_noibat{
-  margin-bottom: 5px;
+/* dòng gạch ngang */
+.home .tintuc_moitruong_sukien .noibat ul .line-2 hr
+{
+  width: 100px;
+  margin-left: -1%;
 }
-.home .cooperate .noibat ul .line-2:before{
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-    color: #636c72;
-    content: "|";
+
+
+
+
+/* phần phần cuối */
+/* màu của phần cuối */
+.home .footer1
+{
+  background-color: #024282;
+  padding: 20px 0;
 }
-.home .cooperate .noibat ul .line-2:after{
-    content: '';
-    bottom: 0;
-    clear: both;
-    border: 1px solid #ccc;
-    position: absolute;
-    width: 100px;
-    left: 0;
-}
-.home .contact{
-    background-color: #024282;
-}
-.home .contact h4 a{
+/* mục tiêu đề của phần cuối */
+.home .footer1 h4 a
+{
   color: white;
   font-weight: bold;
   font-size: 18px;
 }
-.home .contact ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* làm mất form của li */
+.home .footer1 ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.home .contact {
-  padding: 20px 0;
-}
-.home .contact ul li{
-  
+/* căn chinhr trong li */
+.home .footer1 ul li
+{
   padding: 5px 0 0 0;
 }
-.home .contact ul li a{
+/* căn chỉnh chữ */
+.home .footer1 ul li a
+{
   color: #a1a1a1;
   font-size: 13px;
 }
-.home .contact .sociaty ul li a{
+/* phần liên hệ */
+.home .footer1 .sociaty ul li a
+{
   color: white;
 }
-.home .contact .cot-2 h4{
+/* căn chỉnh màu ở cột 2 */
+.home .footer1 .cot-2 h4
+{
   margin-bottom: 30px;
 }
-.home .footer h4{
+/* phần thông tin liên hệ của phần cuối */
+.home .footer2
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home .footer2 h4
+{
   margin: 0;
   padding: 0;
   font-size: 15px;
   font-weight: bold;
 }
-.home .footer p{
+.home .footer2 p
+{
   margin-bottom: 5px;
   font-size: 13px;
 }
-.home .footer{
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.home .wrapper_chatbox .chatbox{
-  background-color: #0f4f8f;
-  width: 400px;
-  padding: 6px 10px;
-  color: white;
-}
-.home .wrapper_chatbox{
+/* phần để lại lời nhắn */
+.home .wrapper_chatbox
+{
+  /* bo tròn 2 góc trên của khung */
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 300px;
   display: flex;
-  justify-content: flex-end;
+  background-color: #0f4f8f;
   padding-right: 10px;
   position: fixed;
-  /*position: absolute;*/
   bottom: 0;
   right: 0;
   z-index: 9;
-
 }
-.home .wrapper_chatbox .chatbox button{
+/* màu chữ của phần để lại liên hệ */
+.home .wrapper_chatbox .chatbox
+{
+  padding-top: 2%;
+  padding-bottom: 2%;
   color: white;
-  background-color: unset;
-  border: none;
-  outline: none;
-  
 }
-.home .wrapper_chatbox .content_chatbox{
-  width: 400px;
+/* nút button */
+.home .wrapper_chatbox .chatbox button
+{
+  color: white;
+  background-color: #0f4f8f;
+  border: none;
+  /* bỏ riềm của button */
+  outline: none;
+}
+/* phần bên trong sau khi ấn */
+.home .wrapper_chatbox .content_chatbox
+{
   border: 0.5px solid #f1efef;
   background-color: white;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-.home .wrapper_chatbox .content_chatbox .top{
+/* căn chỉnh phần đầu của phần để lại tin nhắn */
+.home .wrapper_chatbox .content_chatbox .top
+{
   background-color: #0f4f8f;
   color: white;
-}
-.home .wrapper_chatbox .content_chatbox .top div{
   text-align: center;
   padding: 0 15px;
-}
-.home .wrapper_chatbox .content_chatbox .top p{
-  /*padding-left: 15px;*/
-}
-.home .wrapper_chatbox .content_chatbox .top i{
-    color: white;
-    text-align: end;
-    width: 55%;
-}
-.home .wrapper_chatbox .content_chatbox .top{
   padding-top: 15px;
   padding-bottom: 15px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
-.home .wrapper_chatbox .content_chatbox .main {
+.home .wrapper_chatbox .content_chatbox .top1
+{
+  background-color: #0f4f8f;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+/* icon để thoát khỏi phần hãy để lại lời nhắn */
+.home .wrapper_chatbox .content_chatbox .top i
+{
+  color: white;
+  width: 55%;
+}
+/* phần chính của phần để lại tin nhắn */
+.home .wrapper_chatbox .content_chatbox .main 
+{
   border: 0.5px solid #f1efef;
   margin-top: 40px;
   margin-left: 15px;
@@ -544,7 +624,9 @@ khoảng cách của
   padding: 15px;
   background-color: white;
 }
-.home .wrapper_chatbox .content_chatbox .main input{
+/* phần điền thông tin */
+.home .wrapper_chatbox .content_chatbox .main input
+{
   width: 100%;
   border: 1.5px solid #d0d0d0;
   margin-bottom: 5px;
@@ -553,34 +635,52 @@ khoảng cách của
   outline: none;
   padding-left: 15px;
 }
-.home .wrapper_chatbox .content_chatbox .main textarea{
+/* phần lời nhắn, có thể viết được nhiều dòng*/
+.home .wrapper_chatbox .content_chatbox .main textarea
+{
   width: 100%;
   border: 1.5px solid #d0d0d0;
   outline: none;
   padding-left: 15px;
   height: 60px;
 }
-.home .wrapper_chatbox .content_chatbox .main input[type="submit"]{
+/* nút hoàn tất, trong thẻ input với thể loại là submit*/
+.home .wrapper_chatbox .content_chatbox .main input[type="submit"]
+{
   background-color: #0f4f8f;
   color: white;
 }
-.home .wrapper_chatbox .content_chatbox .main input[type="submit"]:hover{
+/* rê chuột qua */
+.home .wrapper_chatbox .content_chatbox .main input[type="submit"]:hover
+{
   background-color: #0b3764!important;
 }
-.home .wrapper_chatbox .content_chatbox .main .tiny{
-    color: #4f4f4f;
-    font-size: 13px;
-    text-align: center;
+/* phần chữ nhỏ ở dưới */
+.home .wrapper_chatbox .content_chatbox .main .tiny
+{
+  color: #4f4f4f;
+  font-size: 13px;
+  text-align: center;
 }
-.home .wrapper_chatbox .content_chatbox .main .tiny img{
+/* hình ảnh tia sét */
+.home .wrapper_chatbox .content_chatbox .main .tiny img
+{
   height: 20px;
 }
-.hotline-1,.hotline-2{
+
+
+
+/* phần hotline */
+.hotline-1,.hotline-2
+{
   overflow: hidden;
 }
+
 /*responsive*/
-@media only screen and (max-width: 1200px) {
-  .home .wrapper{
+@media only screen and (max-width: 1200px) 
+{
+  .home .wrapper
+  {
     padding: 10px;
   }
   .home .head .top_head .hotline{
@@ -588,7 +688,8 @@ khoảng cách của
   }
   
 }
-.home .head-responsive{
+.home .head-responsive
+{
   display: none;
 }
 @media only screen and (max-width: 1050px) {
@@ -614,7 +715,6 @@ khoảng cách của
   .home .head-responsive .right{
     position: relative;
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
     background-color: #024282;
     padding: 0;
@@ -625,7 +725,6 @@ khoảng cách của
   }
   .home .head-responsive .input{
     background-color: #012b64;
-
   }
   .home .head-responsive .input input{
     width: 90%;
@@ -684,8 +783,8 @@ khoảng cách của
     width: 100%;
   }
 }
+/* chiều rộng màn hình */
 @media only screen and (max-width: 750px) {
   .home .slide .carousel-control-next,.home .slide .carousel-control-prev{
-    /*width: 30%;*/
   }
 }

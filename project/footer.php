@@ -10,7 +10,7 @@
 	<!--boostrap 4-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!--css-->
-	<link rel="stylesheet" media="screen" type="text/css" href="css/style.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/index.css">
 	<!--icon-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -25,7 +25,7 @@
 </head>
 <body>
 	<div class="footer">
-		<div class="contact">
+		<div class="footer1">
 			<div class="wrapper">
 				<div class="row ">
 					<div class="col-md-6 col-lg-3">
@@ -77,7 +77,7 @@
 				</div>
 			</div>
 				
-			<div class="footer1">
+			<div class="footer2">
 				<div class="wrapper">
 					<div class="row">
 						<div class="col-md-6">
@@ -93,31 +93,36 @@
 					</div>
 				</div>
 			</div>
+			<!-- phần để lại lời nhắn -->
 			<div class="wrapper_chatbox">
 				<div class="chatbox" >
 					<button href="#">Hãy để lại lời nhắn</button>
 				</div>
-			<div class="content_chatbox">
-				<div class="top">
-					<div class="d-flex row">
-						<div class="col-8 d-flex justify-content-start">
-							<p>Hãy để lại lời nhắn</p>
+				<div class="content_chatbox">
+					<div class="top">
+						<div class="d-flex row">
+							<div class="col-8 d-flex justify-content-start">
+								<p>Hãy để lại lời nhắn</p>
+							</div>
+							<div class="col-4 d-flex justify-content-end">
+								<i id="close" class="fas fa-times-circle"></i>
+							</div>
 						</div>
-						<div class="col-4 d-flex justify-content-end">
-							<i id="close" class="fas fa-times-circle"></i>
-						</div>
+						<div class="top1">Bạn vui lòng điền vào biểu mẫu dưới đây và chúng tôi sẽ liên hệ lại với bạn ngay khi có thể.</div>
 					</div>
-					<div>Bạn vui lòng điền vào biểu mẫu dưới đây và chúng tôi sẽ liên hệ lại với bạn ngay khi có thể.</div>
-				</div>
-				<div class="main">
-					<input type="text" placeholder="*Tên" name="">
-					<input type="text" placeholder="*E-mail" name="">
-					<input type="text" placeholder="Điện thoại" name="">
-					<input type="text" placeholder="Ngày sinh" name="">
-					<textarea placeholder="*lời nhắn"></textarea>
-					<input type="submit" value="Hoàn tất" name="">
-					<div class="tiny">
-						We're <img src="https://cdn.jsdelivr.net/emojione/assets/png/26a1.png?v=2.2.7">  by tawk.to
+					<!-- phần nội dung chính của để lại liên hệ -->
+					<div class="main">
+						<input type="text" placeholder="*Tên" name="">
+						<input type="text" placeholder="*E-mail" name="">
+						<input type="text" placeholder="Điện thoại" name="">
+						<input type="text" placeholder="Ngày sinh" name="">
+						<!-- nhập băn bản qua nhiều hàng -->
+						<textarea placeholder="*lời nhắn"></textarea>
+						<input type="submit" value="Hoàn tất" name="">
+						<!-- phần chữ nhỏ ở bên dưới -->
+						<div class="tiny">
+							We're <img src="https://cdn.jsdelivr.net/emojione/assets/png/26a1.png?v=2.2.7">  by tawk.to
+						</div>
 					</div>
 				</div>
 			</div>

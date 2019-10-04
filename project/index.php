@@ -10,7 +10,7 @@
 	<!--boostrap 4-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!--css-->
-	<link rel="stylesheet" media="screen" type="text/css" href="css/style.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/index.css">
 	<!--icon-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -292,9 +292,10 @@
 			<?php  
 				include"footer.php"
 			?>
-
+		</div>
 	</div>
-	<!--Start of Tawk.to Script-->
+	
+	<!-- phần script -->
 	<script type="text/javascript">
 	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 	(function(){
@@ -306,7 +307,7 @@
 	s0.parentNode.insertBefore(s1,s0);
 	})();
 	</script>
-	<!--End of Tawk.to Script-->
+	
 </body>
 <script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -374,12 +375,7 @@
 			                slidesToScroll: 1,
 			            }
 			        }]
-
 		      });
-	    	// responsive slide 2
-
-			
-    		
 	});
 </script>
 </html>

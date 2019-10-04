@@ -490,110 +490,149 @@ khoảng cách của
 
 
 
-
-/* phần footer */
-.home .contact{
-    background-color: #024282;
+/* phần tự hào là thành viên của */
+.home .tuhaolathanhviencua  
+{
+  padding-left: 8%;
+  padding-right: 8%;
 }
-.home .contact h4 a{
+/* tiêu đề của tự hào là thành viên của */
+.home .tuhaolathanhviencua h6
+{
+  font-size: 20px;
+}
+/* phần hình ảnh */
+.home .tuhaolathanhviencua .tuhao .actice img
+{
+  width: 40%;
+}
+
+
+/* phần phần cuối */
+/* màu của phần cuối */
+.home .footer1
+{
+  background-color: #024282;
+  padding: 20px 0;
+}
+/* mục tiêu đề của phần cuối */
+.home .footer1 h4 a
+{
   color: white;
   font-weight: bold;
   font-size: 18px;
 }
-.home .contact ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* làm mất form của li */
+.home .footer1 ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.home .contact {
-  padding: 20px 0;
-}
-.home .contact ul li{
-  
+/* căn chinhr trong li */
+.home .footer1 ul li
+{
   padding: 5px 0 0 0;
 }
-.home .contact ul li a{
+/* căn chỉnh chữ */
+.home .footer1 ul li a
+{
   color: #a1a1a1;
   font-size: 13px;
 }
-.home .contact .sociaty ul li a{
+/* phần liên hệ */
+.home .footer1 .sociaty ul li a
+{
   color: white;
 }
-.home .contact .cot-2 h4{
+/* căn chỉnh màu ở cột 2 */
+.home .footer1 .cot-2 h4
+{
   margin-bottom: 30px;
 }
-
-
-
-
-.home .footer1 h4{
+/* phần thông tin liên hệ của phần cuối */
+.home .footer2
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home .footer2 h4
+{
   margin: 0;
   padding: 0;
   font-size: 15px;
   font-weight: bold;
 }
-.home .footer1 p{
+.home .footer2 p
+{
   margin-bottom: 5px;
   font-size: 13px;
 }
-.home .footer1{
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.home .wrapper_chatbox .chatbox{
-  background-color: #0f4f8f;
-  width: 400px;
-  padding: 6px 10px;
-  color: white;
-}
-.home .wrapper_chatbox{
+/* phần để lại lời nhắn */
+.home .wrapper_chatbox
+{
+  /* bo tròn 2 góc trên của khung */
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 300px;
   display: flex;
-  justify-content: flex-end;
+  background-color: #0f4f8f;
   padding-right: 10px;
   position: fixed;
-  /*position: absolute;*/
   bottom: 0;
   right: 0;
   z-index: 9;
-
 }
-.home .wrapper_chatbox .chatbox button{
+/* màu chữ của phần để lại liên hệ */
+.home .wrapper_chatbox .chatbox
+{
+  padding-top: 2%;
+  padding-bottom: 2%;
   color: white;
-  background-color: unset;
-  border: none;
-  outline: none;
-  
 }
-.home .wrapper_chatbox .content_chatbox{
-  width: 400px;
+/* nút button */
+.home .wrapper_chatbox .chatbox button
+{
+  color: white;
+  background-color: #0f4f8f;
+  border: none;
+  /* bỏ riềm của button */
+  outline: none;
+}
+/* phần bên trong sau khi ấn */
+.home .wrapper_chatbox .content_chatbox
+{
   border: 0.5px solid #f1efef;
   background-color: white;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-.home .wrapper_chatbox .content_chatbox .top{
+/* căn chỉnh phần đầu của phần để lại tin nhắn */
+.home .wrapper_chatbox .content_chatbox .top
+{
   background-color: #0f4f8f;
   color: white;
-}
-.home .wrapper_chatbox .content_chatbox .top div{
   text-align: center;
   padding: 0 15px;
-}
-.home .wrapper_chatbox .content_chatbox .top p{
-  /*padding-left: 15px;*/
-}
-.home .wrapper_chatbox .content_chatbox .top i{
-    color: white;
-    text-align: end;
-    width: 55%;
-}
-.home .wrapper_chatbox .content_chatbox .top{
   padding-top: 15px;
   padding-bottom: 15px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
-.home .wrapper_chatbox .content_chatbox .main {
+.home .wrapper_chatbox .content_chatbox .top1
+{
+  background-color: #0f4f8f;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+/* icon để thoát khỏi phần hãy để lại lời nhắn */
+.home .wrapper_chatbox .content_chatbox .top i
+{
+  color: white;
+  width: 55%;
+}
+/* phần chính của phần để lại tin nhắn */
+.home .wrapper_chatbox .content_chatbox .main 
+{
   border: 0.5px solid #f1efef;
   margin-top: 40px;
   margin-left: 15px;
@@ -602,7 +641,9 @@ khoảng cách của
   padding: 15px;
   background-color: white;
 }
-.home .wrapper_chatbox .content_chatbox .main input{
+/* phần điền thông tin */
+.home .wrapper_chatbox .content_chatbox .main input
+{
   width: 100%;
   border: 1.5px solid #d0d0d0;
   margin-bottom: 5px;
@@ -611,79 +652,88 @@ khoảng cách của
   outline: none;
   padding-left: 15px;
 }
-.home .wrapper_chatbox .content_chatbox .main textarea{
+/* phần lời nhắn, có thể viết được nhiều dòng*/
+.home .wrapper_chatbox .content_chatbox .main textarea
+{
   width: 100%;
   border: 1.5px solid #d0d0d0;
   outline: none;
   padding-left: 15px;
   height: 60px;
 }
-.home .wrapper_chatbox .content_chatbox .main input[type="submit"]{
+/* nút hoàn tất, trong thẻ input với thể loại là submit*/
+.home .wrapper_chatbox .content_chatbox .main input[type="submit"]
+{
   background-color: #0f4f8f;
   color: white;
 }
-.home .wrapper_chatbox .content_chatbox .main input[type="submit"]:hover{
+/* rê chuột qua */
+.home .wrapper_chatbox .content_chatbox .main input[type="submit"]:hover
+{
   background-color: #0b3764!important;
 }
-.home .wrapper_chatbox .content_chatbox .main .tiny{
-    color: #4f4f4f;
-    font-size: 13px;
-    text-align: center;
+/* phần chữ nhỏ ở dưới */
+.home .wrapper_chatbox .content_chatbox .main .tiny
+{
+  color: #4f4f4f;
+  font-size: 13px;
+  text-align: center;
 }
-.home .wrapper_chatbox .content_chatbox .main .tiny img{
+/* hình ảnh tia sét */
+.home .wrapper_chatbox .content_chatbox .main .tiny img
+{
   height: 20px;
 }
-.hotline-1,.hotline-2{
-  overflow: hidden;
-}
+
+
+
+
 /*responsive*/
-@media only screen and (max-width: 1200px) {
-  .home .wrapper{
-    padding: 10px;
-  }
-  .home .head .top_head .hotline{
-    padding-left: 18px;
-  }
-  
-}
-.home .head-responsive{
+/* hàng menu1 */
+.home .head-responsive
+{
   display: none;
 }
-@media only screen and (max-width: 1050px) {
-  .home .head-desktop{
+
+@media only screen and (max-width: 1050px) 
+{
+  .home .head-desktop
+  {
     display: none;
   }
-  .home .head-responsive{
+  .home .head-responsive
+  {
     display: block;
   }
-  .home .head-responsive .left{
+  .home .head-responsive .left
+  {
     background-color: #024282;
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
     padding: 0;
     position: relative;
   }
-  .home .head-responsive .left i{
+  .home .head-responsive .left i
+  {
     position: absolute;
     left: 45%;
     font-size: 22px;
   }
-  .home .head-responsive .right{
+  .home .head-responsive .right
+  {
     position: relative;
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
     background-color: #024282;
     padding: 0;
   }
-  .home .head-responsive .right img{
+  .home .head-responsive .right img
+  {
     position: absolute;
     left: 30%;
   }
   .home .head-responsive .input{
     background-color: #012b64;
-
   }
   .home .head-responsive .input input{
     width: 90%;
@@ -742,6 +792,7 @@ khoảng cách của
     width: 100%;
   }
 }
+/* chiều rộng màn hình */
 @media only screen and (max-width: 750px) {
   .home .slide .carousel-control-next,.home .slide .carousel-control-prev{
   }

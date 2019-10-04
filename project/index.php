@@ -7,10 +7,12 @@
     <meta name="author" content="Hoàng Ánh, Huyền Trang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trường Đại Học Nguyễn Tất Thành</title>
+	<!-- khi mở tap ra có ở phần tiêu đề -->
+    <link rel="shortcut icon" href="images/icon.jpg">
 	<!--boostrap 4-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!--css-->
-	<link rel="stylesheet" media="screen" type="text/css" href="css/index.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/style.css">
 	<!--icon-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -274,7 +276,7 @@
 											</ul>
 										</div>
 										<div class="xemthem">
-											<a href="" style="margin: 0 !important;font-size: 13px !important;color: #024282;font-weight: bolder;padding-top: -15%;">
+											<a href="" style="margin: 0 !important;font-size: 13px !important; color: #024282; font-weight: bolder; ">
 												<i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>
 												Xem thêm 
 											</a>
@@ -288,32 +290,82 @@
 			</div>
 			<br>
 			
+			<!-- phần tự hào là thành viên của -->
+			<div class="tuhaolathanhviencua">
+				<h6>Tự hào là thành viên của</h6>
+				<hr style="height: 1px; background-color: #aa914d;width: 35px; margin-top: 1%; margin-left: 0.5%;">
+				<br>
+				<div class="tuhao">
+					<div class="actice">
+						<a href="">
+							<img src="http://ntt.edu.vn/web/partner/logo/ifgtm.png" alt="">
+						</a>
+					</div>
+					<div class="actice">
+						<a href="">
+							<img src="http://ntt.edu.vn/web/partner/logo/phs.png" alt="">
+						</a>
+					</div>
+					<div class="actice">
+						<a href="">
+							<img src="http://ntt.edu.vn/web/partner/logo/hru.png" alt="">
+						</a>
+					</div>
+					<div class="actice">
+						<a href="">
+							<img src="http://ntt.edu.vn/web/partner/logo/hca.png" alt="">
+						</a>
+					</div>
+					<div class="actice">
+						<a href="">
+							<img src="http://ntt.edu.vn/web/partner/logo/auf.png" alt="">
+						</a>
+					</div>
+					<div class="actice">
+						<a href="">
+							<img src="http://ntt.edu.vn/web/partner/logo/cdio.png" alt="">
+						</a>
+					</div>
+					<div class="actice">
+						<a href="">
+							<img src="http://ntt.edu.vn/web/partner/logo/bc.png" alt="">
+						</a>
+					</div>
+					<div class="actice">
+						<a href="">
+							<img src="http://ntt.edu.vn/web/partner/logo/aun.png" alt="">
+						</a>
+					</div>
+					<div class="actice">
+						<a href="http://ntt.edu.vn/web/partner/logo/apcore.png">
+							<img src="" alt="">
+						</a>
+					</div>
+					<div class="actice">
+						<a href="">
+							<img src="http://ntt.edu.vn/web/partner/logo/stc.png" alt="">
+						</a>
+					</div>
+					<div class="actice">
+						<a href="">
+							<img src="http://ntt.edu.vn/web/partner/logo/avnuc.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<br>
 			<!-- phần footer -->
 			<?php  
 				include"footer.php"
 			?>
 		</div>
 	</div>
-	
-	<!-- phần script -->
-	<script type="text/javascript">
-	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-	(function(){
-	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-	s1.async=true;
-	s1.src='https://embed.tawk.to/5cc12161ee912b07bec4bce7/default';
-	s1.charset='UTF-8';
-	s1.setAttribute('crossorigin','*');
-	s0.parentNode.insertBefore(s1,s0);
-	})();
-	</script>
-	
 </body>
 <script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript">
-
+	// menu3, có thể chạy chậm chậm ra
 	$( document ).ready(function() {
     	$('#showCollapse').click(function(){
     		// $(".collapse-handmade").css("display",'block');
@@ -324,7 +376,7 @@
     		$(".collapse-handmade").slideToggle("slow");
     	});
     	 
-
+    	// phần để lại lời nhắn
     	 $('.content_chatbox').hide();
     	 $('.chatbox').click(function(){
     	 	$('.content_chatbox').show();
@@ -335,6 +387,7 @@
     	 	$('.chatbox').show();
     	 });
 
+    	 // phần hotline
     	count = 0;
   		wordsArray = ["0902.298.300 - 0906.298.300","0912.298.300  - 0914.298.300"];
     	 setInterval(function () {
@@ -346,36 +399,38 @@
 		    });
 		  }, 3000);
 
-    	 setInterval(function () {
-		    count++;
-		    $("#hotline-2").slideUp(600, function () {
-		    	// odd % 2 == 1
-		      $(this).text(wordsArray[count % wordsArray.length]).slideDown(200);
-		      console.log('wordsArray '+count % wordsArray.length+' count '+count+' length '+wordsArray.length);
-		    });
-		  }, 3000);
-
+    	 	// phần responsive, ảnh hưởng tới menu1
     	 	$('.content-responsive').hide();
 	    	$('#showMenuRes').click(function(){
 	    		$('.content-responsive').slideToggle();
     		});
-	    	$(".center").slick({
-				        dots: true,
-				        infinite: true,
-				        centerMode: true,
-				        slidesToShow: 3,
-				        slidesToScroll: 3,
-				        dots:false,
 
-				 responsive: [
-			        {
-			            breakpoint: 900,
-			            settings: {
-			                slidesToShow: 1,
-			                slidesToScroll: 1,
-			            }
-			        }]
-		      });
+	    	// phần để lại lời nhắn
+	    	$(".center").slick({
+	    		dots: true,
+				infinite: true,
+				centerMode: true,
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				dots:false,
+
+				responsive: [{
+					breakpoint: 900,
+					settings: {
+				        slidesToShow: 1,
+				        slidesToScroll: 1,
+				    }
+				}]
+				        
+		    });
+
+		    // phần tự hào là thành viên của
+		    $('.tuhao').slick({
+			  slidesToShow: 3,
+			  slidesToScroll: 1,
+			  autoplay: true,
+			  autoplaySpeed: 2000,
+			});
 	});
 </script>
 </html>

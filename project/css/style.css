@@ -1,0 +1,748 @@
+/* top.php */
+.home
+{
+  overflow: hidden;
+  position: relative;
+}
+/* menu1 */
+/* màu của menu1 */
+.home .head
+{
+  background-color: #024282;
+}
+/* màu của hotline */
+.home .head .hotline
+{
+  color: #fdb913;
+}
+/* căn lề  */
+.home .wrapper
+{
+  padding-left: 8%;
+  padding-right: 8%;
+}
+/* dòng menu1 đc căn giữa và dãn giữa các phần */
+.home .head .wrapper
+{
+    font-size: 13px;
+}
+/* dòng hotline chạy trên 1 dòng */
+.home .head .wrapper div
+{
+  display: flex;
+  align-items: center;
+}
+/* màu của menu1 */
+.home .head .wrapper a
+{
+  padding: 0;
+  color: white;
+}
+/* phần tìm kiếm  */
+.home .head .wrapper .input input
+{
+  height: 35px;
+  background-color: #012b64;
+  border:none;
+  padding-left: 20px;
+  font-size: 16px;
+}
+/* phần hình ảnh ở góc bên phải tìm kiêma */
+.home .head .wrapper .input img
+{
+  height: 16px;
+  margin-left: 10px;
+}
+/* màu của icon tìm kiếm */
+.home .head .wrapper .input i
+{
+  color: white;
+  padding-right: 20px;
+}
+/* màu nền của icon tìm kiếm */
+.home .head .wrapper .input form 
+{
+  background-color: #012b64;
+}
+
+
+/*menu2*/
+/* căn chỉnh dãn cách menu2 */
+.home .menu .navbar .navbar-nav
+{
+  width: 100%;
+  padding-left: 10px;
+  height: 70px;
+}
+/* căn chỉnh phần trong menu2 */
+.home .menu .navbar .navbar-nav li
+{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding-left: 6px;
+}
+/* thay đổi màu chữ sau khi rê chuột vào */
+.home .menu .navbar .navbar-nav li:hover i,.home .menu .navbar .navbar-nav li:hover a
+{
+  color: #aa914d;
+}
+/* màu và kích thước cho icon và phần danh sách trong menu2 */
+.home .menu .navbar .navbar-nav li i
+{
+  color: #35699b;
+  margin-right: 5px;
+  font-size: 22px;
+}
+/* định dạng màu cho thành phần trong menu2 */
+.home .menu .navbar .navbar-nav li a
+{
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+/* nút triangle đè lên menu2 */
+.home .slide .slide-wrapper .triangle-wrapper
+{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    z-index: 3;
+}
+/* chỉnh sửa triangle */
+.home .slide .slide-wrapper .triangle-wrapper .triangle
+{
+    width: 0;
+    height: 0;
+    /* làm mờ phần triangle */
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 45px solid white;
+    display: flex;
+    justify-content: center;
+}
+/* chỉnh sửa icon nút menu3 */
+.home .slide .slide-wrapper .triangle-wrapper .triangle i
+{
+  position: absolute;
+  top: 0;
+  font-size: 25px;
+}
+/* căn giữa cho icon */
+.home .slide .slide-wrapper .triangle-wrapper .triangle a
+{
+  display: flex;
+  justify-content: center;
+}
+/* thừa hưởng thuộc tính bên trên nó */
+.home .slide .carousel-inner
+{
+  position: relative;
+}
+/* phần làm mờ ở trình diễn hình ảnh */
+.home .slide .line-slide
+{
+  bottom: 0;
+  position: absolute;
+  background: rgba(0,0,0,0.25);
+  width: 100%;
+  padding: 30px 20px;
+  height: 90px;
+}
+.home .slide .line-slide .control-button{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+/* kế thừa từ cha nó */
+.slide-wrapper
+{
+  position: relative;
+}
+khoảng cách của
+.home .slide .carousel-control-next,.home .slide .carousel-control-prev
+{
+  width: 177%;
+}
+/* độ dầy của icon nút chuyển trình diễn hình ảnh */
+.home .slide .right i
+{
+  font-size: 40px;
+}
+
+/* căn chỉnh menu3 */
+.home .slide .collapse-handmade 
+{
+  top: 0;
+  left: 0;
+  right: 0;
+  /* khi ấn vào mới hiện menu3 */
+  position: absolute;
+  background-color: rgba(2,66,130,0.95);
+  z-index: 2;
+}
+/* căn chỉnh màu của phần liên kết trong menu3 */
+.home .slide .collapse-handmade .sociaty li a
+{
+  width: 100%;
+  color: #fff;
+  background-color: #42719f;
+}
+/* bỏ đi cấu trúc của thẻ li trong menu3 */
+.home .slide .collapse-handmade li
+{
+  list-style: none;
+  padding: 0;
+}
+/* cách phần đầu và màu chữ */
+.home .slide .collapse-handmade
+{
+  padding-top: 70px;
+  color: white;
+}
+/* các icon trong menu3 */
+.home .slide .collapse-handmade .item ul li i
+{
+  font-size: 12px;
+  color: #d2d2d2;
+}
+/* màu chữ trong menu3 */
+.home .slide .collapse-handmade .item ul li a
+{
+  color: #d2d2d2;
+  font-size: 15px;
+  opacity: 0.8;
+}    
+/* thay đổi màu khi rê chuột vào */
+.home .slide .collapse-handmade .item ul li:hover a,.home .slide .collapse-handmade .item ul li:hover i
+{
+  color: #a99149;
+}
+/* phần liên kết */
+.home .slide .collapse-handmade .sociaty ul li,.home .contact .sociaty ul li
+{
+  width: 80%;
+  background-color: #42719f;
+  border-radius: 5px;
+  padding: 7px 15px;
+  margin-bottom: 5px;
+}
+/* bỏ gạch chân ở liên kết */
+.home .slide .collapse-handmade .sociaty ul li a i,.home .contact .sociaty ul li a i
+{
+  padding-right: 6px;
+}
+/* đổi màu nền liên kết sau khi rê chuột vào */
+.home .slide .collapse-handmade .sociaty ul li:hover,.home .contact .sociaty ul li:hover  
+{
+    background-color: white;
+}
+/* đổi màu nền liên kết sau khi rê chuột vào  */
+.home .slide .collapse-handmade .sociaty ul li:hover a,.home .contact .sociaty ul li:hover a
+{
+  color: #0275d8;
+  background-color: white;
+}
+
+
+
+/* phần tin tức và media */
+/* chiều rộng của phần hình ảnh */
+.home .tintuc_media .content a img,.home .tintuc_media .content a iframe
+{
+  height: 175px;
+}
+/* dòng tin tức */
+.home .tintuc_media .title a
+{
+  color: #252525;
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+/* tránh bị lộn xộn hình ảnh */
+.home .tintuc_media .wrapper hr
+{
+  display: block;
+  position: absolute;
+}
+/* phần nội dung sau hình ảnh */
+.home .tintuc_media .content1
+{
+  text-decoration: none;
+  color: #252525;
+}
+/* phần nội dung thứ 2 sau hình ảnh */
+.home .tintuc_media .content p
+{
+  padding-top: 5%;
+  color: #252525;
+  font-size: 13px;
+}
+/* phần media */
+.home .tintuc_media .description 
+{
+  padding: 0 15px 0 15px;
+  min-height: 236px;
+  position: relative;
+  font-size: 15px;
+}
+/* mất form của li */
+.home .tintuc_media .description ul
+{
+  font-size: 14px;
+  list-style: none;
+  padding-left: 20px;
+}
+/* dãn cách giữa các li */
+.home .tintuc_media .description ul li
+{
+  margin-top: 10px;
+}
+/* icon của phần media */
+.home .tintuc_media .description ul li i
+{
+  width: 20px;
+  text-indent: -20px;
+  margin-right: -20px;
+  color: black;
+}
+.home .tintuc_media .description ul li a
+{
+  color: #878787;
+  font-size: 15px;
+}
+/* phần xem thêm */
+.home .tintuc_media .xemthem a
+{
+  color: #024282;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* phần lý do chọn trường Nguyễn Tất Thành */
+/* căn chỉnh khoảng cách với phần trên */
+.home .reason
+{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+/* dòng tại sao chọn trường Nguyễn Tất Thành */
+.home .reason .title b
+{
+  font-size: 24px;
+  font-weight: 400;
+  color: #aa914d;
+}
+/* căn chỉnh dòng tại sao chọn trường NTT */
+.home .reason .title
+{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.home .reason .wrapper-reason
+{
+  background-color: #024282;
+  padding-top: 20px;
+}
+/* dòng gạch bên dưới  */
+.home .reason .title hr
+{
+  background-color: #aa914d;
+  width: 5%;
+  height: 3px;
+}
+/* nút chuyển  */
+.home .reason .slick-prev
+{
+  left: 10px;
+}
+.home .reason .slick-next
+{
+  right: 10px;
+}
+/* căn chỉnh nộ dung bên trong phần lý do */
+.home .reason .wrapper-reason .content .item
+{
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+}
+/* căn chỉnh khảng cách của nội dung chính trong lý do */
+.home .reason .wrapper-reason .content .item .main
+{
+  position: absolute;
+  padding: 0 40px;
+  top: 10%;
+}
+/* dòng tiêu đề trong phần nội dung */
+.home .reason .wrapper-reason .content .item h5
+{
+  font-size: 24px;
+  font-weight: 400;
+}
+.home .reason .wrapper-reason .content .item p
+{
+  color: #b7b7b7;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+}
+/* phần hình ảnh trong lý do chọn trường */
+.home .reason .wrapper-reason .content .item img
+{
+  height: 100px;
+}
+
+
+ /* phần hợp tác quốc tế, môi trường học tập và sự kiện nổi bật  */
+ /* cỡ chữ phần tiêu đề */
+.home .tintuc_moitruong_sukien .title 
+{
+  font-size: 17px;
+}
+.home .tintuc_moitruong_sukien .content img
+{
+  height: 175px;
+}
+/* phần xem thêm */
+.home .tintuc_moitruong_sukien .xemthem a
+{
+  margin: 0 !important;
+  font-size: 13px !important;
+  color: #024282;
+  font-weight: bolder;
+}
+.home .tintuc_moitruong_sukien .xemthem a i
+{
+  margin: 0 !important;
+}
+/* dòng sau hình ảnh */
+.home .tintuc_moitruong_sukien .content .content1
+{
+  text-decoration: none;
+  color: black;
+}
+.home .tintuc_moitruong_sukien .content p
+{
+  margin-top: 10%;
+  font-size: 13px;
+}
+/* ô vuông cột ngày */
+.home .tintuc_moitruong_sukien .noibat .day
+{
+  background-color: #024282;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 25px;
+}
+/* chữ của phần sự kiện nổi bật */
+.home .tintuc_moitruong_sukien .noibat a
+{
+  text-decoration: none;
+  margin: 0;
+  font-weight: bold;
+  color: black;
+}
+.home .tintuc_moitruong_sukien .noibat ul
+{
+  padding: 0;
+} 
+.home .tintuc_moitruong_sukien .noibat ul li
+{
+  list-style: none;
+}
+
+/* icon đồng hồ */
+.home .tintuc_moitruong_sukien .noibat ul .line-1
+{
+  color: #aa914d;
+  font-size: 13px;
+}
+/* dòng chữ nhỏ của sự kiện nổi bật */
+.home .tintuc_moitruong_sukien .noibat ul .line-2
+{
+  color: #959595;
+  font-size: 14px;
+  position: relative;
+  padding-bottom: 5px;
+}
+/* dòng gạch ngang */
+.home .tintuc_moitruong_sukien .noibat ul .line-2 hr
+{
+  width: 100px;
+  margin-left: -1%;
+}
+
+
+
+
+/* phần footer */
+.home .contact{
+    background-color: #024282;
+}
+.home .contact h4 a{
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.home .contact ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.home .contact {
+  padding: 20px 0;
+}
+.home .contact ul li{
+  
+  padding: 5px 0 0 0;
+}
+.home .contact ul li a{
+  color: #a1a1a1;
+  font-size: 13px;
+}
+.home .contact .sociaty ul li a{
+  color: white;
+}
+.home .contact .cot-2 h4{
+  margin-bottom: 30px;
+}
+
+
+
+
+.home .footer1 h4{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+.home .footer1 p{
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+.home .footer1{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home .wrapper_chatbox .chatbox{
+  background-color: #0f4f8f;
+  width: 400px;
+  padding: 6px 10px;
+  color: white;
+}
+.home .wrapper_chatbox{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  position: fixed;
+  /*position: absolute;*/
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+
+}
+.home .wrapper_chatbox .chatbox button{
+  color: white;
+  background-color: unset;
+  border: none;
+  outline: none;
+  
+}
+.home .wrapper_chatbox .content_chatbox{
+  width: 400px;
+  border: 0.5px solid #f1efef;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.home .wrapper_chatbox .content_chatbox .top{
+  background-color: #0f4f8f;
+  color: white;
+}
+.home .wrapper_chatbox .content_chatbox .top div{
+  text-align: center;
+  padding: 0 15px;
+}
+.home .wrapper_chatbox .content_chatbox .top p{
+  /*padding-left: 15px;*/
+}
+.home .wrapper_chatbox .content_chatbox .top i{
+    color: white;
+    text-align: end;
+    width: 55%;
+}
+.home .wrapper_chatbox .content_chatbox .top{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.home .wrapper_chatbox .content_chatbox .main {
+  border: 0.5px solid #f1efef;
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: white;
+}
+.home .wrapper_chatbox .content_chatbox .main input{
+  width: 100%;
+  border: 1.5px solid #d0d0d0;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  height: 40px;
+  outline: none;
+  padding-left: 15px;
+}
+.home .wrapper_chatbox .content_chatbox .main textarea{
+  width: 100%;
+  border: 1.5px solid #d0d0d0;
+  outline: none;
+  padding-left: 15px;
+  height: 60px;
+}
+.home .wrapper_chatbox .content_chatbox .main input[type="submit"]{
+  background-color: #0f4f8f;
+  color: white;
+}
+.home .wrapper_chatbox .content_chatbox .main input[type="submit"]:hover{
+  background-color: #0b3764!important;
+}
+.home .wrapper_chatbox .content_chatbox .main .tiny{
+    color: #4f4f4f;
+    font-size: 13px;
+    text-align: center;
+}
+.home .wrapper_chatbox .content_chatbox .main .tiny img{
+  height: 20px;
+}
+.hotline-1,.hotline-2{
+  overflow: hidden;
+}
+/*responsive*/
+@media only screen and (max-width: 1200px) {
+  .home .wrapper{
+    padding: 10px;
+  }
+  .home .head .top_head .hotline{
+    padding-left: 18px;
+  }
+  
+}
+.home .head-responsive{
+  display: none;
+}
+@media only screen and (max-width: 1050px) {
+  .home .head-desktop{
+    display: none;
+  }
+  .home .head-responsive{
+    display: block;
+  }
+  .home .head-responsive .left{
+    background-color: #024282;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    padding: 0;
+    position: relative;
+  }
+  .home .head-responsive .left i{
+    position: absolute;
+    left: 45%;
+    font-size: 22px;
+  }
+  .home .head-responsive .right{
+    position: relative;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    background-color: #024282;
+    padding: 0;
+  }
+  .home .head-responsive .right img{
+    position: absolute;
+    left: 30%;
+  }
+  .home .head-responsive .input{
+    background-color: #012b64;
+
+  }
+  .home .head-responsive .input input{
+    width: 90%;
+    background-color: unset;
+    border: none;
+    outline: none;
+    color: white;
+    height: 40px;
+  }
+  .home .head-responsive .input i{
+    color: white;
+  }
+  .home .head-responsive .input button{
+    background: unset;
+    border: none;
+  }
+  .home .content-responsive ul{
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .home .content-responsive ul li {
+    list-style: none;
+    padding: 5px 0;
+  }
+  .home .content-responsive{
+    background-color: #024282;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .home .content-responsive ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .home .triangle-wrapper{
+    display: none !important;
+  }
+  .home .slide .carousel-control-next,.home .slide .carousel-control-prev{
+    width: 25%;
+  }
+  .home .slide .line-slide h3 {
+    font-size: 18px;
+  }
+  .home .slide .right i {
+    font-size: 30px;
+  }
+  .home .slide .slide-wrapper {
+    height: 280px;
+  }
+  .home .slide .slide-wrapper .carousel-item img{
+    height: 280px;
+  }
+  .home .tintuc .content img, .home .tintuc .content iframe{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .home .slide .carousel-control-next,.home .slide .carousel-control-prev{
+  }
+}

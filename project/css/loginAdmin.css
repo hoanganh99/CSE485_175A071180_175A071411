@@ -1,0 +1,119 @@
+body
+{
+	margin: 0px auto;
+}
+
+.wrapper
+{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 85px;
+}
+.login
+{
+	height: 370px;
+	width: 550px;
+	background-color: #024282;
+	display: flex;
+	align-items: center;
+}
+.main
+{
+	height: 330px;
+	width: 100%;
+	background-color: #829fbc;
+}
+.wrapper .top img
+{
+	width: 100px;
+	margin-top: -17px;
+	margin-left: 10px;
+}
+
+
+.body
+{
+	border-radius: 10px;
+	border: 1px solid #024282;
+	background-color: #efead7;
+	height: 200px;
+	margin: 5px 50px;
+}
+.body .image img
+{
+	margin-left: -15px;
+}
+.body .image p
+{
+	font-size: 12px;
+	font-weight: bolder;
+	color: #024282;
+}
+.body .image .content
+{
+	color: #7f0000;
+	padding-left: 5px;
+	margin-top: -15px;
+	font-weight: bolder;
+	font-size: 15px;
+}
+.body .image .content p
+{
+	color: #7f0000;
+	padding-left: 35px;
+	margin-top: -7px;
+	font-size: 14px;
+}
+
+
+.body .content h4
+{
+	text-align: center;
+	margin-top: 15px;
+	font-weight: bolder;
+	color: #a55204;
+	/* tạo đổ bóng cho chữ */
+	text-shadow: 4px 4px #b2b2b2;
+}
+.body .content .form
+{
+	border-radius: 10px;
+	border:  1px solid #024282;
+	height: 130px;
+	width: 270px;
+}
+.body .content  li
+{
+	list-style: none;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #024282;
+	margin-left: -20px;
+	margin-top: 15px;
+}
+.body .content li input
+{
+	border-radius: 10px;
+	border: 1px solid #56aaff;
+}
+.body .content li button
+{
+	background-color: #7070c1;
+	border-radius: 10px;
+	border: 1px solid #56aaff;
+	margin-left: 140px;
+	margin-top: -20px;
+	height: 24px;
+}
+
+
+.footer
+{
+	font-size: 10px;
+	color: white;
+	text-align: justify;
+	text-align: center;
+}

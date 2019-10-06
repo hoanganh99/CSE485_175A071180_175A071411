@@ -47,7 +47,7 @@
   padding-left: 20px;
   font-size: 16px;
 }
-/* phần hình ảnh ở góc bên phải tìm kiêma */
+/* phần hình ảnh ở góc bên phải tìm kiếm */
 .home .head .wrapper .input img
 {
   height: 16px;
@@ -138,7 +138,7 @@
   justify-content: center;
 }
 /* thừa hưởng thuộc tính bên trên nó */
-.home .slide .carousel-inner
+.home .slide 
 {
   position: relative;
 }
@@ -152,7 +152,8 @@
   padding: 30px 20px;
   height: 90px;
 }
-.home .slide .line-slide .control-button{
+.home .slide .line-slide .control-button
+{
     position: relative;
     width: 100%;
     display: flex;
@@ -163,10 +164,11 @@
 {
   position: relative;
 }
-khoảng cách của
+/* khoảng cách của nút di chuyển */
 .home .slide .carousel-control-next,.home .slide .carousel-control-prev
 {
-  width: 177%;
+  width: 95%;
+  padding-left: 90%;
 }
 /* độ dầy của icon nút chuyển trình diễn hình ảnh */
 .home .slide .right i
@@ -183,7 +185,7 @@ khoảng cách của
   /* khi ấn vào mới hiện menu3 */
   position: absolute;
   background-color: rgba(2,66,130,0.95);
-  z-index: 2;
+  z-index: 1;
 }
 /* căn chỉnh màu của phần liên kết trong menu3 */
 .home .slide .collapse-handmade .sociaty li a
@@ -689,7 +691,7 @@ khoảng cách của
 
 
 /*responsive*/
-/* hàng menu1 */
+/* hàng menu1, tạm thời chưa hoạt động */
 .home .head-responsive
 {
   display: none;
@@ -732,10 +734,12 @@ khoảng cách của
     position: absolute;
     left: 30%;
   }
-  .home .head-responsive .input{
+  .home .head-responsive .input
+  {
     background-color: #012b64;
   }
-  .home .head-responsive .input input{
+  .home .head-responsive .input input
+  {
     width: 90%;
     background-color: unset;
     border: none;
@@ -743,57 +747,71 @@ khoảng cách của
     color: white;
     height: 40px;
   }
-  .home .head-responsive .input i{
+  .home .head-responsive .input i
+  {
     color: white;
   }
-  .home .head-responsive .input button{
+  .home .head-responsive .input button
+  {
     background: unset;
     border: none;
   }
-  .home .content-responsive ul{
+  .home .content-responsive ul
+  {
     padding-left: 20px;
     padding-bottom: 20px;
   }
-  .home .content-responsive ul li {
+  .home .content-responsive ul li 
+  {
     list-style: none;
     padding: 5px 0;
   }
-  .home .content-responsive{
+  .home .content-responsive
+  {
     background-color: #024282;
     position: absolute;
     z-index: 10;
     width: 100%;
     opacity: 0.9;
   }
-  .home .content-responsive ul li a{
+  .home .content-responsive ul li a
+  {
     color: white;
     text-decoration: none;
     font-size: 12px;
   }
-  .home .triangle-wrapper{
+  .home .triangle-wrapper
+  {
     display: none !important;
   }
-  .home .slide .carousel-control-next,.home .slide .carousel-control-prev{
+  .home .slide .carousel-control-next,.home .slide .carousel-control-prev
+  {
     width: 25%;
   }
-  .home .slide .line-slide h3 {
+  .home .slide .line-slide h3 
+  {
     font-size: 18px;
   }
-  .home .slide .right i {
+  .home .slide .right i 
+  {
     font-size: 30px;
   }
-  .home .slide .slide-wrapper {
+  .home .slide .slide-wrapper 
+  {
     height: 280px;
   }
-  .home .slide .slide-wrapper .carousel-item img{
+  .home .slide .slide-wrapper .carousel-item img
+  {
     height: 280px;
   }
-  .home .tintuc .content img, .home .tintuc .content iframe{
+  .home .tintuc .content img, .home .tintuc .content iframe
+  {
     width: 100%;
   }
 }
 /* chiều rộng màn hình */
 @media only screen and (max-width: 750px) {
-  .home .slide .carousel-control-next,.home .slide .carousel-control-prev{
+  .home .slide .carousel-control-next,.home .slide .carousel-control-prev
+  {
   }
 }

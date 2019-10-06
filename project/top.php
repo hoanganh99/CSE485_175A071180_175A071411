@@ -12,7 +12,7 @@
 	<!--boostrap 4-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!--css-->
-	<link rel="stylesheet" media="screen" type="text/css" href="css/style.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/index.css">
 	<!--icon-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -79,7 +79,7 @@
 				<!-- phần menu 2 -->
 				<div class="wrapper">
 					<nav class="navbar navbar-expand-lg">
-					  	<img src="images/logo_ntt.jpg">
+						<a href="index.php"><img src="images/logo_ntt.jpg"></a>
 					  <button style="outline: none;" class="navbar-toggler" type="button" >
 					    <i id="showCollapse2" style="border: 1px solid #d0d0d0;padding: 10px;" class="fa fa-bars c-blue-a5"></i>
 					  </button>
@@ -128,7 +128,7 @@
 					    </div>
 					    <div class="carousel-item">
 					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Lien-thong-NTTU_Web-Slider.jpg" alt="Second slide">
-					      <h3 style="margin-top: -5%; color: white; padding-left: 2%;padding-bottom: 1%;">Tuyển sinh liên thông 2019</h3>
+					      <h3 style="margin-top: -5%; color: white; padding-left: 2%;padding-bottom: 1%;">Tuyển sinh liên thông 2019</h3> 
 					    </div>
 					    <div class="carousel-item">
 					      <img class="d-block w-100" src="http://ntt.edu.vn/web/upload/images/slider/Chinh-sach-hoc-bong-NTTU_Web-Slider.jpg" alt="Third slide">
@@ -144,7 +144,7 @@
 					    </div>
 					  </div>
 					  <!-- phần bên trong của icon menu 3 -->
-					  	<div class="collapse-handmade" id="collapse-handmade">
+					  	<div class="collapse-handmade" id="collapse-handmade" style="display: none;">
 					  		<div class="row">
 					  			<div class="col-md-6 col-lg-9 row">
 					  				<div class="col-12 col-md-6 col-lg-4 item">

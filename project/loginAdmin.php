@@ -13,11 +13,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!--css-->
 	<link rel="stylesheet" media="screen" type="text/css" href="css/loginAdmin.css">
-	<!--icon-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<!--phần tại sao chọn NTTU-->
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<!--javascript-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript">
@@ -30,16 +25,23 @@
 	<div class="wrapper">
 		<div class="login">
 			<div class="main">
-				<div class="top">
-					<img src="images/icon.jpg" alt="">
+				<div class="container-fluid">
+					<div class="row top">
+						<div class="col-md-6 image1">
+							<img src="images/loginAdmin.jpg" alt="">
+						</div>
+						<div class="col-md-6 image2">
+							<img src="images/loginAdmin1.jpg" alt="">
+						</div>
+					</div>
 				</div>
 				<div class="body">
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-md-4 image">
-								<img src="images/login.jpg" alt="">
+								<img src="images/loginAdmin2.jpg" alt="">
 								<p>Chào mừng đến với</p>
-								<div  class="content">Electronic
+								<div  class="content1">Electronic
 									<p>Document</p>
 								</div>
 							</div>

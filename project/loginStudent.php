@@ -12,7 +12,7 @@
 	<!--boostrap 4-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!--css-->
-	<link rel="stylesheet" media="screen" type="text/css" href="css/loginStudent.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/edit.css">
 	<!--javascript-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript">
@@ -35,9 +35,36 @@
 				<input type="password" name="" placeholder="Nhập mật khẩu">
 			</li>
 			<li><p>Mã xác thực</p></li>
+			<button type="button">Đăng nhập</button>
 		</ul>
 	</div>
-		
-	</main>
+	<div class="footer">
+		<div class="footer1">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-10">
+						<h6>TRƯỜNG ĐẠI HỌC NGUYỄN TẤT THÀNH</h6>
+						<p><b>Địa chỉ:</b> 300A Nguyễn Tất Thành, Phường 13, Quận 4, Tp.HCM <br>
+						<b>Điện thoại(Tổng đài):</b> 1900 2039 Fax:(028) 3940.4759 <br>
+						<b>Số nội bộ:</b> Phòng Công tác SV: 324, 325|Phòng Quản Lý Đào Tạo: 342, 344 <br>
+						<b>Email:</b> <a href="">tuvan-hotroSV@ntt.edu.vn| phongdaotao@ntt.edu.vn</a></p>
+					</div>
+					<div class="col-md-2 thongketruycap">
+						<p>
+							Thống kê truy cập <br>
+							Lượt truy cập: <br>
+							Đang online:
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer2">
+			<p>Bản quyền 2018-Trường Đại Học Nguyễn Tất Thành</p>
+		</div>
+		<div class="footer3">
+			© 2019 ASCVN.All right reserved.
+		</div>
+	</div>
 </body>
 </html>

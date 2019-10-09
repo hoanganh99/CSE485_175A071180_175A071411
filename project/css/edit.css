@@ -1,0 +1,105 @@
+.header img
+{
+	width: 80%;
+	margin-left: 10%;
+}
+
+
+.main
+{
+	margin-top: 2%;
+	border-radius: 5px;
+	width: 410px;
+	height: 350px;
+	border: 1px solid #cccccc;
+	margin-left: 32%;
+}
+.main li
+{
+	margin-top: 5%;
+	list-style: none;
+	display: flex;
+	margin-left: -5%;
+}
+.main li p
+{
+	font-size: 15px;
+	border: 1px solid #cccccc;
+	width: 120px;
+	height: 30px;
+	background-color: #e5e5e5;
+}
+.main li input
+{
+	height: 30px;
+}
+.main button
+{
+	width: 365px;
+	margin-left: -5%;
+	height: 50px;
+	background-color: #007fff;
+	border: none;
+	box-shadow: 1px 2px 5px #024282;
+}
+
+
+.footer
+{
+	margin-left: 7%;
+	margin-right: 7%;
+	color: white;
+	font-size: 13px;
+}
+.footer1
+{
+	background-color: #005fbf;
+	height: 150px;
+}
+.footer1 h6
+{
+	margin-top: 2%;
+}
+.footer1 .thongketruycap
+{
+	margin-top: 1%;
+}
+.footer2
+{
+	background-color: #007fff;
+	height: 50px;
+	text-align: center;
+	padding-top: 1%;
+}
+.footer a
+{
+	color: white;
+}
+.footer3
+{
+	color: black;
+}
+
+/* phần responside */
+@media only screen and (max-width: 1050px) 
+{
+	.main
+	{
+		margin-top: 2%;
+		border-radius: 5px;
+		width: 410px;
+		height: 350px;
+		border: 1px solid #cccccc;
+		margin-left: 17%;
+	}
+
+	.footer
+	{
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	.footer2
+	{
+		padding-top: 3%;
+	}
+}

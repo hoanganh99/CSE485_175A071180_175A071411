@@ -84,34 +84,32 @@ body
 	/* tạo đổ bóng cho chữ */
 	text-shadow: 4px 4px #b2b2b2;
 }
-.body .content .form
+.body .content form
 {
 	border-radius: 10px;
 	border:  1px solid #024282;
 	height: 130px;
 	width: 270px;
-}
-.body .content  li
-{
 	list-style: none;
 	font-size: 12px;
 	font-weight: bolder;
 	color: #024282;
-	margin-left: -20px;
-	margin-top: 15px;
+	padding-left: 10px;
 }
-.body .content li input
+.body .content input
 {
+	margin-left: 10px;
+	margin-top: 15px;
 	border-radius: 10px;
 	border: 1px solid #56aaff;
 }
-.body .content li button
+.body .content .login2
 {
 	background-color: #7070c1;
 	border-radius: 10px;
 	border: 1px solid #56aaff;
 	margin-left: 140px;
-	margin-top: -20px;
+	margin-top: 12px;
 	height: 24px;
 }
 

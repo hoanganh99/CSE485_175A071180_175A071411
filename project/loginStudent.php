@@ -6,13 +6,13 @@
     <meta name="keywords" content="NTTU, Đại học Nguyễn Tất Thành">
     <meta name="author" content="Hoàng Ánh, Huyền Trang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Đăng nhập hệ thống Egov Copyright © 2012 TRƯỜNG ĐẠI HỌC NGUYỄN TẤT THÀNH1</title>
+    <title>dkhp.ntt.edu.vn/Account/Login</title>
     <!-- khi mở tap ra có ở phần tiêu đề -->
     <link rel="shortcut icon" href="images/icon.jpg">
 	<!--boostrap 4-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!--css-->
-	<link rel="stylesheet" media="screen" type="text/css" href="css/edit.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/loginStudent.css">
 	<!--javascript-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript">
@@ -25,18 +25,20 @@
 		<img src="images/loginStudent.jpg" alt="" >
 	</div>
 	<div class="main">
-		<ul>
-			<li>
-				<p>Mã sinh viên</p>
-				<input type="text" placeholder="Nhập mã sinh viên">
-			</li>
-			<li>
-				<p>Mật khẩu</p>
-				<input type="password" name="" placeholder="Nhập mật khẩu">
-			</li>
-			<li><p>Mã xác thực</p></li>
-			<button type="button">Đăng nhập</button>
-		</ul>
+		<form action="" method="get" accept-charset="utf-8">
+			<ul>
+				<li>
+					<p>Mã sinh viên</p>
+					<input type="text" placeholder="Nhập mã sinh viên">
+				</li>
+				<li>
+					<p>Mật khẩu</p>
+					<input type="password" name="" placeholder="Nhập mật khẩu">
+				</li>
+				<li><p>Mã xác thực</p></li>
+				<input class="loginStudent1" type="submit" name="loginStudent" value="Đăng nhập">
+			</ul>
+		</form>
 	</div>
 	<div class="footer">
 		<div class="footer1">

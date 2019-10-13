@@ -54,12 +54,21 @@
 									Tên người dùng: <input type="text" name="user"> <br>
 									Mật khẩu      : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<input type="password" name="pass"> <br>
+									<input class="registration" type="submit" name="registration" value="Đăng ký">
 									<input class="login2" type="submit" name="login" value="Đăng nhập">
 								</form>
+								<?php  
+									if (isset($_POST['registration'])) 
+									{
+										header("location: registration.php");
+									}
+								?>
 
 								<?php 
-									if(isset($_POST['login'])){
-										if(!empty($_POST['user']) && !empty($_POST['pass'])){
+									if(isset($_POST['login']))
+									{
+										if(!empty($_POST['user']) && !empty($_POST['pass']))
+										{
 											$user = $_POST['user'];
 											$pass = $_POST['pass'];
 
@@ -70,15 +79,28 @@
 											{
 												if($row['level']==1)
 												{
+													header("location: admin.php");
+												}
+												else if($row['level']==0)
+												{
 													header("location: index.php");
 												}
-												else if($row['level']==0){
-													header("location: top.php");
-												}
 											}
-											else echo'sai mật khẩu';
+											else
+											{
+												echo 
+												"<div style='color: red; font-weight: bolder;'>
+													Sai mật khẩu !!!
+												</div>";
+											} 
 										}
-										else echo "Vui lòng nhập đủ thông tin!!!";
+										else 
+										{
+											echo
+											"<div style='color: red; font-weight: bolder; margin-left: -15%;'>
+												Vui lòng nhập đủ thông tin !!!
+											</div>"; "";
+										}
 									}
 								 ?>
 							</div>

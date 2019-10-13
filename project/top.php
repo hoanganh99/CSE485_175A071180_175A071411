@@ -34,7 +34,7 @@
 					HOTLINE: <span id="hotline-1">0902.298.300 - 0906.298.300</span>
 				</div>
 				<div class="col-md-5 ">
-					<a class="col" href="index1.php">SINH VIÊN</a>
+					<a class="col" href="">SINH VIÊN</a>
 					<a class="col" href="">GIẢNG VIÊN</a>
 					<a class="col" href="">ĐÀO TẠO QUỐC TẾ</a>
 				</div>

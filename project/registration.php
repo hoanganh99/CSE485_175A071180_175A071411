@@ -16,7 +16,7 @@
 	<!--boostrap 4-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!--css-->
-	<link rel="stylesheet" media="screen" type="text/css" href="css/login.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/registration.css">
 	<!--javascript-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript">
@@ -51,36 +51,79 @@
 							<div class="col-md-8 content">
 								<h4>ĐĂNG KÝ</h4>
 								<form action="" method="post">
-									Tên người dùng: <input type="text" name="user"> <br>
-									Mật khẩu      : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									Tên người dùng: 
+									<input type="text" name="user"> <br>
+									Mật khẩu:  &emsp;&emsp;&nbsp;&nbsp;&nbsp;
 									<input type="password" name="pass"> <br>
+									Giới tính: &emsp;&emsp;&emsp;&nbsp;
+									<input type="text" name="sex"> <br>
+									Ngày sinh: &emsp;&emsp;&nbsp;&nbsp;
+									<input type="date" name="birthday" style="width: 49%;"> <br>
+									Địa chỉ:   &emsp;&emsp;&emsp;&emsp;
+									<input type="text" name="address"> <br>
+									Email:     &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+									<input type="text" name="email"> <br>
+									SĐT:       &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+									<input type="" name="phonenumber"> <br>
+									<input class="login3" type="submit" name="login3" value="Đăng nhập">
 									<input class="login2" type="submit" name="register" value="Đăng ký"> 
 								</form>
-
+								
+								<!-- Ấn vào nút đăng nhập ở trang đăng ký -->
+								<?php  
+									if (isset($_POST['login3']))
+									{
+										header("location: login.php");
+									}
+								?>
 								<?php 
-									if(isset($_POST['register'])){
-										if(!empty($_POST['user']) && !empty($_POST['pass']))
+									if(isset($_POST['register']))
+									{
+										if(!empty($_POST['user']) && !empty($_POST['pass'])&& 
+											!empty($_POST['sex'])&& !empty($_POST['birthday'])&& 
+											!empty($_POST['address'])&& !empty($_POST['email'])&& 
+											!empty($_POST['phonenumber']) 
+											)
 										{
-											$user = $_POST['user'];
-											$pass = $_POST['pass'];
+											$user         = $_POST['user'];
+											$pass         = $_POST['pass'];
+											$sex          = $_POST['sex'];
+											$birthday     = $_POST['birthday'];
+											$address      = $_POST['address'];
+											$email        = $_POST['email'];
+											$phonenumber  = $_POST['phonenumber'];
 
+											// băm mật khẩu
 											$pw=password_hash($pass, PASSWORD_DEFAULT);
 
+											// kết nối với database
 											$sql= mysqli_query($conn,"SELECT * from taikhoan where user = '$user'");
 											$count = mysqli_num_rows($sql);
 
 											if($count==1)
 											{
-												echo("Tài khoản đã tồn tại, vui lòng đăng nhập");
+												echo
+												"<div style='color: red; font-weight: bolder; margin-left: -20%;'>
+													Tài khoản đã tồn tại, vui lòng đăng nhập !!!
+												</div>";
 											}
 											else if($count==0)
 											{
-												mysqli_query($conn,"INSERT into taikhoan(user, password) values('$user','$pw')") or die(mysqli_error($conn));
-												echo("đăng ký thành công, vui lòng quay lại trang chủ để đăng nhập!!!");
-												echo("<a href='loginAdmin.php'>Đăng nhập</a>"); 
+												// đẩy dl lên db
+												mysqli_query($conn,"INSERT into taikhoan(user, password,sex, birthday, address,email,phonenumber) values('$user','$pw','$sex', '$birthday', '$address', '$email', '$phonenumber')") or die(mysqli_error($conn));
+												echo
+												"<div style='color: red; font-weight: bolder; margin-left: 1%;'> 
+													Đăng ký thành công, mời đăng nhập :))
+												</div>";
 											}
 										}
-										else echo "Vui lòng nhập đủ thông tin!!!";
+										else 
+										{
+											echo
+											"<div style='color: red; font-weight: bolder; margin-left: -15%;'>
+												Vui lòng nhập đủ thông tin !!!
+											</div>"; 
+										}
 									}
 								?>
 

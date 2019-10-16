@@ -809,9 +809,3 @@
     width: 100%;
   }
 }
-/* chiều rộng màn hình */
-@media only screen and (max-width: 750px) {
-  .home .slide .carousel-control-next,.home .slide .carousel-control-prev
-  {
-  }
-}

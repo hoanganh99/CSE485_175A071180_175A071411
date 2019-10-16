@@ -1,105 +1,134 @@
-.header img
+/* phần đầu */
+#page-top
 {
-	width: 80%;
-	margin-left: 10%;
+	width: 100%;
+	display: flex;
 }
-
-
-.main
+.manages
 {
-	margin-top: 2%;
-	border-radius: 5px;
-	width: 410px;
-	height: 350px;
-	border: 1px solid #cccccc;
-	margin-left: 32%;
-}
-.main li
-{
-	margin-top: 5%;
 	list-style: none;
 	display: flex;
-	margin-left: -5%;
+	background-color: #343a40;
+	margin-right: 10%;
+	margin-top: 3%;
 }
-.main li p
+.manages li
 {
-	font-size: 15px;
-	border: 1px solid #cccccc;
-	width: 120px;
-	height: 30px;
-	background-color: #e5e5e5;
-}
-.main li input
-{
-	height: 30px;
-}
-.main .loginStudent1
-{
-	width: 365px;
-	margin-left: -5%;
-	height: 50px;
-	background-color: #007fff;
-	border: none;
-	box-shadow: 1px 2px 5px #024282;
+	margin-right: 55%;
 }
 
 
-.footer
+/* phần quản lý */
+/* phần thông báo */
+.manage
 {
-	margin-left: 7%;
-	margin-right: 7%;
-	color: white;
-	font-size: 13px;
+  position: fixed;
 }
-.footer1
+/* màu chữ của thông báo */
+.manage .bell
 {
-	background-color: #005fbf;
-	height: 150px;
+  color: #A4A4A4;
 }
-.footer1 h6
+.manage .bell1
 {
-	margin-top: 2%;
+  color: #A4A4A4;
 }
-.footer1 .thongketruycap
+/* phần bên trong sau khi ấn */
+.manage .action
 {
-	margin-top: 1%;
+  width: 200px;
+  margin-top: 10%;
+  margin-right: 105%;
+  border: 0.5px solid #f1efef;
+  background-color: white;
+  border-radius: 5px;
 }
-.footer2
+.manage .action .main 
 {
-	background-color: #007fff;
-	height: 50px;
-	text-align: center;
-	padding-top: 1%;
+  margin: 15px;
 }
-.footer a
+.manage .action .main a
 {
-	color: white;
+  width: 100%;
+  height: 40px;
 }
-.footer3
+
+/* phần email */
+.manage1
 {
-	color: black;
+  position: fixed;
+}
+/* màu chữ của thông báo */
+.manage1 .envelope
+{
+  color: #A4A4A4;
+}
+.manage1 .envelope1
+{
+  color: #A4A4A4;
+}
+/* phần bên trong sau khi ấn */
+.manage1 .action1
+{
+  width: 200px;
+  margin-top: 10%;
+  margin-right: 105%;
+  border: 0.5px solid #f1efef;
+  background-color: white;
+  border-radius: 5px;
+}
+.manage1 .action1 .main1 
+{
+  margin: 15px;
+}
+.manage1 .action1 .main1 a
+{
+  width: 100%;
+  height: 40px;
+}
+
+
+/* phần của người sử dụng */
+.manage2
+{
+  position: fixed;
+}
+/* màu chữ của thông báo */
+.manage2 .user-circle
+{
+  color: #A4A4A4;
+}
+.manage2 .user-circle1
+{
+  color: #A4A4A4;
+}
+/* phần bên trong sau khi ấn */
+.manage2 .action2
+{
+  width: 200px;
+  margin-top: 10%;
+  margin-right: 105%;
+  border: 0.5px solid #f1efef;
+  background-color: white;
+  border-radius: 5px;
+}
+.manage2 .action2 .main2 
+{
+  margin: 15px;
+}
+.manage2 .action2 .main2 a
+{
+  width: 100%;
+  height: 40px;
 }
 
 /* phần responside */
 @media only screen and (max-width: 1050px) 
 {
-	.main
+	.manages 
 	{
-		margin-top: 2%;
-		border-radius: 5px;
-		width: 410px;
-		height: 350px;
-		border: 1px solid #cccccc;
-		margin-left: 17%;
-	}
-
-	.footer
-	{
-		margin-left: 3%;
-		margin-right: 3%;
-	}
-	.footer2
-	{
-		padding-top: 3%;
+		width: 20%;
+		margin-left: 80%;
+		margin-top: -6%;
 	}
 }

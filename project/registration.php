@@ -56,7 +56,8 @@
 									Mật khẩu:  &emsp;&emsp;&nbsp;&nbsp;&nbsp;
 									<input type="password" name="pass"> <br>
 									Giới tính: &emsp;&emsp;&emsp;&nbsp;
-									<input type="text" name="sex"> <br>
+									<input type="radio" name="sex" value="Nữ"> Nữ
+									<input type="radio" name="sex" value="Nam"> Nam <br>
 									Ngày sinh: &emsp;&emsp;&nbsp;&nbsp;
 									<input type="date" name="birthday" style="width: 49%;"> <br>
 									Địa chỉ:   &emsp;&emsp;&emsp;&emsp;

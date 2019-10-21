@@ -7,20 +7,22 @@
     <meta name="author" content="Hoàng Ánh, Huyền Trang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Phòng Công tác Sinh viên – NTTU</title>
+    <!-- icon-->
+    <link rel="shortcut icon" href="images/icon.jpg">
     <script src="http://ctsv.ntt.edu.vn/wp-includes/js/wp-emoji-release.min.js?ver=711f8189532095f86199a351ece68686" type="text/javascript"></script>
 	
-<link rel="stylesheet" id="A5-framework-css" href="http://ctsv.ntt.edu.vn/a5-framework-frontend.css?ver=1.0%20beta%2020160127%20FCW" type="text/css" media="all">
-<link rel="stylesheet" id="contact-form-7-css" href="http://ctsv.ntt.edu.vn/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.2" type="text/css" media="all">
-<link rel="stylesheet" id="rs-settings-css" href="http://ctsv.ntt.edu.vn/wp-content/plugins/revslider/rs-plugin/css/settings.css?rev=4.1.4&amp;ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
-<link rel="stylesheet" id="rs-captions-css" href="http://ctsv.ntt.edu.vn/wp-content/plugins/revslider/rs-plugin/css/dynamic-captions.css?rev=4.1.4&amp;ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
-<link rel="stylesheet" id="rs-plugin-static-css" href="http://ctsv.ntt.edu.vn/wp-content/plugins/revslider/rs-plugin/css/static-captions.css?rev=4.1.4&amp;ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
-<link rel="stylesheet" id="open-san-font-css" href="http://ctsv.ntt.edu.vn/wp-content/themes/severus/css/OpenSans.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
-<link rel="stylesheet" id="severus-style-css" href="http://ctsv.ntt.edu.vn/wp-content/themes/severus/css/style.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
-<link rel="stylesheet" id="bootstrap-css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
-<link rel="stylesheet" id="severus-extra-style-css" href="http://ctsv.ntt.edu.vn/wp-content/themes/severus/css/severus.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
-<link rel="stylesheet" id="severus-extra-mobile-style-css" href="http://ctsv.ntt.edu.vn/wp-content/themes/severus/css/severus-mobile.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
-<link rel="stylesheet" id="font-awesome-css" href="http://ctsv.ntt.edu.vn/wp-content/themes/severus/css/font-awesome.min.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
-<link rel="stylesheet" id="tablepress-default-css" href="http://ctsv.ntt.edu.vn/wp-content/plugins/tablepress/css/default.min.css?ver=1.7" type="text/css" media="all">
+	<link rel="stylesheet" id="A5-framework-css" href="http://ctsv.ntt.edu.vn/a5-framework-frontend.css?ver=1.0%20beta%2020160127%20FCW" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="http://ctsv.ntt.edu.vn/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.2" type="text/css" media="all">
+	<link rel="stylesheet" id="rs-settings-css" href="http://ctsv.ntt.edu.vn/wp-content/plugins/revslider/rs-plugin/css/settings.css?rev=4.1.4&amp;ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
+	<link rel="stylesheet" id="rs-captions-css" href="http://ctsv.ntt.edu.vn/wp-content/plugins/revslider/rs-plugin/css/dynamic-captions.css?rev=4.1.4&amp;ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
+	<link rel="stylesheet" id="rs-plugin-static-css" href="http://ctsv.ntt.edu.vn/wp-content/plugins/revslider/rs-plugin/css/static-captions.css?rev=4.1.4&amp;ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
+	<link rel="stylesheet" id="open-san-font-css" href="http://ctsv.ntt.edu.vn/wp-content/themes/severus/css/OpenSans.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
+	<link rel="stylesheet" id="severus-style-css" href="http://ctsv.ntt.edu.vn/wp-content/themes/severus/css/style.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
+	<link rel="stylesheet" id="bootstrap-css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
+	<link rel="stylesheet" id="severus-extra-style-css" href="http://ctsv.ntt.edu.vn/wp-content/themes/severus/css/severus.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
+	<link rel="stylesheet" id="severus-extra-mobile-style-css" href="http://ctsv.ntt.edu.vn/wp-content/themes/severus/css/severus-mobile.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="http://ctsv.ntt.edu.vn/wp-content/themes/severus/css/font-awesome.min.css?ver=711f8189532095f86199a351ece68686" type="text/css" media="all">
+	<link rel="stylesheet" id="tablepress-default-css" href="http://ctsv.ntt.edu.vn/wp-content/plugins/tablepress/css/default.min.css?ver=1.7" type="text/css" media="all">
 
 
 <style type="text/css">

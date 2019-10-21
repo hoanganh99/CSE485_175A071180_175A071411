@@ -106,7 +106,7 @@ body
 /* nut đăng ký ở trang đăng nhập */
 .body .content .registration
 {
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 12px;
 	height: 24px;
 }
@@ -117,7 +117,7 @@ body
 	background-color: #7070c1;
 	border-radius: 10px;
 	border: 1px solid #56aaff;
-	margin-left: 60px;
+	margin-left: 10px;
 	margin-top: 12px;
 	height: 24px;
 }

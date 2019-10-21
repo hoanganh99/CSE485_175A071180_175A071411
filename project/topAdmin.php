@@ -8,24 +8,36 @@
       <meta name="author" content="">
       <title>Admin</title>
       <!-- icon-->
-      <!-- khi mở tap ra có ở phần tiêu đề -->
       <link rel="shortcut icon" href="images/icon.jpg">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
       <!--boostrap 4-->
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <!-- css-->
-      <link href="css/admin.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <!--css-->
+      <link rel="stylesheet" media="screen" type="text/css" href="css/admin.css">
+      <!--icon-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <!--phần tại sao chọn NTTU-->
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+      <!--javascript-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+      </script>
       <!--jquery-->
-	  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
    </head>
    <body>
    	<!-- phần đầu -->
    	<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 		<div class="container-fluid">
 			<div class="row" id="page-top">
-				<div class="col-md-7">
+				<div class="col-md-8">
 			        <a class="navbar-brand mr-1" href="admin.php">Xin Chào Admin</a>
+			        <!-- trước khi click -->
 			        <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+			         	<i class="fas fa-bars"></i>
+			        </button>
+			        <!-- sau khi click -->
+			        <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle1" href="#">
 			         	<i class="fas fa-bars"></i>
 			        </button>
 			    </div>	
@@ -41,43 +53,9 @@
 			            </div>
 			        </form>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-1">
 					<!-- phần quản lý -->
-		         	<ul class="manages">
-		         		<!-- phần thông báo -->
-		         		<li>
-		         			<div class="manage">
-								<div class="bell" >
-									<i class="fas fa-bell fa-fw"></i>
-								</div>
-								<div class="bell1" >
-									<i class="fas fa-bell fa-fw"></i>
-									<div class="action">
-										<div class="main">
-											<a href="">Hoạt động</a> <br>
-											<a href="">Hoạt động khác</a> 
-										</div>
-									</div>
-								</div>
-							</div>
-		         		</li>
-		         		<!-- phần email -->
-		         		<li style="margin-right: 55%;">
-		         			<div class="manage1">
-								<div class="envelope" >
-									<i class="fas fa-envelope"></i>
-								</div>
-								<div class="envelope1">
-									<i class="fas fa-envelope"></i>
-									<div class="action1">
-										<div class="main1">
-											<a href="">Hoạt động</a> <br>
-											<a href="">Hoạt động khác</a> 
-										</div>
-									</div>
-								</div>
-							</div>
-		         		</li>
+		         	<ul class="manage">
 		         		<!-- phần người dùng -->
 		         		<li>
 		         			<div class="manage2">
@@ -87,9 +65,9 @@
 								<div class="user-circle1">
 									<i class="fas fa-user-circle"></i>
 									<div class="action2">
-										<div class="main2">
-											<a href="">Hoạt động</a> <br>
-											<a href="">Hoạt động khác</a> 
+										<div class="menu2">
+											<a href="">Cài đặt</a> <br>
+											<a href="login.php">Đăng xuất</a> 
 										</div>
 									</div>
 								</div>

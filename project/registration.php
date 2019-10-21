@@ -1,6 +1,7 @@
 <?php  
 	include'connect.php';
-	//session_start(); 
+	session_start(); 
+	ob_start();
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -67,6 +68,7 @@
 									SĐT:       &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
 									<input type="" name="phonenumber"> <br>
 									<input class="login3" type="submit" name="login3" value="Đăng nhập">
+									<input class="index" type="submit" name="index" value="Trang chủ">
 									<input class="login2" type="submit" name="register" value="Đăng ký"> 
 								</form>
 								
@@ -75,8 +77,18 @@
 									if (isset($_POST['login3']))
 									{
 										header("location: login.php");
+										ob_enf_fluck();
 									}
 								?>
+
+								<?php  
+									if (isset($_POST['index']))
+									{
+										header("location: index.php");
+										ob_enf_fluck();
+									}
+								?>
+
 								<?php 
 									if(isset($_POST['register']))
 									{

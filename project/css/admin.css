@@ -4,96 +4,20 @@
 	width: 100%;
 	display: flex;
 }
-.manages
+.manage
 {
 	list-style: none;
 	display: flex;
 	background-color: #343a40;
-	margin-right: 10%;
-	margin-top: 3%;
+	margin-top: 5%;
 }
-.manages li
-{
-	margin-right: 55%;
-}
-
-
 /* phần quản lý */
-/* phần thông báo */
-.manage
-{
-  position: fixed;
-}
-/* màu chữ của thông báo */
-.manage .bell
-{
-  color: #A4A4A4;
-}
-.manage .bell1
-{
-  color: #A4A4A4;
-}
-/* phần bên trong sau khi ấn */
-.manage .action
-{
-  width: 200px;
-  margin-top: 10%;
-  margin-right: 105%;
-  border: 0.5px solid #f1efef;
-  background-color: white;
-  border-radius: 5px;
-}
-.manage .action .main 
-{
-  margin: 15px;
-}
-.manage .action .main a
-{
-  width: 100%;
-  height: 40px;
-}
-
-/* phần email */
-.manage1
-{
-  position: fixed;
-}
-/* màu chữ của thông báo */
-.manage1 .envelope
-{
-  color: #A4A4A4;
-}
-.manage1 .envelope1
-{
-  color: #A4A4A4;
-}
-/* phần bên trong sau khi ấn */
-.manage1 .action1
-{
-  width: 200px;
-  margin-top: 10%;
-  margin-right: 105%;
-  border: 0.5px solid #f1efef;
-  background-color: white;
-  border-radius: 5px;
-}
-.manage1 .action1 .main1 
-{
-  margin: 15px;
-}
-.manage1 .action1 .main1 a
-{
-  width: 100%;
-  height: 40px;
-}
-
-
 /* phần của người sử dụng */
 .manage2
 {
-  position: fixed;
+	z-index: 9 !important;
+  	position: fixed;
 }
-/* màu chữ của thông báo */
 .manage2 .user-circle
 {
   color: #A4A4A4;
@@ -105,30 +29,89 @@
 /* phần bên trong sau khi ấn */
 .manage2 .action2
 {
-  width: 200px;
-  margin-top: 10%;
-  margin-right: 105%;
-  border: 0.5px solid #f1efef;
+  width: 300px;
+  margin-top: 7%;
+  border: 0.5px solid ;
   background-color: white;
   border-radius: 5px;
+  padding-right: 70%;
+  font-size: 13px;
+  font-weight: bolder;
 }
-.manage2 .action2 .main2 
+.manage2 .action2 .menu2 
 {
-  margin: 15px;
+  margin: 10px;
+
 }
-.manage2 .action2 .main2 a
+.manage2 .action2 .menu2 a
 {
-  width: 100%;
-  height: 40px;
+	text-decoration: none;
+  	width: 100%;
+  	height: 40px;
+  	color: black;
 }
 
+
+
+
+/* phần main */
+.main ul
+{
+	display: flex;
+	border: 1px solid #012b64;
+	background-color: #012b64;
+	height: 30px;
+}
+.main li
+{
+	list-style: none;
+	margin-right: 4%;
+}
+.main a
+{
+	text-decoration: none;
+	color: #D8D8D8;
+}
+.main li:hover
+{
+	background-color: #819FF7;
+}
+
+
+
+
+/* phần menu main */
+.melu ul
+{
+	display: flex;
+}
+.melu li
+{
+	list-style: none;
+}
+
+
+#bd1
+{
+	display: none;
+}
 /* phần responside */
 @media only screen and (max-width: 1050px) 
 {
+	/* topAdmin */
 	.manages 
 	{
 		width: 20%;
 		margin-left: 80%;
 		margin-top: -6%;
+	}
+	/* main */
+	#bd1
+	{
+		display: none;
+	}
+	#bd
+	{
+		display: block;
 	}
 }

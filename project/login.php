@@ -1,6 +1,10 @@
-<?php  
+<?php
+	ob_start();
+	session_start();
 	include'connect.php';
-	session_start(); 
+	if(isset($_SESSION['name'])){
+		header('location:admin.php');
+	}
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -55,12 +59,23 @@
 									Mật khẩu      : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<input type="password" name="pass"> <br>
 									<input class="registration" type="submit" name="registration" value="Đăng ký">
+									<input class="index" type="submit" name="index" value="Trang chủ">
 									<input class="login2" type="submit" name="login" value="Đăng nhập">
+									
 								</form>
+								<?php  
+									if (isset($_POST['index'])) 
+									{
+										header("location: index.php");
+										ob_enf_fluck();
+									}
+								?>
+
 								<?php  
 									if (isset($_POST['registration'])) 
 									{
 										header("location: registration.php");
+										ob_enf_fluck();
 									}
 								?>
 
@@ -79,11 +94,15 @@
 											{
 												if($row['level']==1)
 												{
+													$_SESSION['name'] = $user;
 													header("location: admin.php");
+													ob_enf_fluck();
 												}
 												else if($row['level']==0)
 												{
+													$_SESSION['name'] = $user;
 													header("location: index.php");
+													ob_enf_fluck();
 												}
 											}
 											else

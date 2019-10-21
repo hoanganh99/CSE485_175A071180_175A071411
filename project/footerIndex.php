@@ -1,3 +1,7 @@
+<?php  
+	include'connect.php';
+	//session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -7,7 +11,7 @@
     <meta name="author" content="Hoàng Ánh, Huyền Trang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trường Đại Học Nguyễn Tất Thành</title>
-    <!-- khi mở tap ra có ở phần tiêu đề -->
+	<!-- khi mở tap ra có ở phần tiêu đề -->
     <link rel="shortcut icon" href="images/icon.jpg">
 	<!--boostrap 4-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -113,21 +117,90 @@
 						<div class="top1">Bạn vui lòng điền vào biểu mẫu dưới đây và chúng tôi sẽ liên hệ lại với bạn ngay khi có thể.</div>
 					</div>
 					<!-- phần nội dung chính của để lại liên hệ -->
-					<div class="main">
-						<input type="text" placeholder="*Tên" name="">
-						<input type="text" placeholder="*E-mail" name="">
-						<input type="text" placeholder="Điện thoại" name="">
-						<input type="text" placeholder="Ngày sinh" name="">
+					<form action="" method="post" class="main">
+						<input type="text" placeholder="*Tên" name="name">
+						<input type="text" placeholder="*E-mail" name="email">
+						<input type="text" placeholder="Điện thoại" name="phone">
+						<input type="date" placeholder="Ngày sinh" name="birthday">
 						<!-- nhập băn bản qua nhiều hàng -->
-						<textarea placeholder="*lời nhắn"></textarea>
-						<input type="submit" value="Hoàn tất" name="">
+						<textarea placeholder="*lời nhắn" name="messages"></textarea>
+						<input class="" type="submit" name="finish" value="Hoàn thành"> 
+
 						<!-- phần chữ nhỏ ở bên dưới -->
 						<div class="tiny">
 							We're <img src="https://cdn.jsdelivr.net/emojione/assets/png/26a1.png?v=2.2.7">  by tawk.to
 						</div>
-					</div>
+					</form>
+
+						<?php 
+							if(isset($_POST['finish']))
+							{
+								if(!empty($_POST['name']) && !empty($_POST['email'])&& 
+								   !empty($_POST['phone'])&& !empty($_POST['birthday'])&&
+								   !empty($_POST['messages'])
+									)
+								{
+									$name        = $_POST['name'];
+									$email       = $_POST['email'];
+									$phone       = $_POST['phone'];
+									$birthday    = $_POST['birthday'];
+									$messages    = $_POST['messages'];
+
+											
+									// kết nối với database
+									$sql= mysqli_query($conn,"SELECT * from thongtin where name = '$name'");
+									$count = mysqli_num_rows($sql);
+
+									if($count==1)
+									{
+										echo
+										"<div style='color: red; font-weight: bolder; margin-left: 5%;'> 
+											Tài khoản đã tồn tại, mời nhập lại !!! 
+										</div>";
+									}
+									else if($count==0)
+									{
+										// đẩy dl lên db
+										mysqli_query($conn,"INSERT into thongtin(name, email, phone, birthday, messages) values('$name','$email','$phone', '$birthday', '$messages')") or die(mysqli_error($conn));
+										echo
+										"<div style='color: red; font-weight: bolder; margin-left: 15%;'> 
+											Cảm ơn bạn đã tin tưởng :))
+										</div>";
+									}
+								}
+								else 
+								{
+									echo
+									"<div style='color: red; font-weight: bolder; margin-left: 10%;'>
+										Vui lòng nhập đủ thông tin !!!
+									</div>"; 
+								}
+							}
+						?>
+
 				</div>
 			</div>
 		</div>
 </body>
+		<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script type="text/javascript">
+			// jquery
+		    // phần cuối - phần để lại lời nhắn
+			$( document ).ready(function() 
+			{
+		    	 $('.content_chatbox').hide();
+		    	 $('.chatbox').click(function()
+		    	 {
+		    	 	$('.content_chatbox').show();
+		    	 	$(this).hide();
+		    	 });
+		    	 $('#close').click(function()
+		    	 {
+		    	 	$('.content_chatbox').hide();
+		    	 	$('.chatbox').show();
+		    	 });
+		    });
+</script>
 </html>

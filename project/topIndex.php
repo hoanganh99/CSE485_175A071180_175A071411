@@ -33,18 +33,20 @@
 				<div class="col-md-3 hotline">
 					HOTLINE: <span id="hotline-1">0902.298.300 - 0906.298.300</span>
 				</div>
-				<div class="col-md-5 ">
+				<div class="col-md-4 " style="font-size: 12px;">
 					<a class="col" href="index1.php">SINH VIÊN</a>
 					<a class="col" href="">GIẢNG VIÊN</a>
 					<a class="col" href="">ĐÀO TẠO QUỐC TẾ</a>
 				</div>
 				<!-- Nút tìm kiếm -->
-				<div class="col-md-4 input d-flex justify-content-end">
+				<div class="col-md-5 input d-flex justify-content-end">
 					<form>
 						<input type="text" name="" placeholder="Tìm kiếm thông tin ">
 						<i class="fa fa-search" aria-hidden="true"></i>
-					</form>
-					<a href=""><img src="http://ntt.edu.vn/web/frontend/images/ico-flagen.jpg"></a>
+					</form> 
+					&nbsp;&nbsp;
+					<a href="login.php" style="color: #fdb913;">Đăng Nhập</a> &nbsp;&nbsp;
+					<a href="registration.php" style="color: #fdb913;">Đăng Ký</a>
 				</div>
 			</div>
 		</div>
@@ -54,7 +56,7 @@
 						<div class="col left">
 							<i style="color: white;" id="showMenuRes" class="fa fa-bars c-blue-a5"></i>
 						</div>
-						<div class="col-10 input">
+						<div class="col-7 input">
 							<form>
 								<input type="text" name="" placeholder="Tìm kiếm thông tin ">
 								<button>
@@ -63,7 +65,10 @@
 							</form>		
 						</div>
 						<div class="col right">
-							<a href=""><img src="http://ntt.edu.vn/web/frontend/images/ico-flagen.jpg"></a>
+							&nbsp;
+							<a href="login.php" style="color: #fdb913; font-size: 12px;">Đăng Nhập</a> 
+							&nbsp;&nbsp;
+							<a href="registration.php" style="color: #fdb913; font-size: 12px;">Đăng Ký</a>
 						</div>
 					</div>
 				</div>
@@ -310,4 +315,55 @@
 			</div>
 		</div>
 	</body>
+		<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script type="text/javascript">
+			// jquery
+			// menu3, có thể chạy chậm chậm ra
+			$( document ).ready(function() 
+			{
+		    	$('#showCollapse').click(function()
+		    	{
+		    		$(".collapse-handmade").slideToggle("slow");
+		    	});
+		    	$('#showCollapse2').click(function()
+		    	{
+		    		$(".collapse-handmade").slideToggle("slow");
+		    	});
+		    	 
+		    	// phần để lại lời nhắn
+		    	 $('.content_chatbox').hide();
+		    	 $('.chatbox').click(function()
+		    	 {
+		    	 	$('.content_chatbox').show();
+		    	 	$(this).hide();
+		    	 });
+		    	 $('#close').click(function()
+		    	 {
+		    	 	$('.content_chatbox').hide();
+		    	 	$('.chatbox').show();
+		    	 });
+
+		    	 // phần hotline
+		    	count = 0;
+		  		wordsArray = ["0902.298.300 - 0906.298.300","0912.298.300  - 0914.298.300"];
+		    	 setInterval(function () 
+		    	 {
+				    count++;
+				    $("#hotline-1").slideUp(600, function() 
+				    {
+				      $(this).text(wordsArray[count % wordsArray.length]).slideDown(200);
+				      console.log('wordsArray '+count % wordsArray.length+' count '+count+' length '+wordsArray.length);
+				    });
+				  }, 3000);
+
+		    	 // phần responsive, ảnh hưởng tới menu1
+		    	 	$('.content-responsive').hide();
+			    	$('#showMenuRes').click(function()
+			    	{
+			    		$('.content-responsive').slideToggle();
+		    		});	
+		    });
+</script>
 </html>

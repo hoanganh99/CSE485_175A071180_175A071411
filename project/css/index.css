@@ -8,7 +8,7 @@
 /* màu của menu1 */
 .home .head
 {
-  background-color: #024282;
+  background-color: #012b64;
 }
 /* màu của hotline */
 .home .head .hotline
@@ -24,7 +24,7 @@
 /* dòng menu1 đc căn giữa và dãn giữa các phần */
 .home .head .wrapper
 {
-    font-size: 13px;
+    font-size: 12px;
 }
 /* dòng hotline chạy trên 1 dòng */
 .home .head .wrapper div
@@ -403,7 +403,7 @@
 /* phần hình ảnh trong lý do chọn trường */
 .home .reason .wrapper-reason .content .item img
 {
-  height: 100px;
+  height:100px;
 }
 
 
@@ -506,7 +506,7 @@
 /* phần hình ảnh */
 .home .tuhaolathanhviencua .tuhao .actice img
 {
-  width: 40%;
+  width: 65%;
 }
 
 

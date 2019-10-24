@@ -31,7 +31,7 @@
       </script>
       <!--jquery-->
       <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-   </head>
+</head>
    <body>
      
       
@@ -49,38 +49,33 @@
             <div class="main">
                <ul style="background-color: rgb(43, 90, 132);">
                   <li class="trangchu">
-                     <a href="admin.php">
+                     <a href="indexAdmin.php">
                         <span>Quản lý khóa học</span>
                      </a>
                   </li>
                   <li class="active">
-                     <a href="#">
+                     <a href="top.php">
                         <span>Quản lý đăng ký</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#" >
+                     <a href="main.php" >
                         <span> Quản lý học viên</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#">
+                     <a href="footer.php">
                         <span>Quản lý thi</span>
                   </a>
                   </li> 
                   <li class="active">
-                     <a href="#" >
+                     <a href="registration.php" >
                         <span>Thống kê</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#">
+                     <a href="login.php">
                         <span>Hệ thống</span>
-                     </a>
-                  </li> 
-                  <li class="active">
-                     <a href="user.php">
-                        <span>Đăng bài viết</span>
                      </a>
                   </li> 
                   <li class="active">
@@ -133,50 +128,77 @@
                   </ul>
                </div>
                <div class="melu">
-                  <h3>Quản Lý Thông Tin Khóa Học</h3>
-                  <form method="get">
-                     <?php 
-                        $sql = mysqli_query($conn,"select * from thongtinkhoahoc");
-                           if (mysqli_num_rows($sql) > 0) {
-                              $i=0; 
-                     ?>
-                     <table class="list-course" bgcolor="#FFFFFF" border="1">
-                        <tr class="title">
-                           <td width="40">Sửa</td>
-                           <td width="40">Xóa</a></td>
-                           <td width="100">Mã khóa học</td>
-                           <td width="350">Tên khóa học</td>
-                           <td width="120">Ngày bắt đầu</td>
-                           <td width="120">Ngày kết thúc</td>
-                        </tr>
-                        <?php while($row=mysqli_fetch_assoc($sql)) {
-                              $i++; ?>
-                        <tr>
-                           <td><?php echo "<a href='suakhoahoc.php?idkhoahoc=".$row['idkhoahoc']."'>"; ?><i class="fa fa-edit"></i></a></td>
-                           <td><?php echo "<a href='admin.php?idkhoahoc=".$row['idkhoahoc']."'>"; ?><i class="fa fa-trash-alt"></i></a></td>
-                           <td><?php echo $row['idkhoahoc']; ?></td>
-                           <td class="content"><?php echo $row['tenkhoahoc']; ?></td>
-                           <td><?php echo $row['ngaybatdau']; ?></td>
-                           <td><?php echo $row['ngayketthuc']; ?></td>                                   
-                        </tr>
-                     <?php }} ?>
-                     </table>
-                  </form>
-                  <?php
-                     if (isset($_GET['idkhoahoc'])) {
-                        $idkhoahoc=$_GET['idkhoahoc'];
-                        $query="DELETE from thongtinkhoahoc where idkhoahoc = '$idkhoahoc'";
-                        mysqli_query($conn,$query) or die(mysqli_error($conn));
-                        header("location:admin.php");
-                     }
-                     
-                  ?>
-                  
+                  <h3>Quản Lý Thời Gian Biểu</h3>
+                  <div class="filter">          
+                     <div class="label">LỚP</div>
+                     <div class="value" style="padding-left: 2%;">
+                        <select >                          
+                           <option selected="selected">      E023       </option>
+                           <option >E023</option>
+                           <option >F43</option>
+                           <option >TOEFL132</option>
+                           <option >TINCB198</option>
+                           <option >PHOTOSHOP233</option>                           
+                        </select>
+                     </div>                                          
+                     <div class="search" style="padding-left: 5%;"><input type="button" value="Xem" name="search"></div>
+                  </div>
+                  <div class="list-course">
+                     <div class="task">
+                        <form id="form1" name="form1" method="post" action="">
+                           <table class="list-course" bgcolor="#FFFFFF" border="1">
+                                 <tr>
+                                   <td width="69">&nbsp;</td>
+                                   <td width="224" class="row-first">Thời gian bắt đầu </td>
+                                   <td width="266" class="row-first">Thời gian kết thúc </td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 2 </td>
+                                   <td>                           
+                                       <input type="text" name="textfield" value="18:00"  style="width: 150px; padding: 1%;" /> 
+                                   </td>
+                                   <td><input type="text" name="textfield2" value="20:00" style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 3 </td>
+                                   <td><input type="text" name="textfield3"  style="width: 150px; padding: 1%;" /></td>
+                                   <td><input type="text" name="textfield4"  style="width: 150px; padding: 1%;" /></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 4 </td>
+                                   <td><input type="text" name="textfield5" value="18:00"  style="width: 150px; padding: 1%;"/></td>
+                                   <td><input type="text" name="textfield6" value="20:00"  style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 5 </td>
+                                   <td><input type="text" name="textfield7"  style="width: 150px; padding: 1%;"/></td>
+                                   <td><input type="text" name="textfield8"  style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 6 </td>
+                                   <td><input type="text" name="textfield9" value="18:00" style="width: 150px; padding: 1%;"/></td>
+                                   <td><input type="text" name="textfield10"  value="20:00" style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 7 </td>
+                                   <td><input type="text" name="textfield11"  style="width: 150px; padding: 1%;"/></td>
+                                   <td><input type="text" name="textfield12"  style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Chủ nhật </td>
+                                   <td><input type="text" name="textfield13"  style="width: 150px; padding: 1%;"/></td>
+                                   <td><input type="text" name="textfield14"  style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                           </table>
+                           <br>
+                        </form>
+                     </div>
+                  </div>
                   <br>
-                  <div class="task">
-                     <form method="post">
-                        <a href="themkhoahoc.php"><input type="button" value="Thêm mới" name="Add"></a>
-                     </form>
+                  <div class="task" style="margin-top: -5%; margin-left: 6%;">
+                     <a href="themkhoahoc.html"><input type="button" value="Thêm mới" name="Thêm mới"></a>
+                     <input type="button" name="Xóa" value="Xóa">  
+                     <a href="suakhoahoc.html"><input type="button" name="Cập nhật" value="Cập nhật"></a>
                   </div>
                </div>
             </div>
@@ -236,7 +258,7 @@
             <div class="MENU">
                <div class="menu_main">
                   <h3>Main Menu</h3>
-                  <ul>
+                    <ul>
                      <li>
                         <a href="admin.php">
                            <span>Thông tin khóa học</span>
@@ -272,42 +294,77 @@
                            <span>Quản lý thời gian biểu</span>
                         </a>
                      </li>
-                  </ul>  
+                  </ul>
                </div>
                <div class="melu">
-                  <h3>Quản Lý Thông Tin Khóa Học</h3>
-                   <form method="post">
-                     <?php 
-                        $sql = mysqli_query($conn,"select * from thongtinkhoahoc");
-                           if (mysqli_num_rows($sql) > 0) {
-                              $i=0; 
-                     ?>
-                     <table class="list-course" bgcolor="#FFFFFF" border="1">
-                        <tr class="title">
-                           <td width="20"><input type="checkbox"></td>
-                           <td width="40">Sửa</td>
-                           <td width="40">Xóa</a></td>
-                           <td width="100">Mã khóa học</td>
-                           <td width="350">Tên khóa học</td>
-                           <td width="120">Ngày bắt đầu</td>
-                           <td width="120">Ngày kết thúc</td>
-                        </tr>
-                        <?php while($row=mysqli_fetch_assoc($sql)) {
-                              $i++; ?>
-                        <tr>
-                           <td><input type="checkbox"></td>
-                           <td><a href="suakhoahoc.php"><i class="fa fa-edit"></i></a></td>
-                           <td><a href="xoakhoahoc.php"><i class="fa fa-trash-alt"></i></a></td>
-                           <td><?php echo $row['idkhoahoc']; ?></td>
-                           <td class="content"><?php echo $row['tenkhoahoc']; ?></td>
-                           <td><?php echo $row['ngaybatdau']; ?></td>
-                           <td><?php echo $row['ngayketthuc']; ?></td>                                   
-                        </tr>
-                     <?php }} ?>
-                     </table>
-                  </form>
+                  <h3>Quản Lý Thời Gian Biểu</h3>
+                  <div class="filter">          
+                     <div class="label">LỚP</div>
+                     <div class="value" style="padding-left: 2%;">
+                        <select >                          
+                           <option selected="selected">      E023       </option>
+                           <option >E023</option>
+                           <option >F43</option>
+                           <option >TOEFL132</option>
+                           <option >TINCB198</option>
+                           <option >PHOTOSHOP233</option>                           
+                        </select>
+                     </div>                                          
+                     <div class="search" style="padding-left: 5%;"><input type="button" value="Xem" name="search"></div>
+                  </div>
+                  <div class="list-course">
+                     <div class="task">
+                        <form id="form1" name="form1" method="post" action="">
+                           <table class="list-course" bgcolor="#FFFFFF" border="1">
+                                 <tr>
+                                   <td width="69">&nbsp;</td>
+                                   <td width="224" class="row-first">Thời gian bắt đầu </td>
+                                   <td width="266" class="row-first">Thời gian kết thúc </td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 2 </td>
+                                   <td>                           
+                                       <input type="text" name="textfield" value="18:00"  style="width: 150px; padding: 1%;" /> 
+                                   </td>
+                                   <td><input type="text" name="textfield2" value="20:00" style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 3 </td>
+                                   <td><input type="text" name="textfield3"  style="width: 150px; padding: 1%;" /></td>
+                                   <td><input type="text" name="textfield4"  style="width: 150px; padding: 1%;" /></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 4 </td>
+                                   <td><input type="text" name="textfield5" value="18:00"  style="width: 150px; padding: 1%;"/></td>
+                                   <td><input type="text" name="textfield6" value="20:00"  style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 5 </td>
+                                   <td><input type="text" name="textfield7"  style="width: 150px; padding: 1%;"/></td>
+                                   <td><input type="text" name="textfield8"  style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 6 </td>
+                                   <td><input type="text" name="textfield9" value="18:00" style="width: 150px; padding: 1%;"/></td>
+                                   <td><input type="text" name="textfield10"  value="20:00" style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Thứ 7 </td>
+                                   <td><input type="text" name="textfield11"  style="width: 150px; padding: 1%;"/></td>
+                                   <td><input type="text" name="textfield12"  style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                                 <tr>
+                                   <td class="col-first">Chủ nhật </td>
+                                   <td><input type="text" name="textfield13"  style="width: 150px; padding: 1%;"/></td>
+                                   <td><input type="text" name="textfield14"  style="width: 150px; padding: 1%;"/></td>
+                                 </tr>
+                           </table>
+                           <br>
+                        </form>
+                     </div>
+                  </div>
                   <br>
-                  <div class="task">
+                  <div class="task" style="margin-top: -5%; margin-left: 6%;">
                      <a href="themkhoahoc.html"><input type="button" value="Thêm mới" name="Thêm mới"></a>
                      <input type="button" name="Xóa" value="Xóa">  
                      <a href="suakhoahoc.html"><input type="button" name="Cập nhật" value="Cập nhật"></a>

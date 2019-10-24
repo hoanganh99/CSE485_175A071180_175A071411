@@ -3,7 +3,8 @@
    session_start(); 
    
    include'connect.php';
-   if(!$_SESSION['name']){
+   if(!$_SESSION['name'])
+   {
       header('location:login.php');
    }
 ?>
@@ -49,38 +50,33 @@
             <div class="main">
                <ul style="background-color: rgb(43, 90, 132);">
                   <li class="trangchu">
-                     <a href="admin.php">
+                     <a href="indexAdmin.php">
                         <span>Quản lý khóa học</span>
                      </a>
                   </li>
                   <li class="active">
-                     <a href="#">
+                     <a href="top.php">
                         <span>Quản lý đăng ký</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#" >
+                     <a href="main.php" >
                         <span> Quản lý học viên</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#">
+                     <a href="footer.php">
                         <span>Quản lý thi</span>
                   </a>
                   </li> 
                   <li class="active">
-                     <a href="#" >
+                     <a href="registration.php" >
                         <span>Thống kê</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#">
+                     <a href="login.php">
                         <span>Hệ thống</span>
-                     </a>
-                  </li> 
-                  <li class="active">
-                     <a href="user.php">
-                        <span>Đăng bài viết</span>
                      </a>
                   </li> 
                   <li class="active">
@@ -132,52 +128,111 @@
                      </li>
                   </ul>
                </div>
-               <div class="melu">
-                  <h3>Quản Lý Thông Tin Khóa Học</h3>
-                  <form method="get">
-                     <?php 
-                        $sql = mysqli_query($conn,"select * from thongtinkhoahoc");
-                           if (mysqli_num_rows($sql) > 0) {
-                              $i=0; 
-                     ?>
-                     <table class="list-course" bgcolor="#FFFFFF" border="1">
-                        <tr class="title">
-                           <td width="40">Sửa</td>
-                           <td width="40">Xóa</a></td>
-                           <td width="100">Mã khóa học</td>
-                           <td width="350">Tên khóa học</td>
-                           <td width="120">Ngày bắt đầu</td>
-                           <td width="120">Ngày kết thúc</td>
-                        </tr>
-                        <?php while($row=mysqli_fetch_assoc($sql)) {
-                              $i++; ?>
+               <div class="title-module">
+                  <h3>Thêm Lớp Học Mới</h3>
+                  <form name="edit_course">
+                     <table class="table-form-edit" align="center" bgcolor="#FFFFFF">
+                        
                         <tr>
-                           <td><?php echo "<a href='suakhoahoc.php?idkhoahoc=".$row['idkhoahoc']."'>"; ?><i class="fa fa-edit"></i></a></td>
-                           <td><?php echo "<a href='admin.php?idkhoahoc=".$row['idkhoahoc']."'>"; ?><i class="fa fa-trash-alt"></i></a></td>
-                           <td><?php echo $row['idkhoahoc']; ?></td>
-                           <td class="content"><?php echo $row['tenkhoahoc']; ?></td>
-                           <td><?php echo $row['ngaybatdau']; ?></td>
-                           <td><?php echo $row['ngayketthuc']; ?></td>                                   
+                           <td width="180">Mã lớp học <br><br></td>
+                           <td width="300"><input type="text" value="" name="makh" size="40"> <br><br></td>
                         </tr>
-                     <?php }} ?>
+                        <tr>
+                           <td>Tên lớp học <br><br></td>
+                           <td><input type="text" value="" size="40"> <br><br></td>
+                        </tr>
+                        <tr>
+                           <td>Giáo viên chủ nhiệm <br><br></td>
+                           <td>
+                              <select >
+                                 <option selected="selected">----Chọn giáo viên-----</option>
+                                 <option>Phan Thanh Bình</option>
+                                 <option >Lusia Brown</option>
+                                 <option >Nguyễn Hạnh</option>
+                                 <option >John Lee</option>
+                                 <option >Tiến Anh</option>
+                                 <option >Lusia Brown</option>                         
+                              </select> <br><br>
+                        </td>
+                        </tr>
+                        <tr>
+                           <td>Lịch học <br><br></td>
+                           <td><input type="text"  value="" size="40"> <br><br></td>
+                        </tr> 
+                        <tr>
+                           <td>Học phí <br><br></td>
+                           <td><input type="text"  value="" size="40"> <br><br></td>
+                        </tr>                   
+                        <tr>
+                           <td>Ngày bắt đầu <br><br></td>
+                           <td><input type="date"  value="" size="40"> <br><br></td>
+                        <tr>
+                           <td>Ngày kết thúc <br><br></td>
+                           <td><input type="date"  value="" size="40"> <br><br></td>
+                        </tr>
+                        <tr>
+                           <td>Phòng học <br><br></td>
+                           <td><input type="text"  value="" size="40"> <br><br></td>
+                        </tr>
+                        <tr>
+                           <td align="center" ></td>
+                           <td>
+                              <a href="qllophoc.php">
+                                 <input type="submit" value="Lưu lại" name="submit">
+                              </a>
+                              <a href="themlop.php">
+                                 <input type="reset" value="Làm mới">
+                              </a>
+                           </td>
+                        </tr>
                      </table>
                   </form>
-                  <?php
-                     if (isset($_GET['idkhoahoc'])) {
-                        $idkhoahoc=$_GET['idkhoahoc'];
-                        $query="DELETE from thongtinkhoahoc where idkhoahoc = '$idkhoahoc'";
-                        mysqli_query($conn,$query) or die(mysqli_error($conn));
-                        header("location:admin.php");
-                     }
-                     
-                  ?>
-                  
-                  <br>
-                  <div class="task">
-                     <form method="post">
-                        <a href="themkhoahoc.php"><input type="button" value="Thêm mới" name="Add"></a>
-                     </form>
-                  </div>
+                     <?php 
+                           if(isset($_POST['submit']))
+                           {
+                              if(!empty($_POST['idkhoahoc']) && !empty($_POST['tenkhoahoc'])&& 
+                                 !empty($_POST['ngaybatdau'])&& !empty($_POST['ngayketthuc'])&& 
+                                 !empty($_POST['mota'])
+                                 )
+                              {
+                                 $idkhoahoc      = $_POST['idkhoahoc'];
+                                 $tenkhoahoc     = $_POST['tenkhoahoc'];
+                                 $ngaybatdau     = $_POST['ngaybatdau'];
+                                 $ngayketthuc    = $_POST['ngayketthuc'];
+                                 $mota           = $_POST['mota'];               
+                                                
+
+                                 // kết nối với database
+                                 $sql= mysqli_query($conn,"SELECT * from thongtinkhoahoc where idkhoahoc = '$idkhoahoc'");
+                                 $count = mysqli_num_rows($sql);
+
+                                 if($count==1)
+                                 {
+                                    echo
+                                    "<div style='color: red; font-weight: bolder; text-align: center;'>
+                                       Tài khoản đã tồn tại, vui lòng đăng nhập !!!
+                                    </div>";
+                                 }
+                                 else if($count==0)
+                                 {
+                                 // đẩy dl lên db
+                                    mysqli_query($conn,"INSERT into thongtinkhoahoc(idkhoahoc, tenkhoahoc, ngaybatdau, ngayketthuc, mota) values('$idkhoahoc','$tenkhoahoc','$ngaybatdau', '$ngayketthuc', '$mota')") or die(mysqli_error($conn));
+                                    echo
+                                    "<div style='color: red; font-weight: bolder; text-align: center;'> 
+                                       Thêm thành công, mời chạy lại :))
+                                    </div>";
+                                 }
+                              }
+                              else 
+                              {
+                                 echo
+                                 "<div style='color: red; font-weight: bolder; text-align: center;'>
+                                    Vui lòng nhập đủ thông tin !!!
+                                 </div>"; 
+                              }
+                           }
+                        ?>
+                        <br>
                </div>
             </div>
             <br>
@@ -189,6 +244,8 @@
                </small>
             </div>
          </div>
+         
+
 
 
          <!-- sau khi click -->
@@ -276,36 +333,62 @@
                </div>
                <div class="melu">
                   <h3>Quản Lý Thông Tin Khóa Học</h3>
-                   <form method="post">
-                     <?php 
-                        $sql = mysqli_query($conn,"select * from thongtinkhoahoc");
-                           if (mysqli_num_rows($sql) > 0) {
-                              $i=0; 
-                     ?>
-                     <table class="list-course" bgcolor="#FFFFFF" border="1">
-                        <tr class="title">
-                           <td width="20"><input type="checkbox"></td>
-                           <td width="40">Sửa</td>
-                           <td width="40">Xóa</a></td>
-                           <td width="100">Mã khóa học</td>
-                           <td width="350">Tên khóa học</td>
-                           <td width="120">Ngày bắt đầu</td>
-                           <td width="120">Ngày kết thúc</td>
-                        </tr>
-                        <?php while($row=mysqli_fetch_assoc($sql)) {
-                              $i++; ?>
-                        <tr>
-                           <td><input type="checkbox"></td>
-                           <td><a href="suakhoahoc.php"><i class="fa fa-edit"></i></a></td>
-                           <td><a href="xoakhoahoc.php"><i class="fa fa-trash-alt"></i></a></td>
-                           <td><?php echo $row['idkhoahoc']; ?></td>
-                           <td class="content"><?php echo $row['tenkhoahoc']; ?></td>
-                           <td><?php echo $row['ngaybatdau']; ?></td>
-                           <td><?php echo $row['ngayketthuc']; ?></td>                                   
-                        </tr>
-                     <?php }} ?>
-                     </table>
-                  </form>
+                  <table class="list-course" bgcolor="#FFFFFF" border="1">
+                     <tr class="title">
+                        <td width="20"><input type="checkbox"></td>
+                        <td width="40">Sửa</td>
+                        <td width="40">Xóa</a></td>
+                        <td width="100">Mã khóa học</td>
+                        <td width="350">Tên khóa học</td>
+                        <td width="120">Ngày bắt đầu</td>
+                        <td width="120">Ngày kết thúc</td>                                         
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                        <td><a href=""><i class="fa fa-trash-alt"></i></a></td>
+                        <td>abc</td>
+                        <td class="content">CCNA</td>
+                        <td>19/05/2009</td>
+                        <td>19/08/2009</td>                                   
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                        <td><a href=""><i class="fa fa-trash-alt"></i></a></td>
+                        <td>abc</td>
+                        <td class="content">CCNP</td>
+                        <td>19/05/2009</td>
+                        <td>19/08/2009</td>                                   
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                        <td><a href=""><i class="fa fa-trash-alt"></i></a></td>
+                        <td>abc</td>
+                        <td class="content">CCNA Plus</td>
+                        <td>19/05/2009</td>
+                        <td>19/08/2009</td>                                   
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                        <td><a href=""><i class="fa fa-trash-alt"></i></a></td>
+                        <td>abc</td>
+                        <td class="content">MCSA</td>
+                        <td>19/05/2009</td>
+                        <td>19/08/2009</td>                                   
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                        <td><a href=""><i class="fa fa-trash-alt"></i></a></td>
+                        <td>abc</td>
+                        <td class="content">MCSE</td>
+                        <td>19/05/2009</td>
+                        <td>19/08/2009</td>                                   
+                     </tr>
+                  </table>
                   <br>
                   <div class="task">
                      <a href="themkhoahoc.html"><input type="button" value="Thêm mới" name="Thêm mới"></a>
@@ -331,30 +414,30 @@
          </a>
       </div>
 
-   	
-  	</body>
-   	<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
-   	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-	   <script type="text/javascript" src="slick/slick.min.js"></script>
-	   <script type="text/javascript">
+      
+   </body>
+      <script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <script type="text/javascript">
 
-   	   //phần topAdmin - phần quản lý - phần người dùng
-   		$( document ).ready(function() 
-   		{
-   	    	$('.action2').hide();
-   	    	$('.user-circle1').hide();
-   	    	$('.user-circle').click(function()
-   	    	{
-   	    		$('.action2').show();
-   	    		$('.user-circle1').show();
-   	    	 	$('.user-circle').hide();
-   	    	});
-   	    	$('.user-circle1').click(function()
-   	    	{
-   	    	 	$('.action2').hide();
-   	    	 	$('.user-circle').show();
-   	    	 	$('.user-circle1').hide();
-   	    	});
+         //phần topAdmin - phần quản lý - phần người dùng
+         $( document ).ready(function() 
+         {
+            $('.action2').hide();
+            $('.user-circle1').hide();
+            $('.user-circle').click(function()
+            {
+               $('.action2').show();
+               $('.user-circle1').show();
+               $('.user-circle').hide();
+            });
+            $('.user-circle1').click(function()
+            {
+               $('.action2').hide();
+               $('.user-circle').show();
+               $('.user-circle1').hide();
+            });
          });
 
 
@@ -379,7 +462,7 @@
                $('#bd1').hide();
                $("#bd").show("slow");
             });
-   	   });
+         });
          
          //
 

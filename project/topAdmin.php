@@ -27,7 +27,7 @@
    </head>
    <body>
    	<!-- phần đầu -->
-   	<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+   	<nav class="navbar navbar-expand navbar-dark static-top" style="background-color: #012b64">
 		<div class="container-fluid">
 			<div class="row" id="page-top">
 				<div class="col-md-8">
@@ -47,7 +47,7 @@
 				            <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Search" aria-describedby="basic-addon2">
 				            <div class="input-group-append">
 				                <button class="btn btn-primary" type="button">
-				                  	<i class="fas fa-search"></i>
+				                  	<i class="fas fa-search" ></i>
 				                </button>
 				            </div>
 			            </div>
@@ -66,8 +66,8 @@
 									<i class="fas fa-user-circle"></i>
 									<div class="action2">
 										<div class="menu2">
-											<a href="">Cài đặt</a> <br>
-											<a href="login.php">Đăng xuất</a> 
+											<a href="">Quản lý tk</a> <br>
+											<a href="logout.php">Đăng xuất</a> 
 										</div>
 									</div>
 								</div>

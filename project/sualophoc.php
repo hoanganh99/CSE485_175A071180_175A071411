@@ -22,6 +22,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <!--css-->
       <link rel="stylesheet" type="text/css" href="css/admin.css">
+
       <!--icon-->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
       </style>
@@ -31,7 +32,7 @@
       </script>
       <!--jquery-->
       <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-   </head>
+</head>
    <body>
      
       
@@ -49,38 +50,33 @@
             <div class="main">
                <ul style="background-color: rgb(43, 90, 132);">
                   <li class="trangchu">
-                     <a href="admin.php">
+                     <a href="indexAdmin.php">
                         <span>Quản lý khóa học</span>
                      </a>
                   </li>
                   <li class="active">
-                     <a href="#">
+                     <a href="top.php">
                         <span>Quản lý đăng ký</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#" >
+                     <a href="main.php" >
                         <span> Quản lý học viên</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#">
+                     <a href="footer.php">
                         <span>Quản lý thi</span>
                   </a>
                   </li> 
                   <li class="active">
-                     <a href="#" >
+                     <a href="registration.php" >
                         <span>Thống kê</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#">
+                     <a href="login.php">
                         <span>Hệ thống</span>
-                     </a>
-                  </li> 
-                  <li class="active">
-                     <a href="user.php">
-                        <span>Đăng bài viết</span>
                      </a>
                   </li> 
                   <li class="active">
@@ -94,7 +90,7 @@
             <div class="MENU">
                <div class="menu_main">
                   <h3>Main Menu</h3>
-                    <ul>
+                  <ul>
                      <li>
                         <a href="admin.php">
                            <span>Thông tin khóa học</span>
@@ -132,52 +128,55 @@
                      </li>
                   </ul>
                </div>
-               <div class="melu">
-                  <h3>Quản Lý Thông Tin Khóa Học</h3>
-                  <form method="get">
-                     <?php 
-                        $sql = mysqli_query($conn,"select * from thongtinkhoahoc");
-                           if (mysqli_num_rows($sql) > 0) {
-                              $i=0; 
-                     ?>
-                     <table class="list-course" bgcolor="#FFFFFF" border="1">
-                        <tr class="title">
-                           <td width="40">Sửa</td>
-                           <td width="40">Xóa</a></td>
-                           <td width="100">Mã khóa học</td>
-                           <td width="350">Tên khóa học</td>
-                           <td width="120">Ngày bắt đầu</td>
-                           <td width="120">Ngày kết thúc</td>
-                        </tr>
-                        <?php while($row=mysqli_fetch_assoc($sql)) {
-                              $i++; ?>
+               <div class="title-module">
+                  <h3>Sửa Lớp Học</h3>
+                  <form name="edit_course">
+                     <table class="table-form-edit" align="center" bgcolor="#FFFFFF">
                         <tr>
-                           <td><?php echo "<a href='suakhoahoc.php?idkhoahoc=".$row['idkhoahoc']."'>"; ?><i class="fa fa-edit"></i></a></td>
-                           <td><?php echo "<a href='admin.php?idkhoahoc=".$row['idkhoahoc']."'>"; ?><i class="fa fa-trash-alt"></i></a></td>
-                           <td><?php echo $row['idkhoahoc']; ?></td>
-                           <td class="content"><?php echo $row['tenkhoahoc']; ?></td>
-                           <td><?php echo $row['ngaybatdau']; ?></td>
-                           <td><?php echo $row['ngayketthuc']; ?></td>                                   
+                           <td width="180">Mã lớp học</td>
+                           <td width="300"><input type="text" value="E023" name="makh" size="40"></td>
                         </tr>
-                     <?php }} ?>
+                        <tr>
+                           <td>Tên lớp học</td>
+                           <td><input type="text" value="Lớp tiếng Anh giao tiếp dành cho học sinh lứa tổi tiểu học" size="40"></td>
+                        </tr>
+                        <tr>
+                           <td>Giáo viên chủ nhiệm</td>
+                           <td><select >
+                              <option selected="selected">Phan Thanh Bình</option>
+                              <option >Lusia Brown</option>
+                              <option >Nguyễn Hạnh</option>
+                              <option >John Lee</option>
+                              <option >Tiến Anh</option>
+                              <option >Lusia Brown</option>                         
+                           </select></td>
+                        </tr>
+                        <tr>
+                           <td>Lịch học</td>
+                           <td><input type="text"  value="Từ 18h-20h, Thứ 2,4,6" size="40"></td>
+                        </tr> 
+                        <tr>
+                           <td>Học phí</td>
+                           <td><input type="text"  value="500$" size="40"></td>
+                        </tr>                   
+                        <tr>
+                           <td>Ngày bắt đầu</td>
+                           <td><input type="text"  value="20/05/2009" size="40"></td>
+                        </tr>
+                        <tr>
+                           <td>Ngày kết thúc</td>
+                           <td><input type="text"  value="05/09/2009" size="40"></td>
+                        </tr>
+                        <tr>
+                           <td>Phòng học</td>
+                           <td><input type="text"  value="P403 Nhà C" size="40"></td>
+                        </tr>
+                        <tr>
+                           <td align="center" ></td>
+                           <td><a href="qllophoc.php"><input type="submit" value="Lưu lại" name="submit"></a><input type="reset" value="Reset"></td>
+                        </tr>
                      </table>
                   </form>
-                  <?php
-                     if (isset($_GET['idkhoahoc'])) {
-                        $idkhoahoc=$_GET['idkhoahoc'];
-                        $query="DELETE from thongtinkhoahoc where idkhoahoc = '$idkhoahoc'";
-                        mysqli_query($conn,$query) or die(mysqli_error($conn));
-                        header("location:admin.php");
-                     }
-                     
-                  ?>
-                  
-                  <br>
-                  <div class="task">
-                     <form method="post">
-                        <a href="themkhoahoc.php"><input type="button" value="Thêm mới" name="Add"></a>
-                     </form>
-                  </div>
                </div>
             </div>
             <br>
@@ -272,40 +271,66 @@
                            <span>Quản lý thời gian biểu</span>
                         </a>
                      </li>
-                  </ul>  
+                  </ul>
                </div>
                <div class="melu">
-                  <h3>Quản Lý Thông Tin Khóa Học</h3>
-                   <form method="post">
-                     <?php 
-                        $sql = mysqli_query($conn,"select * from thongtinkhoahoc");
-                           if (mysqli_num_rows($sql) > 0) {
-                              $i=0; 
-                     ?>
-                     <table class="list-course" bgcolor="#FFFFFF" border="1">
-                        <tr class="title">
-                           <td width="20"><input type="checkbox"></td>
-                           <td width="40">Sửa</td>
-                           <td width="40">Xóa</a></td>
-                           <td width="100">Mã khóa học</td>
-                           <td width="350">Tên khóa học</td>
-                           <td width="120">Ngày bắt đầu</td>
-                           <td width="120">Ngày kết thúc</td>
-                        </tr>
-                        <?php while($row=mysqli_fetch_assoc($sql)) {
-                              $i++; ?>
-                        <tr>
-                           <td><input type="checkbox"></td>
-                           <td><a href="suakhoahoc.php"><i class="fa fa-edit"></i></a></td>
-                           <td><a href="xoakhoahoc.php"><i class="fa fa-trash-alt"></i></a></td>
-                           <td><?php echo $row['idkhoahoc']; ?></td>
-                           <td class="content"><?php echo $row['tenkhoahoc']; ?></td>
-                           <td><?php echo $row['ngaybatdau']; ?></td>
-                           <td><?php echo $row['ngayketthuc']; ?></td>                                   
-                        </tr>
-                     <?php }} ?>
-                     </table>
-                  </form>
+                  <h3>Danh Sách Lớp Học</h3>
+                  <table class="list-course" bgcolor="#FFFFFF" border="1">
+                     <tr class="title">
+                        <td width="10"><input type="checkbox"></td>
+                        <td width="30">Sửa</td>
+                        <td width="30">Xóa</td>
+                        <td width="100">Mã lớp</td>
+                        <td width="250">Tên lớp</td>
+                        <td width="100">Tên môn</td>
+                        <td width="100">Thời lượng</td>                                        
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                        <td><a href=""><i class="fa fa-trash-alt"></i></a></td>
+                        <td>abc</td>
+                        <td class="content">Lớp tiếng Anh giao tiếp dành cho học sinh lứa tổi tiểu học</td>
+                        <td>English</td>
+                        <td>30 buổi</td>                                  
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                        <td><a href=""><i class="fa fa-trash-alt"></i></a></td>
+                        <td>abc</td>
+                        <td class="content">Lớp tiếng Anh giao tiếp dành cho học sinh lứa tổi tiểu học</td>
+                        <td>English</td>
+                        <td>30 buổi</td>                                   
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                        <td><a href=""><i class="fa fa-trash-alt"></i></a></td>
+                        <td>abc</td>
+                        <td>Lớp tiếng Anh giao tiếp dành cho học sinh lứa tổi tiểu học</td>
+                        <td>English</td>
+                        <td>30 buổi</td>                                   
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                        <td><a href=""><i class="fa fa-trash-alt"></i></a></td>
+                        <td>abc</td>
+                        <td class="content">Lớp tiếng Anh giao tiếp dành cho học sinh lứa tổi tiểu học</td>
+                        <td>English</td>
+                        <td>30 buổi</td>                                  
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#"><i class="fa fa-edit"></i></a></td>
+                        <td><a href=""><i class="fa fa-trash-alt"></i></a></td>
+                        <td>abc</td>
+                        <td class="content">Lớp tiếng Anh giao tiếp dành cho học sinh lứa tổi tiểu học</td>
+                        <td>English</td>
+                        <td>30 buổi</td>                                  
+                     </tr>
+                  </table>
                   <br>
                   <div class="task">
                      <a href="themkhoahoc.html"><input type="button" value="Thêm mới" name="Thêm mới"></a>

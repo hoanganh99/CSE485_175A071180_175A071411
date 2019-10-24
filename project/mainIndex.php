@@ -1,3 +1,8 @@
+<?php 
+	$conn = mysqli_connect('localhost','root','','login')or die('Kết nối thất bại!'.mysqli_connect_error());
+	mysqli_query($conn, 'SET NAMES UTF8');
+?>
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -36,29 +41,34 @@
 							<hr style="height: 1px; background-color: #aa914d; width: 35px; margin-top: -1%;">
 							<div class="row content d-flex justify-content-end">
 								<!-- cột tin tức 1 -->
+								<?php
+		                            $sql = mysqli_query($conn,"SELECT * FROM baiviet limit 3") or die(mysqli_error($conn));
+		                            while($row = mysqli_fetch_assoc($sql)) :
+		                         ?>
 								<div class="col-12 col-md-4">
 									<a href="">
 										<img src="http://ntt.edu.vn/web/upload/images/123.JPG" class="w-100">
 									</a>
-									<a class="content1" href="">Đào tạo nguồn nhân lực du lịch: Đã đến lúc phải để cho sinh viên tự làm</a>
-									<p>Hiện nay, nhiều trường, cơ sở đào tạo các ngành về dịch vụ du lịch vẫn đang chú trọng quá nhiều vào đào tạo lý thuyết mà ít có thực hành… đúng nghĩa. Đây cũng là điều hạn chế xưa nay, đã được bàn - nói đến rất</p>
+									<a class="content1" href=""><?php echo $row['tieude']; ?></a>
+									<p><?php echo $row['noidung']; ?></p>
 								</div>
+								<?php endwhile; ?>
 								<!-- cột tin tức 2 -->
-								<div class="col-12 col-md-4">
+								<!-- <div class="col-12 col-md-4">
 									<a href="">
 										<img src="http://ntt.edu.vn/web/upload/images/Tin_Tuc/201909_TIN/537ed521aa664c381577.jpg" class="w-100">
 									</a>
 									<a class="content1" href="">Giảng viên ĐH Nguyễn Tất Thành lọt vào top 1% các nhà bình duyệt từ Việt Nam</a>
 									<p>NTTU - Vừa qua, Global Peer Review Awards 2019 đã công bố 10 nhà bình duyệt xuất sắc nhất, trong đó có đại diện đến từ Trường ĐH Nguyễn Tất Thành, TS. Võ Nguyễn Đại Việt. Kết quả này là sự ghi nhận của Global Peer</p>
-								</div>
+								</div> -->
 								<!-- cột tin tức 3 -->
-								<div class="col-12 col-md-4">
+								<!-- <div class="col-12 col-md-4">
 									<a href="">
 										<img src="http://ntt.edu.vn/web/upload/images/Khoa-nganh/ketoan-taichinh-thumb.png" class="w-100">
 									</a>
 									<a class="content1" href="">ĐH Nguyễn Tất Thành tuyển sinh liên thông các ngành đào tạo</a>
 									<p>NTTU - ĐH Nguyễn Tất Thành tuyển sinh liên thông các ngành đào tạo...</p>
-								</div>
+								</div> -->
 								<div class="xemthem">
 									<div class="" style="text-align:end;">
 										<a href="">

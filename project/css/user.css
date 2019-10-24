@@ -1,88 +1,14 @@
-/* phần đầu */
-#page-top
+
+
+.user h5
 {
+	height: 50px;
 	width: 100%;
-	display: flex;
-}
-/* phần tìm kiếm thông tin */
-.input-group-append button
-{
-	background-color:#BDBDBD;
-	border: 1px solid #BDBDBD;
-}
-.manage
-{
-	list-style: none;
-	display: flex;
-	background-color: #343a40;
-	margin-top: 5%;
-}
-/* phần quản lý */
-/* phần của người sử dụng */
-.manage2
-{
-	z-index: 9 !important;
-  	position: fixed;
-}
-.manage2 .user-circle
-{
-  color: #A4A4A4;
-}
-.manage2 .user-circle1
-{
-  color: #A4A4A4;
-}
-/* phần bên trong sau khi ấn */
-.manage2 .action2
-{
-  width: 300px;
-  margin-top: 7%;
-  border: 0.5px solid ;
-  background-color: white;
-  border-radius: 5px;
-  padding-right: 70%;
-  font-size: 13px;
-  font-weight: bolder;
-}
-.manage2 .action2 .menu2 
-{
-  margin: 10px;
-
-}
-.manage2 .action2 .menu2 a
-{
-	text-decoration: none;
-  	width: 100%;
-  	height: 40px;
-  	color: black;
-}
-
-
-
-
-/* phần main */
-.main ul
-{
-	display: flex;
-	border: 1px solid rgb(43, 90, 132);
+	padding-top: 1%;
 	background-color: rgb(43, 90, 132);
-	height: 30px;
+	color: white;
+	text-align: center;
 }
-.main li
-{
-	list-style: none;
-	margin-right: 4%;
-}
-.main a
-{
-	text-decoration: none;
-	color: #D8D8D8;
-}
-.main li:hover
-{
-	background-color: #819FF7;
-}
-
 
 
 
@@ -125,6 +51,7 @@
 .melu
 {
 	text-align: center;
+	width: 100%;
 }
 .melu .title
 {
@@ -142,6 +69,7 @@
 }
 .melu table
 {
+	width: 95%;
 	margin-left:  3%;
 	margin-top: 3%;
 	margin-right: -7%;
@@ -222,13 +150,6 @@
 /* phần responside */
 @media only screen and (max-width: 1050px) 
 {
-	/* topAdmin */
-	.manages 
-	{
-		width: 20%;
-		margin-left: 80%;
-		margin-top: -6%;
-	}
 	/* main */
 	#bd
 	{
@@ -238,23 +159,8 @@
 	{
 		display: none;
 	}
-	.manage2
+	.MENU .menu_main ul li
 	{
-		display: flex;
-	}
-	.main ul
-	{
-		display: flex;
-		font-size: 10px;
-	}
-	.melu table
-	{
-		margin-right: 2%;
-	}
-	.melu .task input
-	{
-		width: 80px;
-		height: auto;
-		font-size: 12px;
+		margin-left: -40%;
 	}
 }

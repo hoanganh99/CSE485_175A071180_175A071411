@@ -1,8 +1,10 @@
 <?php
 	ob_start();
 	session_start();
+	
 	include'connect.php';
-	if(isset($_SESSION['name'])){
+	if(isset($_SESSION['name']))
+	{
 		header('location:admin.php');
 	}
 ?>
@@ -101,7 +103,7 @@
 												else if($row['level']==0)
 												{
 													$_SESSION['name'] = $user;
-													header("location: index.php");
+													header("location: user.php");
 													ob_enf_fluck();
 												}
 											}

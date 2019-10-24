@@ -3,7 +3,8 @@
    session_start(); 
    
    include'connect.php';
-   if(!$_SESSION['name']){
+   if(!$_SESSION['name'])
+   {
       header('location:login.php');
    }
 ?>
@@ -49,38 +50,33 @@
             <div class="main">
                <ul style="background-color: rgb(43, 90, 132);">
                   <li class="trangchu">
-                     <a href="admin.php">
+                     <a href="indexAdmin.php">
                         <span>Quản lý khóa học</span>
                      </a>
                   </li>
                   <li class="active">
-                     <a href="#">
+                     <a href="top.php">
                         <span>Quản lý đăng ký</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#" >
+                     <a href="main.php" >
                         <span> Quản lý học viên</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#">
+                     <a href="footer.php">
                         <span>Quản lý thi</span>
                   </a>
                   </li> 
                   <li class="active">
-                     <a href="#" >
+                     <a href="registration.php" >
                         <span>Thống kê</span>
                      </a>
                   </li> 
                   <li class="active">
-                     <a href="#">
+                     <a href="login.php">
                         <span>Hệ thống</span>
-                     </a>
-                  </li> 
-                  <li class="active">
-                     <a href="user.php">
-                        <span>Đăng bài viết</span>
                      </a>
                   </li> 
                   <li class="active">
@@ -132,51 +128,93 @@
                      </li>
                   </ul>
                </div>
-               <div class="melu">
-                  <h3>Quản Lý Thông Tin Khóa Học</h3>
-                  <form method="get">
-                     <?php 
-                        $sql = mysqli_query($conn,"select * from thongtinkhoahoc");
-                           if (mysqli_num_rows($sql) > 0) {
-                              $i=0; 
-                     ?>
-                     <table class="list-course" bgcolor="#FFFFFF" border="1">
-                        <tr class="title">
-                           <td width="40">Sửa</td>
-                           <td width="40">Xóa</a></td>
-                           <td width="100">Mã khóa học</td>
-                           <td width="350">Tên khóa học</td>
-                           <td width="120">Ngày bắt đầu</td>
-                           <td width="120">Ngày kết thúc</td>
-                        </tr>
-                        <?php while($row=mysqli_fetch_assoc($sql)) {
-                              $i++; ?>
+               <div class="title-module">
+                  <h3>Thêm Khóa Học</h3>
+                  <form name="edit_course" method="post">
+                     <table class="table-form-edit" align="center" bgcolor="#FFFFFF">
                         <tr>
-                           <td><?php echo "<a href='suakhoahoc.php?idkhoahoc=".$row['idkhoahoc']."'>"; ?><i class="fa fa-edit"></i></a></td>
-                           <td><?php echo "<a href='admin.php?idkhoahoc=".$row['idkhoahoc']."'>"; ?><i class="fa fa-trash-alt"></i></a></td>
-                           <td><?php echo $row['idkhoahoc']; ?></td>
-                           <td class="content"><?php echo $row['tenkhoahoc']; ?></td>
-                           <td><?php echo $row['ngaybatdau']; ?></td>
-                           <td><?php echo $row['ngayketthuc']; ?></td>                                   
+                           <td colspan="2" align="left"><strong>Thêm mới khóa học:<br><br></strong></td> 
                         </tr>
-                     <?php }} ?>
+                        <tr>
+                           <td width="180">Mã khóa học:<br><br></td>
+                           <td width="300"><input type="text" name="idkhoahoc" placeholder="Nhập mã khóa học"  size="40"><br><br></td>
+                        </tr>
+                        <tr>
+                           <td>Tên khóa học:<br><br></td>
+                           <td><input type="text" name="tenkhoahoc" placeholder="Nhập tên khóa học" size="40"><br><br></td>
+                        </tr>
+                        <tr>
+                           <td>Ngày bắt đầu khóa học:<br><br></td>
+                           <td><input type="date" name="ngaybatdau" size="40"><br><br></td>
+                        </tr>
+                        <tr>
+                           <td>Ngày kết thúc khóa học:<br><br></td>
+                           <td><input type="date" name="ngayketthuc" size="40"><br><br></td>
+                        </tr>                   
+                        <tr>
+                           <td>Mô tả chung:<br><br></td>
+                           <td><textarea cols="30" rows="5" name="mota"></textarea><br><br></td>
+                        </tr>
+                        <tr>
+                           <td align="center" ></td>
+                           <td>
+                              <a href="admin.php">
+                                 <input type="submit" value="Lưu lại" name="submit">
+                              </a>
+                              <a href="themkhoahoc.php">
+                                 <input type="reset" value="Làm mới" name="reset">
+                              </a>
+                              <br><br>
+                           </td>
+                        </tr>
                      </table>
                   </form>
-                  <?php
-                     if (isset($_GET['idkhoahoc'])) {
-                        $idkhoahoc=$_GET['idkhoahoc'];
-                        $query="DELETE from thongtinkhoahoc where idkhoahoc = '$idkhoahoc'";
-                        mysqli_query($conn,$query) or die(mysqli_error($conn));
-                        header("location:admin.php");
-                     }
-                     
-                  ?>
-                  
-                  <br>
-                  <div class="task">
-                     <form method="post">
-                        <a href="themkhoahoc.php"><input type="button" value="Thêm mới" name="Add"></a>
-                     </form>
+                     <?php 
+                           if(isset($_POST['submit']))
+                           {
+                              if(!empty($_POST['idkhoahoc']) && !empty($_POST['tenkhoahoc'])&& 
+                                 !empty($_POST['ngaybatdau'])&& !empty($_POST['ngayketthuc'])&& 
+                                 !empty($_POST['mota'])
+                                 )
+                              {
+                                 $idkhoahoc      = $_POST['idkhoahoc'];
+                                 $tenkhoahoc     = $_POST['tenkhoahoc'];
+                                 $ngaybatdau     = $_POST['ngaybatdau'];
+                                 $ngayketthuc    = $_POST['ngayketthuc'];
+                                 $mota           = $_POST['mota'];               
+                                                
+
+                                 $sql= mysqli_query($conn,"SELECT * from thongtinkhoahoc where idkhoahoc = '$idkhoahoc'");
+                                 $count = mysqli_num_rows($sql);
+
+                                 if($count==1)
+                                 {
+                                    echo
+                                    "<div style='color: red; font-weight: bolder; text-align: center;'>
+                                       Thông tin đã tồn tại !!!
+                                    </div>";
+                                 }
+                                 else if($count==0)
+                                 {
+                                 // đẩy dl lên db
+                                    mysqli_query($conn,"INSERT into thongtinkhoahoc(idkhoahoc, tenkhoahoc, ngaybatdau, ngayketthuc, mota) values('$idkhoahoc','$tenkhoahoc','$ngaybatdau', '$ngayketthuc', '$mota')") or die(mysqli_error($conn));
+                                    echo
+                                    "<div style='color: red; font-weight: bolder; text-align: center;'> 
+                                       Thêm thành công :))
+                                    </div>";
+                                 }
+                              }
+                              else 
+                              {
+                                 echo
+                                 "<div style='color: red; font-weight: bolder; text-align: center;'>
+                                    Vui lòng nhập đủ thông tin !!!
+                                 </div>"; 
+                              }
+                           }
+                        ?>
+                        <br>
+                     </div>
                   </div>
                </div>
             </div>
@@ -189,6 +227,8 @@
                </small>
             </div>
          </div>
+         
+
 
 
          <!-- sau khi click -->
@@ -275,38 +315,92 @@
                   </ul>  
                </div>
                <div class="melu">
-                  <h3>Quản Lý Thông Tin Khóa Học</h3>
-                   <form method="post">
-                     <?php 
-                        $sql = mysqli_query($conn,"select * from thongtinkhoahoc");
-                           if (mysqli_num_rows($sql) > 0) {
-                              $i=0; 
-                     ?>
-                     <table class="list-course" bgcolor="#FFFFFF" border="1">
-                        <tr class="title">
-                           <td width="20"><input type="checkbox"></td>
-                           <td width="40">Sửa</td>
-                           <td width="40">Xóa</a></td>
-                           <td width="100">Mã khóa học</td>
-                           <td width="350">Tên khóa học</td>
-                           <td width="120">Ngày bắt đầu</td>
-                           <td width="120">Ngày kết thúc</td>
-                        </tr>
-                        <?php while($row=mysqli_fetch_assoc($sql)) {
-                              $i++; ?>
+                  <h3>Thêm Khóa Học</h3>
+                  <form name="edit_course" method="post">
+                     <table class="table-form-edit" align="center" bgcolor="#FFFFFF">
                         <tr>
-                           <td><input type="checkbox"></td>
-                           <td><a href="suakhoahoc.php"><i class="fa fa-edit"></i></a></td>
-                           <td><a href="xoakhoahoc.php"><i class="fa fa-trash-alt"></i></a></td>
-                           <td><?php echo $row['idkhoahoc']; ?></td>
-                           <td class="content"><?php echo $row['tenkhoahoc']; ?></td>
-                           <td><?php echo $row['ngaybatdau']; ?></td>
-                           <td><?php echo $row['ngayketthuc']; ?></td>                                   
+                           <td colspan="2" align="left"><strong>Thêm mới khóa học:<br><br></strong></td> 
                         </tr>
-                     <?php }} ?>
+                        <tr>
+                           <td width="180">Mã khóa học:<br><br></td>
+                           <td width="300"><input type="text" name="idkhoahoc" placeholder="Nhập mã khóa học"  size="40"><br><br></td>
+                        </tr>
+                        <tr>
+                           <td>Tên khóa học:<br><br></td>
+                           <td><input type="text" name="tenkhoahoc" placeholder="Nhập tên khóa học" size="40"><br><br></td>
+                        </tr>
+                        <tr>
+                           <td>Ngày bắt đầu khóa học:<br><br></td>
+                           <td><input type="date" name="ngaybatdau" size="40"><br><br></td>
+                        </tr>
+                        <tr>
+                           <td>Ngày kết thúc khóa học:<br><br></td>
+                           <td><input type="date" name="ngayketthuc" size="40"><br><br></td>
+                        </tr>                   
+                        <tr>
+                           <td>Mô tả chung:<br><br></td>
+                           <td><textarea cols="30" rows="5" name="mota"></textarea><br><br></td>
+                        </tr>
+                        <tr>
+                           <td align="center" ></td>
+                           <td>
+                              <a href="admin.php">
+                                 <input type="submit" value="Lưu lại" name="submit">
+                              </a>
+                              <a href="themkhoahoc.php">
+                                 <input type="reset" value="Làm mới" name="reset">
+                              </a>
+                              <br><br>
+                           </td>
+                        </tr>
                      </table>
                   </form>
-                  <br>
+                     <?php 
+                           if(isset($_POST['submit']))
+                           {
+                              if(!empty($_POST['idkhoahoc']) && !empty($_POST['tenkhoahoc'])&& 
+                                 !empty($_POST['ngaybatdau'])&& !empty($_POST['ngayketthuc'])&& 
+                                 !empty($_POST['mota'])
+                                 )
+                              {
+                                 $idkhoahoc      = $_POST['idkhoahoc'];
+                                 $tenkhoahoc     = $_POST['tenkhoahoc'];
+                                 $ngaybatdau     = $_POST['ngaybatdau'];
+                                 $ngayketthuc    = $_POST['ngayketthuc'];
+                                 $mota           = $_POST['mota'];               
+                                                
+
+                                 $sql= mysqli_query($conn,"SELECT * from thongtinkhoahoc where idkhoahoc = '$idkhoahoc'");
+                                 $count = mysqli_num_rows($sql);
+
+                                 if($count==1)
+                                 {
+                                    echo
+                                    "<div style='color: red; font-weight: bolder; text-align: center;'>
+                                       Tài khoản đã tồn tại, vui lòng đăng nhập !!!
+                                    </div>";
+                                 }
+                                 else if($count==0)
+                                 {
+                                 // đẩy dl lên db
+                                    mysqli_query($conn,"INSERT into thongtinkhoahoc(idkhoahoc, tenkhoahoc, ngaybatdau, ngayketthuc, mota) values('$idkhoahoc','$tenkhoahoc','$ngaybatdau', '$ngayketthuc', '$mota')") or die(mysqli_error($conn));
+                                    echo
+                                    "<div style='color: red; font-weight: bolder; text-align: center;'> 
+                                       Thêm thành công :))
+                                    </div>";
+                                 }
+                              }
+                              else 
+                              {
+                                 echo
+                                 "<div style='color: red; font-weight: bolder; text-align: center;'>
+                                    Vui lòng nhập đủ thông tin !!!
+                                 </div>"; 
+                              }
+                           }
+                        ?>
+                        <br>
+                     </div>
                   <div class="task">
                      <a href="themkhoahoc.html"><input type="button" value="Thêm mới" name="Thêm mới"></a>
                      <input type="button" name="Xóa" value="Xóa">  

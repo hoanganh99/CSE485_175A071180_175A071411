@@ -1,0 +1,12 @@
+K:\Quản_Lý_Cửa_Hàng\DTO_QuanLy\bin\Debug\DTO_QuanLy.dll
+K:\Quản_Lý_Cửa_Hàng\DTO_QuanLy\bin\Debug\DTO_QuanLy.pdb
+K:\Quản_Lý_Cửa_Hàng\DTO_QuanLy\obj\Debug\DTO_QuanLy.csprojAssemblyReference.cache
+K:\Quản_Lý_Cửa_Hàng\DTO_QuanLy\obj\Debug\DTO_QuanLy.csproj.CoreCompileInputs.cache
+K:\Quản_Lý_Cửa_Hàng\DTO_QuanLy\obj\Debug\DTO_QuanLy.dll
+K:\Quản_Lý_Cửa_Hàng\DTO_QuanLy\obj\Debug\DTO_QuanLy.pdb
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\DTO_QuanLy\bin\Debug\DTO_QuanLy.dll
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\DTO_QuanLy\bin\Debug\DTO_QuanLy.pdb
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\DTO_QuanLy\obj\Debug\DTO_QuanLy.csprojAssemblyReference.cache
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\DTO_QuanLy\obj\Debug\DTO_QuanLy.csproj.CoreCompileInputs.cache
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\DTO_QuanLy\obj\Debug\DTO_QuanLy.dll
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\DTO_QuanLy\obj\Debug\DTO_QuanLy.pdb

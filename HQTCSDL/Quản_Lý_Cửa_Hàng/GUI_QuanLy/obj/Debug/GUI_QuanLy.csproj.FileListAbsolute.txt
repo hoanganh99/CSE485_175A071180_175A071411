@@ -1,0 +1,56 @@
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csprojAssemblyReference.cache
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.DangNhap.resources
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.Properties.Resources.resources
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.GenerateResource.cache
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.CoreCompileInputs.cache
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\GUI_QuanLy.exe.config
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\GUI_QuanLy.exe
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\GUI_QuanLy.pdb
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\BUS_QuanLy.dll
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DTO_QuanLy.dll
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DAL_QuanLy.dll
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\BUS_QuanLy.pdb
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DTO_QuanLy.pdb
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DAL_QuanLy.pdb
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.CopyComplete
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.exe
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.pdb
+K:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.Quan_Ly.resources
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\GUI_QuanLy.exe.config
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\GUI_QuanLy.exe
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\GUI_QuanLy.pdb
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\BUS_QuanLy.dll
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DTO_QuanLy.dll
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DAL_QuanLy.dll
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\BUS_QuanLy.pdb
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DTO_QuanLy.pdb
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DAL_QuanLy.pdb
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csprojAssemblyReference.cache
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.DangNhap.resources
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.Properties.Resources.resources
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.Quan_Ly.resources
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.GenerateResource.cache
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.CoreCompileInputs.cache
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.CopyComplete
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.exe
+E:\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.pdb
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\GUI_QuanLy.exe.config
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\GUI_QuanLy.exe
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\GUI_QuanLy.pdb
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\BUS_QuanLy.dll
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DTO_QuanLy.dll
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DAL_QuanLy.dll
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\BUS_QuanLy.pdb
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DTO_QuanLy.pdb
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\bin\Debug\DAL_QuanLy.pdb
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csprojAssemblyReference.cache
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.DangNhap.resources
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.Properties.Resources.resources
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.Quan_Ly.resources
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.GenerateResource.cache
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.CoreCompileInputs.cache
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.CopyComplete
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.exe
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.pdb
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.DangKy.resources
+E:\HỆ QUẢN TRỊ CSDL\PROJECT\Quản_Lý_Cửa_Hàng\GUI_QuanLy\obj\Debug\GUI_QuanLy.QuanLyCuaNhanVien.resources
